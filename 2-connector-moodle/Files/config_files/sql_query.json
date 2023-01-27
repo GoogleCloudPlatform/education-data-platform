@@ -1,0 +1,5 @@
+{
+  "default" : "select * from {}",
+  "mdl_adminpresets": "select id, userid, name, comments, site, author, moodleversion, moodlerelease, cast(iscore as unsigned) as iscore, timecreated, timeimported from mdl_adminpresets"
+
+}
