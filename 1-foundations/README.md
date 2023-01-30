@@ -2,7 +2,7 @@
 
 Building EDP starts with the construction of the infrastructure where the platform will be sitting. That's what this document is all about. It details the process of deploying EDP's foundation.
 
-> Before proceding with the steps described here, please, make sure to read through the [pre-requisites documentation](../docs/edp-prerequisites.md).
+> Before proceding with the steps described here, please, make sure to read through and comply with what is described in the [**pre-requisites documentation**](../docs/edp-prerequisites.md).
 
 ### Roles
 
@@ -19,9 +19,9 @@ Service account creation follows the least privilege principle, performing a sin
 |`transformation-sa`|-|`READ`/`WRITE`|`READ`/`WRITE`|`READ`/`WRITE`|
 |`orchestration-sa`|-|-|-|-|
 
-A full reference of IAM roles managed by the Data Platform [is available here](./IAM.md).
+A full reference of IAM roles managed by the Education Data Platform [is available here](./IAM.md).
 
-Using of service account keys within a data pipeline exposes to several security risks deriving from a credentials leak. This blueprint shows how to leverage impersonation to avoid the need of creating keys.
+Using service account keys within a data pipeline exposes to several security risks deriving from a credentials leak. This blueprint shows how to leverage impersonation to avoid the need of creating keys.
 
 ### User groups
 
@@ -31,9 +31,9 @@ We use three groups to control access to resources:
 
 - *Data Engineers* They handle and run the Data Hub, with read access to all resources in order to troubleshoot possible issues with pipelines. This team can also impersonate any service account.
 - *Data Analysts*. They perform analysis on datasets, with read access to the Data Warehouse Confidential project, and BigQuery READ/WRITE access to the playground project.
-- *Data Security*:. They handle security configurations related to the Data Hub. This team has admin access to the common project to configure Cloud DLP templates or Data Catalog policy tags.
+- *Data Security*. They handle security configurations related to the Data Hub. This team has admin access to the common project to configure Cloud DLP templates or Data Catalog policy tags.
 
-The table below shows a high level overview of roles for each group on each project, using `READ`, `WRITE` and `ADMIN` access patterns for simplicity. For detailed roles please refer to the code.
+The table below shows a high-level overview of roles for each group on each project, using `READ`, `WRITE` and `ADMIN` access patterns for simplicity. For detailed roles please refer to the code.
 
 |Group|Drop off|Load|Transformation|DHW Landing|DWH Curated|DWH Confidential|DWH Playground|Orchestration|Common|
 |-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -64,7 +64,7 @@ In both VPC scenarios, you also need these ranges for Composer:
 
 - one /24 for Cloud SQL
 - one /28 for the GKE control plane
-- one /28 for the web server
+- one /28 for the webserver
 
 ### Resource naming conventions
 
@@ -76,7 +76,7 @@ Resources follow the naming convention described below.
 
 ### Encryption
 
-We suggest a centralized approach to key management, where Organization Security is the only team that can access encryption material, and keyrings and keys are managed in a project external to the Data Platform.
+We suggest a centralized approach to key management, where Organization Security is the only team that can access encryption material, and keyrings and keys are managed in a project external to the Education Data Platform.
 
 ![Centralized Cloud Key Management high-level diagram](./images/kms_diagram.png "Centralized Cloud Key Management high-level diagram")
 
@@ -111,7 +111,7 @@ You can find more details and best practices on using DLP to De-identification a
 
 ## Data Catalog
 
-[Data Catalog](https://cloud.google.com/data-catalog) helps you to document your data entry at scale. Data Catalog relies on [tags](https://cloud.google.com/data-catalog/docs/tags-and-tag-templates#tags) and [tag template](https://cloud.google.com/data-catalog/docs/tags-and-tag-templates#tag-templates) to manage metadata for all data entries in a unified and centralized service. To implement [column-level security](https://cloud.google.com/bigquery/docs/column-level-security-intro) on BigQuery, we suggest to use `Tags` and `Tag templates`.
+[Data Catalog](https://cloud.google.com/data-catalog) helps you to document your data entry at scale. Data Catalog relies on [tags](https://cloud.google.com/data-catalog/docs/tags-and-tag-templates#tags) and [tag templates](https://cloud.google.com/data-catalog/docs/tags-and-tag-templates#tag-templates) to manage metadata for all data entries in a unified and centralized service. To implement [column-level security](https://cloud.google.com/bigquery/docs/column-level-security-intro) on BigQuery, we suggest using `Tags` and `Tag templates`.
 
 The default configuration will implement 3 tags:
 
@@ -121,16 +121,16 @@ The default configuration will implement 3 tags:
 
 Anything that is not tagged is available to all users who have access to the data warehouse.
 
-For the purpose of the blueprint no groups has access to tagged data. You can configure your tags and roles associated by configuring the `data_catalog_tags` variable. We suggest using the "[Best practices for using policy tags in BigQuery](https://cloud.google.com/bigquery/docs/best-practices-policy-tags)" article as a guide to designing your tags structure and access pattern.
+For the purpose of the blueprint, no group has access to tagged data. You can configure your tags and roles associated by configuring the `data_catalog_tags` variable. We suggest using the "[Best practices for using policy tags in BigQuery](https://cloud.google.com/bigquery/docs/best-practices-policy-tags)" article as a guide to designing your tags' structure and access pattern.
 
 ## How to run this script
 
-To deploy this blueprint on your GCP organization, you will need
+To deploy this blueprint in your GCP organization, you will need
 
 - a folder or organization where new projects will be created
 - a billing account that will be associated with the new projects
 
-The Data Platform is meant to be executed by a Service Account (or a regular user) having this minimal set of permission:
+The Education Data Platform is meant to be executed by a Service Account (or a regular user) having this minimal set of permission:
 
 - **Billing account**
   - `roles/billing.user`
@@ -165,7 +165,7 @@ terraform apply
 
 ## How to use this blueprint from Terraform
 
-While this blueprint can be used as a standalone deployment, it can also be called directly as a Terraform module by providing the variables values as show below:
+While this blueprint can be used as a standalone deployment, it can also be called directly as a Terraform module by providing the values of the variables as show below:
 
 ```hcl
 module "data-platform" {
@@ -181,18 +181,18 @@ module "data-platform" {
 
 ## Customizations
 
-### Create Cloud Key Management keys as part of the Data Platform
+### Create Cloud Key Management keys as part of the Education Data Platform
 
-To create Cloud Key Management keys in the Data Platform you can uncomment the Cloud Key Management resources configured in the [`06-common.tf`](./06-common.tf) file and update Cloud Key Management keys pointers on `local.service_encryption_keys.*` to the local resource created.
+To create Cloud Key Management keys in the Education Data Platform you can uncomment the Cloud Key Management resources configured in the [`06-common.tf`](./06-common.tf) file and update Cloud Key Management keys pointers on `local.service_encryption_keys.*` to the local resource created.
 
 ### Assign roles at BQ Dataset level
 
-To handle multiple groups of `data-analysts` accessing the same Data Warehouse layer projects but only to the dataset belonging to a specific group, you may want to assign roles at BigQuery dataset level instead of at project-level.
-To do this, you need to remove IAM binging at project-level for the `data-analysts` group and give roles at BigQuery dataset level using the `iam` variable on `bigquery-dataset` modules.
+To handle multiple groups of `data-analysts` accessing the same Data Warehouse layer projects but only to the dataset belonging to a specific group, you may want to assign roles at BigQuery dataset level instead of at the project level.
+To do this, you need to remove IAM binging at the project level for the `data-analysts` group and give roles at BigQuery dataset level using the `iam` variable on `bigquery-dataset` modules.
 
 ## Demo pipeline
 
-The application layer is out of scope of this script. As a demo purpuse only, several Cloud Composer DAGs are provided. Demos will import data from the `drop off` area to the `Data Warehouse Confidential` dataset suing different features.
+The application layer is out of the scope of this script. For a demo purpose only, several Cloud Composer DAGs are provided. Demos will import data from the `drop off` area to the `Data Warehouse `Confidential` dataset using different features.
 
 You can find examples in the `[demo](./demo)` folder.
 <!-- BEGIN TFDOC -->
@@ -229,10 +229,3 @@ You can find examples in the `[demo](./demo)` folder.
 | [vpc_subnet](outputs.tf#L97) | VPC subnetworks. |  |
 
 <!-- END TFDOC -->
-## TODOs
-
-Features to add in future releases:
-
-- Add example on how to use Cloud Data Loss Prevention
-- Add solution to handle Tables, Views, and Authorized Views lifecycle
-- Add solution to handle Metadata lifecycle
