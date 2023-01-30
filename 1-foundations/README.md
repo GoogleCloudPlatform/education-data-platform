@@ -1,4 +1,4 @@
-# Data Platform
+# Education Data Platform - Foundations
 
 This module implements an opinionated Data Platform Architecture that creates and setup projects and related resources that compose an end-to-end data environment.
 
@@ -6,7 +6,7 @@ The code is intentionally simple, as it's intended to provide a generic initial 
 
 The following diagram is a high-level reference of the resources created and managed here:
 
-![Data Platform architecture overview](./images/overview_diagram.png "Data Platform architecture overview")
+![Education Data Platform overview](./images/overview_diagram.png "Data Platform architecture overview")
 
 A demo Airflow pipeline is also part of this blueprint: it can be built and run on top of the foundational infrastructure to verify or test the setup quickly.
 
