@@ -107,7 +107,7 @@ organization_domain = "domain.com"
 prefix              = "myco"
 ```
 
-For more fine details check variables on [`variables.tf`](./variables.tf) and update according to the desired configuration. Remember to create team groups described [below](#groups).
+For more fine details check variables on [`variables.tf`](./variables.tf) and update according to the desired configuration. Remember to create team groups described [below](#user-groups).
 
 Once the configuration is complete, run the project factory by running
 
@@ -118,7 +118,7 @@ terraform apply
 
 ### How to use this blueprint from Terraform
 
-While this blueprint can be used as a standalone deployment, it can also be called directly as a Terraform module by providing the values of the variables as show below:
+While this blueprint can be used as a standalone deployment, it can also be called directly as a Terraform module by providing the values of the variables as shown below:
 
 ```hcl
 module "data-platform" {
