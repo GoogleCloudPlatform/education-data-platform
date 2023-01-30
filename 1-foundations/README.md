@@ -4,11 +4,13 @@ Building EDP starts with the construction of the infrastructure where the platfo
 
 > Before proceding with the steps described here, please, make sure to read through and comply with what is described in the [**pre-requisites documentation**](../docs/edp-prerequisites.md).
 
-### Roles
+Before deploying EDP's foundation though, it is important to acknowledge important aspects related to the way resources are deployed. Security associated with flexibility are aspects we've taken from scratch to build it out. 
+
+## Roles
 
 We assign roles on resources at the project level, granting the appropriate roles via groups (humans) and service accounts (services and applications) according to best practices.
 
-### Service accounts
+## Service accounts
 
 Service account creation follows the least privilege principle, performing a single task that requires access to a defined set of resources. The table below shows a high-level overview of roles for each service account on each data layer, using `READ` or `WRITE` access patterns for simplicity. For detailed roles please refer to the code.
 
@@ -23,7 +25,7 @@ A full reference of IAM roles managed by the Education Data Platform [is availab
 
 Using service account keys within a data pipeline exposes to several security risks deriving from a credentials leak. This blueprint shows how to leverage impersonation to avoid the need of creating keys.
 
-### User groups
+## User groups
 
 User groups provide a stable frame of reference that allows decoupling the final set of permissions from the stage where entities and resources are created, and their IAM bindings defined.
 
@@ -43,13 +45,13 @@ The table below shows a high-level overview of roles for each group on each proj
 
 You can configure groups via the `groups` variable.
 
-### Virtual Private Cloud (VPC) design
+## Virtual Private Cloud (VPC) design
 
 As is often the case in real-world configurations, this blueprint accepts as input an existing [Shared-VPC](https://cloud.google.com/vpc/docs/shared-vpc) via the `network_config` variable. Make sure that the GKE API (`container.googleapis.com`) is enabled in the VPC host project.
 
 If the `network_config` variable is not provided, one VPC will be created in each project that supports network resources (load, transformation and orchestration).
 
-### IP ranges and subnetting
+## IP ranges and subnetting
 
 To deploy this blueprint with self-managed VPCs you need the following ranges:
 
@@ -66,7 +68,7 @@ In both VPC scenarios, you also need these ranges for Composer:
 - one /28 for the GKE control plane
 - one /28 for the webserver
 
-### Resource naming conventions
+## Resource naming conventions
 
 Resources follow the naming convention described below.
 
@@ -74,56 +76,7 @@ Resources follow the naming convention described below.
 - `prefix-layer-prduct` for resources
 - `prefix-layer[2]-gcp-product[2]-counter` for services and service accounts
 
-### Encryption
-
-We suggest a centralized approach to key management, where Organization Security is the only team that can access encryption material, and keyrings and keys are managed in a project external to the Education Data Platform.
-
-![Centralized Cloud Key Management high-level diagram](./images/kms_diagram.png "Centralized Cloud Key Management high-level diagram")
-
-To configure the use of Cloud KMS on resources, you have to specify the key id on the `service_encryption_keys` variable. Key locations should match resource locations. Example:
-
-```tfvars
-service_encryption_keys = {
-    bq       = "KEY_URL_MULTIREGIONAL"
-    composer = "KEY_URL_REGIONAL"
-    dataflow = "KEY_URL_REGIONAL"
-    storage  = "KEY_URL_MULTIREGIONAL"
-    pubsub   = "KEY_URL_MULTIREGIONAL"
-}
-```
-
-This step is optional and depends on customer policies and security best practices.
-
-## Data Anonymization
-
-We suggest using Cloud Data Loss Prevention to identify/mask/tokenize your confidential data.
-
-While implementing a Data Loss Prevention strategy is out of scope for this blueprint, we enable the service in two different projects so that [Cloud Data Loss Prevention templates](https://cloud.google.com/dlp/docs/concepts-templates) can be configured in one of two ways:
-
-- during the ingestion phase, from Dataflow
-- during the transformation phase, from [BigQuery](https://cloud.google.com/bigquery/docs/scan-with-dlp) or [Cloud Dataflow](https://cloud.google.com/architecture/running-automated-dataflow-pipeline-de-identify-pii-dataset)
-
-Cloud Data Loss Prevention resources and templates should be stored in the security project:
-
-![Centralized Cloud Data Loss Prevention high-level diagram](./images/dlp_diagram.png "Centralized Cloud Data Loss Prevention high-level diagram")
-
-You can find more details and best practices on using DLP to De-identification and re-identification of PII in large-scale datasets in the [GCP documentation](https://cloud.google.com/architecture/de-identification-re-identification-pii-using-cloud-dlp).
-
-## Data Catalog
-
-[Data Catalog](https://cloud.google.com/data-catalog) helps you to document your data entry at scale. Data Catalog relies on [tags](https://cloud.google.com/data-catalog/docs/tags-and-tag-templates#tags) and [tag templates](https://cloud.google.com/data-catalog/docs/tags-and-tag-templates#tag-templates) to manage metadata for all data entries in a unified and centralized service. To implement [column-level security](https://cloud.google.com/bigquery/docs/column-level-security-intro) on BigQuery, we suggest using `Tags` and `Tag templates`.
-
-The default configuration will implement 3 tags:
-
-- `3_Confidential`: policy tag for columns that include very sensitive information, such as credit card numbers.
-- `2_Private`: policy tag for columns that include sensitive personal identifiable information (PII) information, such as a person's first name.
-- `1_Sensitive`: policy tag for columns that include data that cannot be made public, such as the credit limit.
-
-Anything that is not tagged is available to all users who have access to the data warehouse.
-
-For the purpose of the blueprint, no group has access to tagged data. You can configure your tags and roles associated by configuring the `data_catalog_tags` variable. We suggest using the "[Best practices for using policy tags in BigQuery](https://cloud.google.com/bigquery/docs/best-practices-policy-tags)" article as a guide to designing your tags' structure and access pattern.
-
-## How to run this script
+# How to run this script
 
 To deploy this blueprint in your GCP organization, you will need
 
@@ -139,7 +92,7 @@ The Education Data Platform is meant to be executed by a Service Account (or a r
   - `roles/resourcemanager.projectCreator`
 - **KMS Keys** (If CMEK encryption in use):
   - `roles/cloudkms.admin` or a custom role with `cloudkms.cryptoKeys.getIamPolicy`, `cloudkms.cryptoKeys.list`, `cloudkms.cryptoKeys.setIamPolicy` permissions
-- **Shared VPC host project** (if configured):\
+- **Shared VPC host project** (if configured):
   - `roles/compute.xpnAdmin` on the host project folder or org
   - `roles/resourcemanager.projectIamAdmin` on the host project, either with no conditions or with a condition allowing [delegated role grants](https://medium.com/google-cloud/managing-gcp-service-usage-through-delegated-role-grants-a843610f2226#:~:text=Delegated%20role%20grants%20is%20a,setIamPolicy%20permission%20on%20a%20resource.) for `roles/compute.networkUser`, `roles/composer.sharedVpcAgent`, `roles/container.hostServiceAgentUser`
 
@@ -179,7 +132,58 @@ module "data-platform" {
 # tftest modules=42 resources=316
 ```
 
-## Customizations
+## Data Catalog
+
+[Data Catalog](https://cloud.google.com/data-catalog) helps you to document your data entry at scale. Data Catalog relies on [tags](https://cloud.google.com/data-catalog/docs/tags-and-tag-templates#tags) and [tag templates](https://cloud.google.com/data-catalog/docs/tags-and-tag-templates#tag-templates) to manage metadata for all data entries in a unified and centralized service. To implement [column-level security](https://cloud.google.com/bigquery/docs/column-level-security-intro) on BigQuery, we suggest using `Tags` and `Tag templates`.
+
+The default configuration will implement 3 tags:
+
+- `3_Confidential`: policy tag for columns that include very sensitive information, such as credit card numbers.
+- `2_Private`: policy tag for columns that include sensitive personal identifiable information (PII) information, such as a person's first name.
+- `1_Sensitive`: policy tag for columns that include data that cannot be made public, such as the credit limit.
+
+Anything that is not tagged is available to all users who have access to the data warehouse.
+
+For the purpose of the blueprint, no group has access to tagged data. You can configure your tags and roles associated by configuring the `data_catalog_tags` variable. We suggest using the "[Best practices for using policy tags in BigQuery](https://cloud.google.com/bigquery/docs/best-practices-policy-tags)" article as a guide to designing your tags' structure and access pattern.
+
+# Optional configuration
+
+## Encryption (optional)
+
+We suggest a centralized approach to key management, where Organization Security is the only team that can access encryption material, and keyrings and keys are managed in a project external to the Education Data Platform.
+
+![Centralized Cloud Key Management high-level diagram](./images/kms_diagram.png "Centralized Cloud Key Management high-level diagram")
+
+To configure the use of Cloud KMS on resources, you have to specify the key id on the `service_encryption_keys` variable. Key locations should match resource locations. Example:
+
+```tfvars
+service_encryption_keys = {
+    bq       = "KEY_URL_MULTIREGIONAL"
+    composer = "KEY_URL_REGIONAL"
+    dataflow = "KEY_URL_REGIONAL"
+    storage  = "KEY_URL_MULTIREGIONAL"
+    pubsub   = "KEY_URL_MULTIREGIONAL"
+}
+```
+
+This step is optional and depends on customer policies and security best practices.
+
+## Data Anonymization (optional)
+
+We suggest using Cloud Data Loss Prevention to identify/mask/tokenize your confidential data.
+
+While implementing a Data Loss Prevention strategy is out of scope for this blueprint, we enable the service in two different projects so that [Cloud Data Loss Prevention templates](https://cloud.google.com/dlp/docs/concepts-templates) can be configured in one of two ways:
+
+- during the ingestion phase, from Dataflow
+- during the transformation phase, from [BigQuery](https://cloud.google.com/bigquery/docs/scan-with-dlp) or [Cloud Dataflow](https://cloud.google.com/architecture/running-automated-dataflow-pipeline-de-identify-pii-dataset)
+
+Cloud Data Loss Prevention resources and templates should be stored in the security project:
+
+![Centralized Cloud Data Loss Prevention high-level diagram](./images/dlp_diagram.png "Centralized Cloud Data Loss Prevention high-level diagram")
+
+You can find more details and best practices on using DLP to De-identification and re-identification of PII in large-scale datasets in the [GCP documentation](https://cloud.google.com/architecture/de-identification-re-identification-pii-using-cloud-dlp).
+
+## Customizations (optional)
 
 ### Create Cloud Key Management keys as part of the Education Data Platform
 
