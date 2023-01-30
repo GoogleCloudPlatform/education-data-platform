@@ -1,4 +1,4 @@
-# Data Platform
+# Education Data Platform foundations
 
 This module implements an opinionated Data Platform Architecture that creates and setup projects and related resources that compose an end-to-end data environment.
 
