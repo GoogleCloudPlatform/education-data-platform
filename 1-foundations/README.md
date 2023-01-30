@@ -6,11 +6,11 @@ Building EDP starts with the construction of the infrastructure where the platfo
 
 Before deploying EDP's foundation though, it is important to acknowledge important aspects related to the way resources are deployed. Security associated with flexibility are aspects we've taken from scratch to build it out. 
 
-## Roles
+### Roles
 
 We assign roles on resources at the project level, granting the appropriate roles via groups (humans) and service accounts (services and applications) according to best practices.
 
-## Service accounts
+### Service accounts
 
 Service account creation follows the least privilege principle, performing a single task that requires access to a defined set of resources. The table below shows a high-level overview of roles for each service account on each data layer, using `READ` or `WRITE` access patterns for simplicity. For detailed roles please refer to the code.
 
@@ -25,7 +25,7 @@ A full reference of IAM roles managed by the Education Data Platform [is availab
 
 Using service account keys within a data pipeline exposes to several security risks deriving from a credentials leak. This blueprint shows how to leverage impersonation to avoid the need of creating keys.
 
-## User groups
+### User groups
 
 User groups provide a stable frame of reference that allows decoupling the final set of permissions from the stage where entities and resources are created, and their IAM bindings defined.
 
@@ -45,13 +45,13 @@ The table below shows a high-level overview of roles for each group on each proj
 
 You can configure groups via the `groups` variable.
 
-## Virtual Private Cloud (VPC) design
+### Virtual Private Cloud (VPC) design
 
 As is often the case in real-world configurations, this blueprint accepts as input an existing [Shared-VPC](https://cloud.google.com/vpc/docs/shared-vpc) via the `network_config` variable. Make sure that the GKE API (`container.googleapis.com`) is enabled in the VPC host project.
 
 If the `network_config` variable is not provided, one VPC will be created in each project that supports network resources (load, transformation and orchestration).
 
-## IP ranges and subnetting
+### IP ranges and subnetting
 
 To deploy this blueprint with self-managed VPCs you need the following ranges:
 
@@ -68,7 +68,7 @@ In both VPC scenarios, you also need these ranges for Composer:
 - one /28 for the GKE control plane
 - one /28 for the webserver
 
-## Resource naming conventions
+### Resource naming conventions
 
 Resources follow the naming convention described below.
 
@@ -96,7 +96,7 @@ The Education Data Platform is meant to be executed by a Service Account (or a r
   - `roles/compute.xpnAdmin` on the host project folder or org
   - `roles/resourcemanager.projectIamAdmin` on the host project, either with no conditions or with a condition allowing [delegated role grants](https://medium.com/google-cloud/managing-gcp-service-usage-through-delegated-role-grants-a843610f2226#:~:text=Delegated%20role%20grants%20is%20a,setIamPolicy%20permission%20on%20a%20resource.) for `roles/compute.networkUser`, `roles/composer.sharedVpcAgent`, `roles/container.hostServiceAgentUser`
 
-## Variable configuration
+### Variable configuration
 
 There are three sets of variables you will need to fill in:
 
@@ -116,7 +116,7 @@ terraform init
 terraform apply
 ```
 
-## How to use this blueprint from Terraform
+### How to use this blueprint from Terraform
 
 While this blueprint can be used as a standalone deployment, it can also be called directly as a Terraform module by providing the values of the variables as show below:
 
@@ -132,7 +132,7 @@ module "data-platform" {
 # tftest modules=42 resources=316
 ```
 
-## Data Catalog
+### Data Catalog
 
 [Data Catalog](https://cloud.google.com/data-catalog) helps you to document your data entry at scale. Data Catalog relies on [tags](https://cloud.google.com/data-catalog/docs/tags-and-tag-templates#tags) and [tag templates](https://cloud.google.com/data-catalog/docs/tags-and-tag-templates#tag-templates) to manage metadata for all data entries in a unified and centralized service. To implement [column-level security](https://cloud.google.com/bigquery/docs/column-level-security-intro) on BigQuery, we suggest using `Tags` and `Tag templates`.
 
@@ -148,7 +148,7 @@ For the purpose of the blueprint, no group has access to tagged data. You can co
 
 # Optional configuration
 
-## Encryption (optional)
+### Encryption (optional)
 
 We suggest a centralized approach to key management, where Organization Security is the only team that can access encryption material, and keyrings and keys are managed in a project external to the Education Data Platform.
 
@@ -168,7 +168,7 @@ service_encryption_keys = {
 
 This step is optional and depends on customer policies and security best practices.
 
-## Data Anonymization (optional)
+### Data Anonymization (optional)
 
 We suggest using Cloud Data Loss Prevention to identify/mask/tokenize your confidential data.
 
@@ -183,7 +183,7 @@ Cloud Data Loss Prevention resources and templates should be stored in the secur
 
 You can find more details and best practices on using DLP to De-identification and re-identification of PII in large-scale datasets in the [GCP documentation](https://cloud.google.com/architecture/de-identification-re-identification-pii-using-cloud-dlp).
 
-## Customizations (optional)
+# Customizations (optional)
 
 ### Create Cloud Key Management keys as part of the Education Data Platform
 
@@ -194,14 +194,14 @@ To create Cloud Key Management keys in the Education Data Platform you can uncom
 To handle multiple groups of `data-analysts` accessing the same Data Warehouse layer projects but only to the dataset belonging to a specific group, you may want to assign roles at BigQuery dataset level instead of at the project level.
 To do this, you need to remove IAM binging at the project level for the `data-analysts` group and give roles at BigQuery dataset level using the `iam` variable on `bigquery-dataset` modules.
 
-## Demo pipeline
+### Demo pipeline
 
 The application layer is out of the scope of this script. For a demo purpose only, several Cloud Composer DAGs are provided. Demos will import data from the `drop off` area to the `Data Warehouse `Confidential` dataset using different features.
 
 You can find examples in the `[demo](./demo)` folder.
 <!-- BEGIN TFDOC -->
 
-## Variables
+### Variables
 
 | name | description | type | required | default |
 |---|---|:---:|:---:|:---:|
@@ -220,7 +220,7 @@ You can find examples in the `[demo](./demo)` folder.
 | [region](variables.tf#L129) | Region used for regional resources. | <code>string</code> |  | <code>&#34;europe-west1&#34;</code> |
 | [service_encryption_keys](variables.tf#L135) | Cloud KMS to use to encrypt different services. Key location should match service region. | <code title="object&#40;&#123;&#10;  bq       &#61; string&#10;  composer &#61; string&#10;  dataflow &#61; string&#10;  storage  &#61; string&#10;  pubsub   &#61; string&#10;&#125;&#41;">object&#40;&#123;&#8230;&#125;&#41;</code> |  | <code>null</code> |
 
-## Outputs
+### Outputs
 
 | name | description | sensitive |
 |---|---|:---:|
