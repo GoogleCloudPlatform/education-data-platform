@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mysql-connector-j-8.0.31">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/2-connector-moodle/Driver-JDBC/mysql-connector-j-8.0.31.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
