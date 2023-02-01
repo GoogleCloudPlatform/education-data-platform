@@ -13,7 +13,7 @@ With those informations you need to create two triggers in Cloud Build
 
 ### Trigger for Load Bucket
 
-1. First you select the Load Project (**{your-prefix}-lod**)
+1. First you select the Load Project: **{your-prefix}-lod**.
 
   ![Project List](docs/img/project-list.png)
 
@@ -53,7 +53,7 @@ With those informations you need to create two triggers in Cloud Build
 
 | Variables             | Example value   | Description             |
 |-----------------------|-----------------|-------------------------|
-| _DATAFLOW_LOAD_BUCKET | PREFIX-lod-cs-0 | Name of the Load Bucket |
+| _DATAFLOW_LOAD_BUCKET | {your-prefix}-lod-cs-0 | Name of the Load Bucket |
 
   ![Create Trigger](docs/img/create-trigger-8.png)
 
@@ -61,7 +61,7 @@ With those informations you need to create two triggers in Cloud Build
 
 ### Trigger for Composer Bucket
 
-1. First you select the Ochestration Project (**PREFIX-orc**)
+1. First you select the Ochestration Project (**{your-prefix}-orc**)
 
   ![Project List](docs/img/project-list-2.png)
 
