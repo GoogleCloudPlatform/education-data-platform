@@ -4,4 +4,4 @@ This tutorial shows you how to configure the Looker Studio to copy EDP pre-built
 
 ## Looker Studio Pre-built Dashboards:
 
-[EDP - Students Overview](moodle-students-overview.md)
+[EDP - Students Overview](docs/moodle-students-overview.md)

@@ -29,4 +29,4 @@ Some key differentiators of this approach are:
    1. Ingesting Moodle's data
    2. Ingesting Open API's data
    3. Curating data
-   4. [Exposing data to external consumption](4-looker-dashboards/moodle-students-overview.md)
+   4. [Exposing data to external consumption](4-looker-dashboards/docs/moodle-students-overview.md)
