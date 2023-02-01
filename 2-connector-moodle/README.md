@@ -1,13 +1,13 @@
 # Creating the deployment for Composer Education for Data Platform Foundation
 
-This document describes the process of deploying and configuring EDPs Moodle Connector. At the end, it will allow a parametrized way to ingest data from Moodles database by leveraging [Dataflow](https://cloud.google.com/dataflow) under-the-hood. 
+This document describes the process of deploying and configuring **EDP's Moodle Connector**. At the end, it will allow a parametrized way to ingest data (what makes sense only) from Moodle's database. This connector leverages [Dataflow](https://cloud.google.com/dataflow) under-the-hood. 
 
 ## Configure Cloud Build Trigger
 
-After you provision the [EDPs foundation](https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/tree/master/blueprints/data-solutions/data-platform-foundations) you need the following values:
+After provisioning infrastructure for data through [EDP's foundation](https://github.com/GoogleCloudPlatform/education-data-platform/tree/main/1-foundations), make sure to set up the following values in "Files/config-file":
 
-- The Load Bucket ID **PREFIX-lod-cs-0**
-- The Composer Bucket ID **europe-west1-PREFIX-orc-cmp-0-834e7303-bucket**
+- The Load Bucket ID **{your-prefix}-lod-cs-0**
+- The Composer Bucket ID **{your-gcp-region}-{your-prefix}-orc-cmp-0-834e7303-bucket**
 
 With those informations you need to create two triggers in Cloud Build
 
