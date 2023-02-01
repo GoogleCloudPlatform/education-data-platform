@@ -13,7 +13,7 @@ With those informations you need to create two triggers in Cloud Build
 
 ### Trigger for Load Bucket
 
-1. First you select the Load Project (**PREFIX-lod**)
+1. First you select the Load Project (**{your-prefix}-lod**)
 
   ![Project List](docs/img/project-list.png)
 
@@ -100,7 +100,7 @@ With those informations you need to create two triggers in Cloud Build
 10. On Advanced select the option **ADD VARIABLE** and create the following variable with the name of Composer Cloud Storage
 
 ```tfvars
-_DATAFLOW_COMPOSER_BUCKET = "europe-west1-PREFIX-orc-cmp-0-834e7303-bucket"
+_DATAFLOW_COMPOSER_BUCKET = "{your-gcp-region}-{your-prefix}-orc-cmp-0-834e7303-bucket"
 ```
 
   ![Create Trigger](docs/img/create-trigger-8.1.png)
@@ -151,25 +151,25 @@ To use the moodle_pipeline, update the configuration file (config.json) in the L
 
 The following variables must be informed for the correct execution of this pipeline:
 
-- project_id =  Id of load project used to load data from the drop off zone (or source databases) to the data warehouse  (PREFIX-lod)
-- project_id_bq =  Id of project that contains the BigQuery tables - Landing Raw Data (PREFIX-dwh-lnd)
-- prj_id_bq_cur = Id of project that contains the BigQuery tables/views in the Curated layer (PREFIX-dwh-cur)
-- dataset_name = Name of the dataset where the moodle tables will be stored in the landing Layer (PREFIX_dwh_lnd_bq_0)
-- dts_nm_cur = Name of the dataset where the moodle tables/views will be stored in the curated Layer
-- region = Cloud region where the resource will be executed
-- url_template = The Dataflow template URL
-- driver_jar = Path where the .jar file is stored for the JDBC connection
-- driverclsname = Class name of the Driver
-- conn_url = URL address for connection with the Moodle Database
-- conn_user = User for Moodle Database connection
-- conn_pass = Password for Moodle Database connection
-- bq_temp_dir = Temporary directory required for Dataflow
-- bq_sa_email = Service account e-mail used by Dataflow
-- retention_data = Time in seconds for the table partition data retention
-- max_df_instance = The maximun number of instances to parallel execution of Dataflow
-- dir_schm = Path on bucket where it will be stored the tables schemas of BigQuery
-- dir_views_cur = Path on bucket where it will be stored the select of views that will be created in the curated layer
-- tables = Table names to be processed
+- **project_id** =  Id of load project used to load data from the drop off zone (or source databases) to the data warehouse  ({your-prefix}-lod)
+- **project_id_bq** =  Id of project that contains the BigQuery tables - Landing Raw Data ({your-prefix}-dwh-lnd)
+- **prj_id_bq_cur** = Id of project that contains the BigQuery tables/views in the Curated layer ({your-prefix}-dwh-cur)
+- **dataset_name** = Name of the dataset where the moodle tables will be stored in the landing Layer ({your-prefix}_dwh_lnd_bq_0)
+- **dts_nm_cur** = Name of the dataset where the moodle tables/views will be stored in the curated Layer
+- **region** = Cloud region where the resource will be executed
+- **url_template** = The Dataflow template URL
+- **driver_jar** = Path where the .jar file is stored for the JDBC connection
+- **driverclsname** = Class name of the Driver
+- **conn_url** = URL address for connection with the Moodle Database
+- **conn_user** = User for Moodle Database connection
+- **conn_pass** = Password for Moodle Database connection
+- **bq_temp_dir** = Temporary directory required for Dataflow
+- **bq_sa_email** = Service account e-mail used by Dataflow
+- **retention_data** = Time in seconds for the table partition data retention
+- **max_df_instance** = The maximun number of instances to parallel execution of Dataflow
+- **dir_schm** = Path on bucket where it will be stored the tables schemas of BigQuery
+- **dir_views_cur** = Path on bucket where it will be stored the select of views that will be created in the curated layer
+- **tables** = Table names to be processed
 
 ## create_table_bq
 
@@ -181,15 +181,22 @@ To create the tables, the process uses the table's schema in Json format (same p
 
 This framework already contains all table schemas of moodle version 4 (469 tables) and are available in the filemdl_schemas.tar.gz
 
-The schema files must have the following name pattern: schema.<nome_da_tabela_moodle>.json
+The schema files must have the following name pattern: 
+
+```
+schema.{moodle-table-name}.json
+```
 
 The structure of the mdl_schemas.tar.gz file must be:
+
+```
 mdl_schemas
    | schema.tabela1.json
    | Schema.tabela2.json
    | Schema.tabela3.json
   ...
-  
+```  
+
 This DAG must be executed manualy before the execution of moodle_pipeline DAG, to create the datase/tables used by it.
 
 ## create_views_cur
