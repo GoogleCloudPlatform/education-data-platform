@@ -224,10 +224,13 @@ The view(s) will be created in the project/dataset according to the prj_id_bq_cu
 The views must be in a file named mdl_views_cur.tar.gz
 
 The structure of the mdl_views_cur.tar.gz file must be:
+
+```
 mdl_views_cur
   | v_mdl_courses.sql
   | v_mdl_grades.sql
   | v_mdl_users.sql
   ...
+```
 
 The file mdl_views_cur.tar.gz must be available in the bucket/folder where the Dataflow/BigQuery configuration files are located.
