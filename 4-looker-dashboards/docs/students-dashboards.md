@@ -1,6 +1,6 @@
-# EDP - Students and Courses Dashboard
+# Students and Courses Dashboards
 
-This view illustrates how you can leverage data ingested in the Education Data Platform to understand your student's enrollment and performance metrics. You can use this dashboard as-is, or use it as a starting point for more complex visualizations.
+This view illustrates how you can leverage data ingested in the Education Data Platform to understand your student's performance and enrollment metrics. You can use this dashboard as-is, or use it as a starting point for more complex visualizations.
 
 The dashboard is comprised of the following reports:
 
