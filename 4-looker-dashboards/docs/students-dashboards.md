@@ -39,10 +39,10 @@ Log in to Data Studio and copy the following data sources:
 Click on "Make a copy of this datasource" to create your local copy.
 
 <p align="left">
-    <img src="../img/copy_data_source.png" width="800" height="600">
+    <img src="../img/copy_data_source.png" width="800" height="500">
 </p>
 
-After selecting your curated layer project ({PREFIX}-dwh-cur),the BigQuery dataset name you configured during the Moodle Connector deploy, and the view, click on RECONNECT to create the data source in you account.
+After selecting your curated layer project ({PREFIX}-dwh-cur),the BigQuery dataset name you configured during the Moodle Connector deploy, and the respective table for the data source, click on RECONNECT to create the data source in you account.
 
 <p align="left">
     <img src="../img/reconnect_data_source.png" width="800" height="300">
