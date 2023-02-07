@@ -23,7 +23,7 @@ Service account creation follows the least privilege principle, performing a sin
 
 A full reference of IAM roles managed by the Education Data Platform [is available here](./IAM.md).
 
-Using service account keys within a data pipeline exposes to several security risks deriving from a credentials leak. This blueprint shows how to leverage impersonation to avoid the need of creating keys.
+Using service account keys within a data pipeline exposes several security risks deriving from a credentials leak. This blueprint shows how to leverage impersonation to avoid the need of creating keys.
 
 ### User groups
 
@@ -78,27 +78,19 @@ Resources follow the naming convention described below.
 
 # How to run this script
 
-To deploy this blueprint in your GCP organization, you will need
+The steps below highlight what it takes to deploy EDP's infrastructure. Follow them carefully to get the deployment done.
 
-- a folder or organization where new projects will be created
-- a billing account that will be associated with the new projects
+> Before proceeding with those steps, please, **[make sure to double-check if none of the prerequisites](../docs/edp-prerequisites.md)** needed for the scripts to run.
 
-The Education Data Platform is meant to be executed by a Service Account (or a regular user) having this minimal set of permission:
+### 1. Clone the original repository
 
-- **Billing account**
-  - `roles/billing.user`
-- **Folder level**:
-  - `roles/resourcemanager.folderAdmin`
-  - `roles/resourcemanager.projectCreator`
-- **KMS Keys** (If CMEK encryption in use):
-  - `roles/cloudkms.admin` or a custom role with `cloudkms.cryptoKeys.getIamPolicy`, `cloudkms.cryptoKeys.list`, `cloudkms.cryptoKeys.setIamPolicy` permissions
-- **Shared VPC host project** (if configured):
-  - `roles/compute.xpnAdmin` on the host project folder or org
-  - `roles/resourcemanager.projectIamAdmin` on the host project, either with no conditions or with a condition allowing [delegated role grants](https://medium.com/google-cloud/managing-gcp-service-usage-through-delegated-role-grants-a843610f2226#:~:text=Delegated%20role%20grants%20is%20a,setIamPolicy%20permission%20on%20a%20resource.) for `roles/compute.networkUser`, `roles/composer.sharedVpcAgent`, `roles/container.hostServiceAgentUser`
+The very first step to getting EDP deployed is cloning the original repository (https://github.com/googlecloudplatform/education-data-platform) to your own organization. From there, everything can get started.
 
-### Variable configuration
+### 2. Variable configuration
 
-There are three sets of variables you will need to fill in:
+First, under the directory "1-foundations", create a new file called "terraform.tfvars". This file will be used to set up Terraform's environment variables.
+
+Once created, there are three sets of variables you will need to fill in:
 
 ```tfvars
 billing_account_id  = "111111-222222-333333"
@@ -116,7 +108,7 @@ terraform init
 terraform apply
 ```
 
-### How to use this blueprint from Terraform
+### 3. How to use this blueprint from Terraform
 
 While this blueprint can be used as a standalone deployment, it can also be called directly as a Terraform module by providing the values of the variables as shown below:
 
@@ -132,7 +124,7 @@ module "data-platform" {
 # tftest modules=42 resources=316
 ```
 
-### Data Catalog
+### 4. Data Catalog
 
 [Data Catalog](https://cloud.google.com/data-catalog) helps you to document your data entry at scale. Data Catalog relies on [tags](https://cloud.google.com/data-catalog/docs/tags-and-tag-templates#tags) and [tag templates](https://cloud.google.com/data-catalog/docs/tags-and-tag-templates#tag-templates) to manage metadata for all data entries in a unified and centralized service. To implement [column-level security](https://cloud.google.com/bigquery/docs/column-level-security-intro) on BigQuery, we suggest using `Tags` and `Tag templates`.
 
