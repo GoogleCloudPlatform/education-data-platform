@@ -25,25 +25,6 @@ A full reference of IAM roles managed by the Education Data Platform [is availab
 
 Using service account keys within a data pipeline exposes several security risks deriving from a credentials leak. This blueprint shows how to leverage impersonation to avoid the need of creating keys.
 
-### User groups
-
-User groups provide a stable frame of reference that allows decoupling the final set of permissions from the stage where entities and resources are created, and their IAM bindings defined.
-
-We use three groups to control access to resources:
-
-- *Data Engineers*. They handle and run the Data Hub, with read access to all resources in order to troubleshoot possible issues with pipelines. This team can also impersonate any service account.
-- *Data Analysts*. They perform analysis on datasets, with read access to the Data Warehouse Confidential project, and BigQuery READ/WRITE access to the playground project.
-- *Data Security*. They handle security configurations related to the Data Hub. This team has admin access to the common project to configure Cloud DLP templates or Data Catalog policy tags.
-
-The table below shows a high-level overview of roles for each group on each project, using `READ`, `WRITE` and `ADMIN` access patterns for simplicity. For detailed roles please refer to the code.
-
-|Group|Drop off|Load|Transformation|DHW Landing|DWH Curated|DWH Confidential|DWH Playground|Orchestration|Common|
-|-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|Data Engineers|`ADMIN`|`ADMIN`|`ADMIN`|`ADMIN`|`ADMIN`|`ADMIN`|`ADMIN`|`ADMIN`|`ADMIN`|
-|Data Analysts|-|-|-|-|-|`READ`|`READ`/`WRITE`|-|-|
-|Data Security|-|-|-|-|-|-|-|-|`ADMIN`|
-
-You can configure groups via the `groups` variable.
 
 ### Virtual Private Cloud (VPC) design
 
@@ -99,7 +80,7 @@ organization_domain = "domain.com"
 prefix              = "myco"
 ```
 
-For more fine details check variables on [`variables.tf`](./variables.tf) and update according to the desired configuration. Remember to create team groups described [below](#user-groups).
+For more fine details check variables on [`variables.tf`](./variables.tf) and update according to the desired configuration.
 
 Once the configuration is complete, run the project factory by running
 

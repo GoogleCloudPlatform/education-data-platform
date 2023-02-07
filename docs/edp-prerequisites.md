@@ -87,3 +87,33 @@ Additionally, we recommend doing the following (only if necessary).
 
 * Active the `Organization Policy API` at the organization level where EDP's projects will be deployed.
 * To the Service Account, do attribute the roles of `Owner` and `Organization Policy Administrator` at the organization level.
+
+## 6. User groups
+
+User groups provide a stable frame of reference that allows decoupling the final set of permissions from the stage where entities and resources are created, and their IAM bindings defined.
+
+We use three groups to control access to resources:
+
+- *Data Engineers*. They handle and run the Data Hub, with read access to all resources in order to troubleshoot possible issues with pipelines. This team can also impersonate any service account.
+- *Data Analysts*. They perform analysis on datasets, with read access to the Data Warehouse Confidential project, and BigQuery READ/WRITE access to the playground project.
+- *Data Security*. They handle security configurations related to the Data Hub. This team has admin access to the common project to configure Cloud DLP templates or Data Catalog policy tags.
+
+The table below shows a high-level overview of roles for each group on each project, using `READ`, `WRITE` and `ADMIN` access patterns for simplicity. For detailed roles please refer to the code.
+
+|Group|Drop off|Load|Transformation|DHW Landing|DWH Curated|DWH Confidential|DWH Playground|Orchestration|Common|
+|-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|Data Engineers|`ADMIN`|`ADMIN`|`ADMIN`|`ADMIN`|`ADMIN`|`ADMIN`|`ADMIN`|`ADMIN`|`ADMIN`|
+|Data Analysts|-|-|-|-|-|`READ`|`READ`/`WRITE`|-|-|
+|Data Security|-|-|-|-|-|-|-|-|`ADMIN`|
+
+Before deploying EDP you need to certify that the three groups mentioned above exist in Google Cloud Identity and Access Management (IAM).
+
+You can  opt for using the default group names defined in the EDP foundations scripts. In this case, you should create in advance the following three groups in your organization:
+
+- gcp-data-engineers
+- gcp-data-analysts
+- gcp-data-security
+
+You can find more information about creating groups in IAM [here](https://cloud.google.com/iam/docs/groups-in-cloud-console#creating).
+
+Another option is using your organization pre-defined groups for these three roles. In order to achieve this, you can configure groups by setting the `groups` variable in the `terraform.tfvars` file. Further information on EDP foundation deployment and customization is provided [here](../1-foundations/README.md)
