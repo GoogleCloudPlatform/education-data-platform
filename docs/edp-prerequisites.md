@@ -116,4 +116,28 @@ You can  opt for using the default group names defined in the EDP foundations sc
 
 You can find more information about creating groups in IAM [here](https://cloud.google.com/iam/docs/groups-in-cloud-console#creating).
 
-Another option is using your organization pre-defined groups for these three roles. In order to achieve this, you can configure groups by setting the `groups` variable in the `terraform.tfvars` file. Further information on EDP foundation deployment and customization is provided [here](../1-foundations/README.md)
+Another option is using your organization pre-defined groups for these three roles. In order to achieve this, you can configure groups by setting the `groups` variable in the `terraform.tfvars` file. Further information on EDP foundation deployment and customization is provided [here](../1-foundations/README.md).
+
+
+## 7. ### Virtual Private Cloud (VPC) design
+
+As is often the case in real-world configurations, this blueprint accepts as input an existing [Shared-VPC](https://cloud.google.com/vpc/docs/shared-vpc) via the `network_config` variable. Make sure that the GKE API (`container.googleapis.com`) is enabled in the VPC host project.
+
+If the `network_config` variable is not provided, one VPC will be created in each project that supports network resources (load, transformation, and orchestration projects).
+
+### IP ranges and subnetting
+
+To deploy this blueprint with self-managed VPCs you need the following ranges:
+
+- one /24 for the load project VPC subnet used for Cloud Dataflow workers
+- one /24 for the transformation VPC subnet used for Cloud Dataflow workers
+- one /24 range for the orchestration VPC subnet used for Composer workers
+- one /22 and one /24 ranges for the secondary ranges associated with the orchestration VPC subnet
+
+If you are using Shared VPC, you need one subnet with one /22 and one /24 secondary range defined for Composer pods and services.
+
+In both VPC scenarios, you also need these ranges for Composer:
+
+- one /24 for Cloud SQL
+- one /28 for the GKE control plane
+- one /28 for the webserver

@@ -25,30 +25,6 @@ A full reference of IAM roles managed by the Education Data Platform [is availab
 
 Using service account keys within a data pipeline exposes several security risks deriving from a credentials leak. This blueprint shows how to leverage impersonation to avoid the need of creating keys.
 
-
-### Virtual Private Cloud (VPC) design
-
-As is often the case in real-world configurations, this blueprint accepts as input an existing [Shared-VPC](https://cloud.google.com/vpc/docs/shared-vpc) via the `network_config` variable. Make sure that the GKE API (`container.googleapis.com`) is enabled in the VPC host project.
-
-If the `network_config` variable is not provided, one VPC will be created in each project that supports network resources (load, transformation and orchestration).
-
-### IP ranges and subnetting
-
-To deploy this blueprint with self-managed VPCs you need the following ranges:
-
-- one /24 for the load project VPC subnet used for Cloud Dataflow workers
-- one /24 for the transformation VPC subnet used for Cloud Dataflow workers
-- one /24 range for the orchestration VPC subnet used for Composer workers
-- one /22 and one /24 ranges for the secondary ranges associated with the orchestration VPC subnet
-
-If you are using Shared VPC, you need one subnet with one /22 and one /24 secondary range defined for Composer pods and services.
-
-In both VPC scenarios, you also need these ranges for Composer:
-
-- one /24 for Cloud SQL
-- one /28 for the GKE control plane
-- one /28 for the webserver
-
 ### Resource naming conventions
 
 Resources follow the naming convention described below.
