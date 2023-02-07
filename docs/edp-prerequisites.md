@@ -119,7 +119,7 @@ You can find more information about creating groups in IAM [here](https://cloud.
 Another option is using your organization pre-defined groups for these three roles. In order to achieve this, you can configure groups by setting the `groups` variable in the `terraform.tfvars` file. Further information on EDP foundation deployment and customization is provided [here](../1-foundations/README.md).
 
 
-## 7. ### Virtual Private Cloud (VPC) design
+## 7. Virtual Private Cloud (VPC) design
 
 As is often the case in real-world configurations, this blueprint accepts as input an existing [Shared-VPC](https://cloud.google.com/vpc/docs/shared-vpc) via the `network_config` variable. Make sure that the GKE API (`container.googleapis.com`) is enabled in the VPC host project.
 
