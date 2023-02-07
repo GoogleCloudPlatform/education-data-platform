@@ -20,8 +20,8 @@ Some key differentiators of this approach are:
 
 1. [EDP's concepts](docs/edp-concepts.md)
 2. [Architecture and components](docs/edp-architecture.md)
-3. Pre-requisites for deploying EDP
-4. Deploying EDP's infrastructure
+3. [Pre-requisites for deploying EDP](docs/edp-prerequisites.md)
+4. [Deploying EDP's infrastructure](1-foundations/README.md)
 5. Deploying connectors
    1. Connector for Moodle
    2. Connector for Open APIs
