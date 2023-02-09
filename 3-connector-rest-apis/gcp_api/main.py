@@ -25,6 +25,11 @@ bucket_name = os.environ['BUCKET_ID']
 
 def main(request):
 
+    request_json = request.get_json()
+    url = request_json['url']
+    type_file = request_json['type']
+    blob_from_config = request_json['blob']
+
     storage_client = storage.Client()
     source_bucket = storage_client.bucket(bucket_name)
 
@@ -32,53 +37,51 @@ def main(request):
 
     read_output = blob.download_as_text()
     clean_data = json.loads(read_output)
+    api_path = clean_data['api_path']
 
-    for endpoint in clean_data['endpoints']:
-        print('****** Endpoint:', endpoint)
+    if type_file == 'json':
+        try:
+            response = requests.get(url)
 
-        if endpoint['type'] == 'json':
-            try:                
-                response = requests.get(endpoint['url'])
+            if response.status_code == 200:
 
-                if response.status_code == 200:
+                source_bucket_output = storage_client.bucket(clean_data['bucket'])
 
-                    source_bucket_output = storage_client.bucket(clean_data['bucket'])
+                hash = hashlib.md5(str(time.time()).encode())
+                filename = f"file_{hash.hexdigest()}.json"
 
-                    hash = hashlib.md5(str(time.time()).encode())
-                    filename = f"file_{hash.hexdigest()}.json"
+                blob_output = source_bucket_output.blob(f"{api_path}/{blob_from_config}/{filename}")
+                blob_output.upload_from_string(
+                    data=json.dumps(response.json()),
+                    content_type='application/json'
+                )
+                print('****** File Created:', blob_output)
 
-                    blob_output = source_bucket_output.blob(f"{clean_data['api_path']}/{endpoint['blob']}/{filename}")
-                    blob_output.upload_from_string(
-                        data=json.dumps(response.json()),
-                        content_type='application/json'
-                    )
-                    print('****** File Created:', blob_output)
+        except Exception as e:
+            print('****** Exception JSON:', e)
 
-            except Exception as e:
-                print('****** Exception JSON:', e)
-                continue
 
-        elif endpoint['type'] == 'csv':
-            
-            try:
-                response = requests.get(endpoint['url'])
+    elif type_file == 'csv':
 
-                if response.status_code == 200:
+        try:
+            response = requests.get(url)
 
-                    source_bucket_output = storage_client.bucket(clean_data['bucket'])
+            if response.status_code == 200:
 
-                    hash = hashlib.md5(str(time.time()).encode())
-                    filename = f"file_{hash.hexdigest()}.csv"
-                    blob_output = source_bucket_output.blob(f"{clean_data['api_path']}/{endpoint['blob']}/{filename}")
-                    blob_output.upload_from_string(
-                        data=csv.writer(response.text),
-                        content_type='application/CSV'
-                    )
+                source_bucket_output = storage_client.bucket(clean_data['bucket'])
 
-                    print('****** File Created:', blob_output)
+                hash = hashlib.md5(str(time.time()).encode())
+                filename = f"file_{hash.hexdigest()}.csv"
+                blob_output = source_bucket_output.blob(f"{api_path}/{blob_from_config}/{filename}")
+                blob_output.upload_from_string(
+                    data=csv.writer(response.text),
+                    content_type='application/CSV'
+                )
 
-            except Exception as e:
-                print('****** Exception CSV:', e)
-                continue
-    
+                print('****** File Created:', blob_output)
+
+        except Exception as e:
+            print('****** Exception CSV:', e)
+
+
     return 'End of process!'
