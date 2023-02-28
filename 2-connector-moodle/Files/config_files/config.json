@@ -15,8 +15,8 @@
   "bq_sa_email": "{your-prefix}-load-df-0@{your-prefix}-lod.iam.gserviceaccount.com",
   "retention_data": "172800",
   "max_df_instance": "7",
-  "dir_schm": "gs://your-cloud-storage-bucket/Files/config_files/mdl_schemas.tar.gz",
-  "dir_views_cur": "gs://your-cloud-storage-bucket/Files/config_files/mdl_views_cur.tar.gz",
+  "dir_schm": "gs://{your-prefix}-load-cs-0/Files/config_files/mdl_schemas.tar.gz",
+  "dir_views_cur": "gs://{your-prefix}-load-cs-0/Files/config_files/mdl_views_cur.tar.gz",
   "tables": [
     "mdl_adminpresets",
     "mdl_adminpresets_app",
