@@ -15,7 +15,7 @@ In the orchestration project ({your-prefix}-orc) you find a Cloud Composer insta
 
 ### moodle_pipeline
 
-This DAG consists of gathering data from Moodle database (MySQL) and ingest it in BigQuery and is deployed with a default scheduling of running this pipeline once a day. You can customize this scheduling in Airflow according to your needs.
+This DAG consists of gathering data from Moodle database (MySQL) and load them into BigQuery landing zone. A default scheduling is configured for this DAG so it is going to run every day and once a day. You can customize this scheduling config in Airflow according to your needs.
 
 The following GCP Cloud resources are used in this pipeline:
 
