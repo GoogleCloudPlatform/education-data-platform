@@ -46,13 +46,15 @@ After provisioning infrastructure for the data platform through [EDP's foundatio
 
   ![Create Trigger](docs/img/create-trigger-7.png)
 
-10. On Advanced select the option **ADD VARIABLE** and create the following variable with the name of Load Cloud Storage
+10. On Advanced select the option **ADD VARIABLE** and create the following variable with the name of the Load Cloud Storage Bucket:
 
-| Variables             | Example value   | Description             |
-|-----------------------|-----------------|-------------------------|
-| _DATAFLOW_LOAD_BUCKET | {your-prefix}-lod-cs-0 | Name of the Load Bucket |
+| Variables             | Example value           | Description             |
+|-----------------------|-------------------------|-------------------------|
+| _DATAFLOW_LOAD_BUCKET | {your-prefix}-load-cs-0 | Name of the Load Bucket |
 
-  ![Create Trigger](docs/img/create-trigger-8.png)
+<p align="left">
+    <img src="docs/img/create-trigger-8.png" width="600" height="280">
+</p>
 
 11. Click on **CREATE**
 
@@ -96,10 +98,10 @@ After provisioning infrastructure for the data platform through [EDP's foundatio
 
   ![Create Trigger](docs/img/create-trigger-7.1.png)
 
-10. On Advanced select the option **ADD VARIABLE** and create the following variable with the name of Composer Cloud Storage
+10. Refer to {your-prefix}-orc project to find the bucket name for composer artifacts (name pattern: "{your-gcp-region}-{your-prefix}-orc-cmp-0-{random-id}-bucket"). On Advanced session select the option **ADD VARIABLE** and create the following variable with the name of the Composer Cloud Storage Bucket:
 
 ```tfvars
-_DATAFLOW_COMPOSER_BUCKET = "{your-gcp-region}-{your-prefix}-orc-cmp-0-834e7303-bucket"
+_DATAFLOW_COMPOSER_BUCKET = "{your-gcp-region}-{your-prefix}-orc-cmp-0-{random-id}-bucket"
 ```
 
   ![Create Trigger](docs/img/create-trigger-8.1.png)
@@ -110,7 +112,7 @@ _DATAFLOW_COMPOSER_BUCKET = "{your-gcp-region}-{your-prefix}-orc-cmp-0-834e7303-
 
 ## 2. Configure Moodle Connector variables
 
-Before deploying the Moodle Connector's artifacts, you need to configure the [config.json](Files/config_files/config.json) by filling in the following sets of variables:
+Before deploying the Moodle Connector's artifacts, you need to configure the [Files/config_files/config.json](Files/config_files/config.json) by filling in the following sets of variables:
 
 - **"project_id": "{your-prefix}-lod"** = Load project in EDP
 - **"project_id_bq": "{your-prefix}-dwh-lnd"** = Data Warehouse project for landing raw data
@@ -135,5 +137,6 @@ You can keep the default values for the following variables or customize them ac
 - **retention_data** = Time in seconds for the table partition data retention
 - **max_df_instance** = The maximum number of Dataflow jobs running in parallel to ingest Moodle data 
 
-As soon as you push the changes of these variables to your EDP repository in GitHub, the triggers configured in Cloud Build are going to run and deploy all the artifacts needed to run the Moodle connector pipelines.
+As soon as you push the changes of these variables to your EDP repository in GitHub, the trigger configured in Cloud Build for Load Pipeline is going to run and deploy all the artifacts needed to run the Moodle connector pipelines.
 
+At this point, there is no changes to apply in the orchestration artifacts. So, to deploy them you must run the trigger created on Orchestration project manually. However, anytime changes for Orchestration artifacts are pushed in the EDP Repo, Cloud Build in the orc project is going to be triggerd automatically. 
