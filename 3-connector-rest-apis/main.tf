@@ -14,11 +14,6 @@
  * limitations under the License.
  */
 
-locals {
-  api_id_prefix        = "your-api-id-prefix"
-  function_name_prefix = "your-function-name-prefix"
-}
-
 module "project" {
   source = "../modules/project"
   billing_account = (var.project_create != null
@@ -58,7 +53,7 @@ module "sa" {
 module "function" {
   source           = "../modules/cloud-function"
   project_id       = module.project.project_id
-  name             = "${local.function_name_prefix}"
+  name             = var.prefix
   bucket_name      = "bkt-${module.project.project_id}"
   region           = var.region
   ingress_settings = "ALLOW_ALL"

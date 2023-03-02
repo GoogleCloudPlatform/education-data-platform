@@ -42,3 +42,8 @@ variable "composer_iam_email" {
   description = "The ID of the Composer of Orchestration project"
   type        = string
 }
+
+variable "prefix" {
+  description = "Cloud Function prefix"
+  type        = string
+}

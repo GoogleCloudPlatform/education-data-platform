@@ -1,17 +1,3 @@
-# Copyright 2022 Google LLC
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     https://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 from airflow import DAG
 from airflow.operators.dummy_operator import DummyOperator
 from airflow.operators.python_operator import PythonOperator
@@ -24,8 +10,47 @@ from googleapiclient.discovery import build
 import datetime
 from airflow.exceptions import AirflowFailException
 import os
+from airflow.operators.bash_operator import BashOperator
 
+def read_file(bucket_name, file_name):
+   try:
+       storage_client = storage.Client()
+       bucket = storage_client.bucket(bucket_name)
+       blob = bucket.blob(file_name)
 
+       with blob.open("r") as f:
+           file_content = json.loads(f.read())
+
+       return file_content
+
+   except:
+       file_content = "ERR"
+       return file_content
+
+# Gets the state of the specified Cloud Dataflow job.
+def call_api_status_dataflow(project_id, job_id, region):
+   try:
+
+       dataflow = build('dataflow', 'v1b3', cache_discovery=False)
+       request = dataflow.projects().locations().jobs().get(
+           projectId=project_id,
+           location=region,
+           jobId=job_id,
+           view='JOB_VIEW_SUMMARY'
+       )
+
+       response = request.execute()
+
+       status_job = response.get('currentState')
+
+       return status_job
+
+   except:
+       status_job = 'ERR'
+       request.close()
+       return status_job
+
+# Launch a Dataflow template.
 def call_api_dataflow(project_id, region, table_name, url_template, driver_jar, dvrclsname, conn_url, query_sql,
                      output_table,
                      bq_temp_dir,
@@ -80,51 +105,9 @@ def call_api_dataflow(project_id, region, table_name, url_template, driver_jar, 
        df_job_id = 'ERR'
        return df_job_id
 
-def call_api_status_dataflow(project_id, job_id, region):
-   try:
+def run(config_file,table_name,**kwargs):
 
-       dataflow = build('dataflow', 'v1b3', cache_discovery=False)
-       request = dataflow.projects().locations().jobs().get(
-           projectId=project_id,
-           location=region,
-           jobId=job_id,
-           view='JOB_VIEW_SUMMARY'
-       )
-
-       response = request.execute()
-
-       status_job = response.get('currentState')
-
-       return status_job
-
-   except:
-       status_job = 'ERR'
-       request.close()
-       return status_job
-
-def read_file(bucket_name, file_name):
-   try:
-       storage_client = storage.Client()
-       bucket = storage_client.bucket(bucket_name)
-       blob = bucket.blob(file_name)
-
-       with blob.open("r") as f:
-           file_content = json.loads(f.read())
-
-       return file_content
-
-   except:
-       file_content = "ERR"
-       return file_content
-
-def run():
-
-   bucket_name = os.environ.get("LOD_GCS_STAGING")
-   bucket_name = bucket_name[5:]
-   config_path = "Files/config_files/config.json"
    sql_query_path = "Files/config_files/sql_query.json"
-   config_file = read_file(bucket_name, config_path)
-
    project_id = config_file.get('project_id')
    region = config_file.get('region')
    project_id_bq = config_file.get('project_id_bq')
@@ -143,120 +126,77 @@ def run():
    max_df_instance = int(config_file.get("max_df_instance"))
    bq_dataset = config_file.get('dataset_name')
 
-   df_jobid = []
-
    if config_file != 'ERR':
 
-       num_df = 1
+        # read the sql_query file to check if there is aspecific query
+        query_file = read_file(bucket_name, sql_query_path)
 
-       for i in config_file['tables']:
-           table_name = i
+        query_sql = query_file.get(table_name)
 
-           # read the sql_query file to check if there is aspecific query
-           query_file = read_file(bucket_name, sql_query_path)
+        if query_sql == None:
+            query_sql = query_file.get("default")
+            query_sql = query_sql.format(table_name)
 
-           query_sql = query_file.get(table_name)
+        output_table = '{0}:{1}.{2}'.format(project_id_bq, bq_dataset, table_name)
 
-           if query_sql == None:
-               query_sql = query_file.get("default")
-               query_sql = query_sql.format(table_name)
+        logging.info('Table: {}'.format(table_name))
+        logging.info('Query: {}'.format(query_sql))
+        logging.info('Output: {}'.format(output_table))
 
-           output_table = '{0}:{1}.{2}'.format(project_id_bq, bq_dataset, table_name)
-
-           logging.info('Table: {}'.format(i))
-           logging.info('Query: {}'.format(query_sql))
-           logging.info('Output: {}'.format(output_table))
-
-           if num_df <= max_df_instance:
-               num_df += 1
-               logging.info('Create Dataflow pipeline for table {}'.format(i))
-               job_id = call_api_dataflow(project_id, region, table_name, url_template1, driver_jar, dvrclsname,
+        # Call the DF Job for the table that was not executed yet, before exit the elif
+        job_id = call_api_dataflow(project_id, region, table_name, url_template1, driver_jar, dvrclsname,
                                           conn_url,
                                           query_sql, output_table,
                                           bq_temp_dir1, conn_user, conn_pass, bq_sa_email)
 
-               if job_id != 'ERR':
-                   df_jobid.append(job_id)
-                   logging.info('Job ID: {}'.format(job_id))
-                   logging.info('----------------------------------')
-                   time.sleep(3)
-               elif job_id == 'ERR':
-                   logging.info('Error to run Dataflow')
-                   break
+        executing_states = ['JOB_STATE_PENDING', 'JOB_STATE_RUNNING', 'JOB_STATE_CANCELLING']
 
-           elif num_df > max_df_instance:
-               while len(df_jobid) + 1 > max_df_instance:
-                   logging.info('Waiting to check status of Dataflow Jobs!')
-                   logging.info('List of running Jobs: {}'.format(df_jobid))
-                   time.sleep(15)
-                   for job in df_jobid:
-                       logging.info('Ckeck status of Job ID: {}'.format(job))
-                       status_job = call_api_status_dataflow(project_id, job, region)
-                       logging.info('Status Job Id: {} - {}'.format(job, status_job))
+        # final states do not change further
+        final_states = ['JOB_STATE_DONE', 'JOB_STATE_FAILED', 'JOB_STATE_CANCELLED']
 
-                       if (status_job != 'JOB_STATE_RUNNING'):
+        # Check states of Dataflow Job
+        while True:
+            logging.info('Ckeck status of Job ID: {}'.format(job_id))
+            status_job = call_api_status_dataflow(project_id, job_id, region)
+            logging.info('Status Job Id: {} - {}'.format(job_id, status_job))
+            if status_job in executing_states:
+                pass
+            elif status_job in final_states:
+                if status_job == "JOB_STATE_FAILED" or status_job == "JOB_STATE_CANCELLED":
+                    raise AirflowFailException("Job failed")
+                break
+            time.sleep(10)
 
-                           if (status_job == 'JOB_STATE_FAILED'):
-                               raise AirflowFailException("Job failed. Aborting the Pipeline")
-
-                           else:
-                               logging.info('Removing the job id of the list - Job ID: {}'.format(job))
-                               df_jobid.remove(job)
-                               num_df = len(df_jobid) + 1
-
-                       time.sleep(1)
-
-                   logging.info('num_df: ' + str(num_df))
-
-               # Call the DF Job for the table that was not executed yet, before exit the elif
-               job_id = call_api_dataflow(project_id, region, table_name, url_template1, driver_jar, dvrclsname,
-                                          conn_url,
-                                          query_sql, output_table,
-                                          bq_temp_dir1, conn_user, conn_pass, bq_sa_email)
-
-               if job_id != 'ERR':
-                   num_df += 1
-                   df_jobid.append(job_id)
-                   logging.info('Job ID: {}'.format(job_id))
-                   logging.info('----------------------------------')
-               elif job_id == 'ERR':
-                   logging.info('Error to run Dataflow')
-                   break
-
-       while len(df_jobid) > 0:
-           logging.info('Waiting to check status of remaing Dataflow Jobs!!')
-           logging.info('List of running Jobs: {}'.format(df_jobid))
-           time.sleep(15)
-           for job in df_jobid:
-               logging.info('Ckeck status of Job ID: {}'.format(job))
-               status_job = call_api_status_dataflow(project_id, job, region)
-               logging.info('Status Job Id: {} - {}'.format(job, status_job))
-
-               if (status_job != 'JOB_STATE_RUNNING'):
-
-                   if (status_job == 'JOB_STATE_FAILED'):
-                       raise AirflowFailException("Job failed. Aborting the Pipeline")
-
-                   else:
-                       logging.info('Removing the job id of the list - Job ID: {}'.format(job))
-                       df_jobid.remove(job)
-
-               time.sleep(1)
 
 
 if __name__ == '__main__':
    logging.getLogger().setLevel(logging.INFO)
    logging.info("Starting the moodle Pipeline...")
-   run()
 
 yesterday = datetime.datetime.combine(
     datetime.datetime.today() - datetime.timedelta(1),
     datetime.datetime.min.time())
 
-with DAG('moodle_pipeline', schedule_interval='@daily', start_date=yesterday, catchup=False) as dag:
+bucket_name = os.environ.get("LOD_GCS_STAGING")
+bucket_name = bucket_name[5:]
+config_path = "Files/config_files/config.json"
+config_file = read_file(bucket_name, config_path)
+max_tasks = int(config_file.get('max_df_instance'))
 
-   dummy_task_start = DummyOperator(task_id='start', retries=0)
-   python_task = PythonOperator(task_id='execute', retries=0, python_callable=run)
-   dummy_task_end = DummyOperator(task_id='end', retries=0)
+with DAG(
+    dag_id="moodle_pipeline",
+    schedule_interval='@daily',
+    start_date=yesterday,
+    max_active_tasks=max_tasks,
+    catchup=False,
+) as dag:
+    for table in config_file['tables']:
 
-dummy_task_start >> python_task >> dummy_task_end
+        PythonOperator(
+            task_id=table,
+            python_callable=run,
+            provide_context=True,
+            retries=0,
+            op_kwargs={"config_file":config_file,"table_name":table},
+        )
+        pass
