@@ -54,6 +54,11 @@ module "drop-project" {
     "storage.googleapis.com",
     "storage-component.googleapis.com",
     "cloudbuild.googleapis.com",
+    "cloudfunctions.googleapis.com",
+    "compute.googleapis.com",
+    "servicemanagement.googleapis.com",
+    "apigateway.googleapis.com",
+    "servicecontrol.googleapis.com",
   ])
   service_encryption_key_ids = {
     bq      = [try(local.service_encryption_keys.bq, null)]
