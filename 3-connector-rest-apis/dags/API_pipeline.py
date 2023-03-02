@@ -17,6 +17,7 @@ from airflow.operators.dummy_operator import DummyOperator
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime
 import json
+import datetime
 import google.auth.transport.requests
 import google.oauth2.id_token
 from google.cloud import storage
@@ -25,50 +26,66 @@ from google.auth.transport.requests import AuthorizedSession
 import os
 from airflow.exceptions import AirflowFailException
 
+def invoke_cloud_function(api_uri, type, blob, url):
+    print('****** api_uri:', api_uri)
 
-def invoke_cloud_function(service_url):
-  url = service_url
-  print('****** url:', url)
+    request = google.auth.transport.requests.Request()
+    print('****** request:', request)
 
-  request = google.auth.transport.requests.Request()
-  print('****** request:', request)  
+    id_token_credentials = id_token_credential_utils.get_default_id_token_credentials(api_uri, request=request)
+    print('****** id_token_credentials:', id_token_credentials)
 
-  id_token_credentials = id_token_credential_utils.get_default_id_token_credentials(url, request=request)
-  print('****** id_token_credentials:', id_token_credentials)
+    try:
+        headers = {"Content-Type": "application/json"}
+        body = {"url":url, "type":type, "blob":blob}
+        resp = AuthorizedSession(id_token_credentials).post(url=api_uri, json=body, headers=headers)
+        print('****** resp:', resp)
+        if resp.status_code == 200:
+            return resp
+        else:
+            raise AirflowFailException("API Job failed. Aborting the Pipeline")
 
-  try:
-    resp = AuthorizedSession(id_token_credentials).request("GET", url=url)
-    print('****** resp:', resp)
-    if resp.status_code == 200:
-      return resp
-    else:
-      raise AirflowFailException("API Job failed. Aborting the Pipeline")
-
-  except Exception as e:
-    print('****** Exception:', e)  
+    except Exception as e:
+        print('****** Exception:', e)
 
 
-def main():
-    bucket_name = os.environ.get("DRP_GCS")
-    bucket_name = bucket_name[5:]
+def run(api_uri, type, blob, url, **kwargs):
 
-    storage_client = storage.Client()
-    source_bucket = storage_client.bucket(bucket_name)
-    blob = source_bucket.get_blob(f"config/config.json")
-    read_output = blob.download_as_text()
-    clean_data = json.loads(read_output)
-
-    response = invoke_cloud_function(clean_data['api_uri'])
+    response = invoke_cloud_function(api_uri, type, blob, url)
     print('***** response invoke_cloud_function', response)
 
     if not response.text == 'End of process!':
-      raise AirflowFailException("API Job failed. Aborting the Pipeline")
+        raise AirflowFailException("API Job failed. Aborting the Pipeline")
 
+if __name__ == '__main__':
+    logging.getLogger().setLevel(logging.INFO)
+    logging.info("Starting the API Pipeline...")
 
-with DAG('API_pipeline', schedule_interval='@daily', start_date=datetime(2022, 12, 25), catchup=False) as dag:
+yesterday = datetime.datetime.combine(
+    datetime.datetime.today() - datetime.timedelta(1),
+    datetime.datetime.min.time())
 
-   dummy_task_start = DummyOperator(task_id='start', retries=0)
-   python_task = PythonOperator(task_id='call_API', retries=0, python_callable=main)
-   dummy_task_end = DummyOperator(task_id='end', retries=0)
+bucket_name = os.environ.get("DRP_GCS")
+bucket_name = bucket_name[5:]
 
-dummy_task_start >> python_task >> dummy_task_end
+storage_client = storage.Client()
+source_bucket = storage_client.bucket(bucket_name)
+blob = source_bucket.get_blob(f"config/config.json")
+read_output = blob.download_as_text()
+clean_data = json.loads(read_output)
+
+with DAG(
+        dag_id="API_pipeline",
+        schedule_interval='@daily',
+        start_date=yesterday,
+        catchup=False,
+) as dag:
+    for endpoint in clean_data['endpoints']:
+        PythonOperator(
+            task_id=endpoint['blob'].replace("/load", ""),
+            python_callable=run,
+            provide_context=True,
+            retries=0,
+            op_kwargs={"api_uri":clean_data['api_uri'], "type":endpoint['type'], "blob":endpoint['blob'], "url":endpoint['url']},
+        )
+        pass
