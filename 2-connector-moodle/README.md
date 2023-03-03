@@ -1,4 +1,4 @@
-# Creating the deployment for Composer Education for Data Platform Foundation
+# Deploying EDP Moodle Connector
 
 This document describes the process of deploying and configuring **EDP's Moodle Connector**. At the end, it will enable a parametrized way to ingest data (what makes sense only) from Moodle's database. This connector leverages [Dataflow](https://cloud.google.com/dataflow) under-the-hood. 
 

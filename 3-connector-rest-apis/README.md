@@ -1,4 +1,4 @@
-# Creating the deployment for API Education for Data Platform Foundation
+# Deploying EDP Rest APIs Connector
 
 This tutorial shows you how to configure the Cloud Build to deploy the API Education over the Data Platform Foundation.
 
@@ -6,16 +6,16 @@ The following diagram is a high-level reference of the resources created and man
 
 ![API Education Data Platform](docs/img/API-Pipeline.drawio.png)
 
-After you provision the [Data Platform Foundation](https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/tree/master/blueprints/data-solutions/data-platform-foundations) you need to [create a Cloud Storage in GCP](https://cloud.google.com/storage/docs/creating-buckets), inside the project of Dropoff, to store the Terraform state file and the following values
+After you provision the [Data Platform Foundation](https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/tree/master/blueprints/data-solutions/data-platform-foundations) you need to [create a Cloud Storage Bucket in GCP](https://cloud.google.com/storage/docs/creating-buckets) in the drop-off project to store the Terraform state file and find the following values:
 
-- Name of the Dropoff Bucket ID **PREFIX-drp-cs-0**
-- Service Account Email of Orchestrator Composer **PREFIX-orc-cmp-0@PREFIX-orc.iam.gserviceaccount.com**
-- Project ID of the Dropoff Project **PREFIX-drp**
-- Region of where the project was created
-- The endpoint name for the API for the variable **_PREFIX**
-- Permission of 'Storage Object Creator' for Dropoff Cloud Build Service Account on the Orchestration Project (**PREFIX-orc**)
+- Name of the Drop-off Bucket ID **PREFIX-drp-cs-0**
+- Composer Service Account Email **PREFIX-orc-cmp-0@PREFIX-orc.iam.gserviceaccount.com**
+- Drop-off Project ID **PREFIX-drp**
+- Region in which the EDP resources were created
+- The endpoint name for the Cloud Function responsible for API ingestion **_PREFIX**
+- Grant 'Storage Object Creator' role inn the Orchestration Project (**PREFIX-orc**) for the Cloud Build Service Account created in Drop-off project
 
-With those informations you need to create a trigger
+You are going to use the above information to create a trigger in Drop-off project, as described in the following steps.
 
 ## Trigger for Education API
 
@@ -37,7 +37,9 @@ With those informations you need to create a trigger
 
 5. On 'Source' click on the Repository Box and select the option **CONNECT NEW REPOSITORY**
 
-  ![Create Trigger](docs/img/create-trigger-3.png)
+<p align="left">
+    <img src="docs/img/create-trigger-3.png" width="600" height="350">
+</p>
 
 6. Select the Service Source and click on Continue
 
@@ -57,15 +59,15 @@ With those informations you need to create a trigger
 
 10. On Advanced select the option **ADD VARIABLE** and create the following variable with the name of Load Cloud Storage
 
-| Variables                 | Example value                                       | Description                              |
-|---------------------------|-----------------------------------------------------|------------------------------------------|
-| _BUCKET_CONFIG            | tfstate-bucket                                      | Bucket Name for Terraform tfstate        |
-| _BUCKET_ID                | PREFIX-drp-cs-0                                     | Bucket Name of Dropoff environment       |
-| _COMPOSER_IAM_EMAIL       | PREFIX-orc-cmp-0@PREFIX-orc.iam.gserviceaccount.com | Composer Service Account email           |
-| _DATAFLOW_COMPOSER_BUCKET | europe-west1-PREFIX-orc-cmp-0-834e7303-bucket       | Name of Composer Bucket                  |
-| _PREFIX                   | api                                                 | Name of the folder for Terraform tfstate |
-| _PROJECT_ID               | PREFIX-drp                                          | Name of the Dropoff project              |
-| _REGION                   | europe-west1                                        | Region of the deploy                     |
+| Variables                 | Example value                                       | Description                         |
+|---------------------------|-----------------------------------------------------|-------------------------------------|
+| _BUCKET_CONFIG            | tfstate-bucket                                      | Bucket Name for Terraform tfstate   |
+| _BUCKET_ID                | PREFIX-drp-cs-0                                     | Bucket Name of Drop-off environment |
+| _COMPOSER_IAM_EMAIL       | PREFIX-orc-cmp-0@PREFIX-orc.iam.gserviceaccount.com | Composer Service Account email      |
+| _DATAFLOW_COMPOSER_BUCKET | REGION-PREFIX-orc-cmp-0-RANDOM_ID-bucket            | Name of Composer Bucket             |
+| _PREFIX                   | api                                                 | Name of Cloud Function prefix       |
+| _PROJECT_ID               | PREFIX-drp                                          | ID of the Drop-off project          |
+| _REGION                   | europe-west1                                        | Region of the deploy                |
 
   ![Create Trigger](docs/img/create-trigger-8.png)
 
@@ -89,17 +91,14 @@ With those informations you need to create a trigger
 
   ![Create Trigger](docs/img/create-trigger-11.1.png)
 
-The templates for Cloud Build are located [here](./cloud-build/)
 
 ## How to run
 
-First you need to configure the config.json according to your parameters, the file is located on PREFIX-drp-cs-0/config/config.json
+First you need to configure the [gcp_api/config.json](gcp_api/config.json) file according to your parameters.
 
-You will need to setup all the variables according to your project before running the pipelines
+You will need to setup all the variables according to your project before running the pipelines.
 
-All the necessary files will be load automatically on composer using the cloud build
-
-The templates for Cloud Build are located [here](./cloud-build/)
+All the files needed will be load automatically on composer using the Cloud Build trigger. The templates for Cloud Build are located [here](cloud-build)
 
 ## Cloud Function (API)
 
@@ -129,5 +128,5 @@ The Cloud Composer will be used as a orchestration solution of ingestion pipelin
 
 In this project we have the following pipelines:
 
-- API_pipeline
-- bq_load
+- API_pipeline: call the Rest APIs parameterized in the config files and load the json or csv files in the drop off bucket;
+- bq_load: load the json or csv files ingested by the API_pipeline in the BigQuery landing zone.
