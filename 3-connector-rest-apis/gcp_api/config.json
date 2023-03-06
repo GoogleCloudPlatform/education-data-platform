@@ -2,25 +2,25 @@
     "project_id": "your-dropoff-project-id",
     "bucket": "your-dropoff-cloud-bucket",
     "api_path": "pipeline_api",
-    "api_uri": "https://your-function-prefix.cloudfunctions.net/api",
+    "api_uri": "https://{your-region}-{your-edp-prefix}-drp.cloudfunctions.net/{your-function-prefix}",
     "endpoints": [
         {
             "url":"https://your-api-endpoint-1",
             "type": "json",
-            "blob": "your-api-1/load"
+            "blob": "your-api-folder/load"
         },
         {
             "url":"https://your-api-endpoint-2",
             "type": "json",
-            "blob": "your-api-2/load"
+            "blob": "your-api-folder/load"
         },
         {
             "url":"https://your-api-endpoint-3",
             "type": "json",
-            "blob": "your-api-3/load"
+            "blob": "{your-api-folder}/load"
         }
     ],
-    "project_id_bq": "your-datawarehouse-landing-bigquery-project-id",
-    "dataset_name": "your-database-name",
+    "project_id_bq": "{your-prefix}-dwh-lnd",
+    "dataset_name": "your-dataset-name-for-api-ingestion",
     "retention_data": "172800"
 }
