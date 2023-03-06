@@ -185,7 +185,7 @@ max_tasks = int(config_file.get('max_df_instance'))
 
 with DAG(
     dag_id="moodle_pipeline",
-    schedule_interval='@daily',
+    schedule_interval='0 2 * * *',
     start_date=yesterday,
     max_active_tasks=max_tasks,
     catchup=False,

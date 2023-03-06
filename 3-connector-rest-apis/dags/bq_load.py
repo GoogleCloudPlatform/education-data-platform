@@ -50,7 +50,7 @@ yesterday = datetime.datetime.combine(
     datetime.datetime.min.time())
 
 with DAG('bq_load',
-         schedule_interval='*/30 * * * *',
+         schedule_interval='30 2 * * *',
          start_date=yesterday,
          template_searchpath=['/home/airflow/gcs/data'],
          catchup=False) as dag:

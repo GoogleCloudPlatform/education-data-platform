@@ -85,7 +85,7 @@ You are going to use the above information to create a trigger in Drop-off proje
 
   ![Create Trigger](docs/img/create-trigger-10.png)
 
-15.  Click in **GRANT ACCESS** inform the Service Account email in 'New principals' and select the Role '**Storage Object Creator(roles/storage.objectCreator)**'
+15.  Click in **GRANT ACCESS** inform the Service Account email in 'New principals' and select the Role '**Storage Admin(roles/storage.admin)**'
 
 <p align="left">
     <img src="docs/img/create-trigger-10-a.png" width="500" height="350">
