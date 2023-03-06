@@ -27,6 +27,6 @@ Some key differentiators of this approach are:
    2. [Connector for Open APIs](3-connector-rest-apis/README.md)
 6. How to use it
    1. [Ingesting Moodle's data](2-connector-moodle/docs/how-to-run.md)
-   2. Ingesting Open API's data
+   2. [Ingesting Open API's data](3-connector-rest-apis/README.md/#How-to-run)
    3. Curating data
    4. [Exposing data to external consumption](4-looker-dashboards/docs/students-dashboards.md)
