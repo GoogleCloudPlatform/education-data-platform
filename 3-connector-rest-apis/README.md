@@ -6,14 +6,14 @@ The following diagram is a high-level reference of the resources created and man
 
 ![API Education Data Platform](docs/img/API-Pipeline.drawio.png)
 
-After you provision the [Data Platform Foundation](https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/tree/master/blueprints/data-solutions/data-platform-foundations) you need to [create a Cloud Storage Bucket in GCP](https://cloud.google.com/storage/docs/creating-buckets) in the drop-off project to store the Terraform state file and find the following values:
+After you provision the [Data Platform Foundation](https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/tree/master/blueprints/data-solutions/data-platform-foundations) you need to [create a Cloud Storage Bucket in GCP](https://cloud.google.com/storage/docs/creating-buckets) in the drop-off project to store the Terraform state file and reserve the following values for the next steps:
 
-- Name of the Drop-off Bucket ID **PREFIX-drp-cs-0**
-- Composer Service Account Email **PREFIX-orc-cmp-0@PREFIX-orc.iam.gserviceaccount.com**
-- Drop-off Project ID **PREFIX-drp**
-- Region in which the EDP resources were created
-- The endpoint name for the Cloud Function responsible for API ingestion **_PREFIX**
-- Grant 'Storage Object Creator' role inn the Orchestration Project (**PREFIX-orc**) for the Cloud Build Service Account created in Drop-off project
+- Drop-off Project ID **(PREFIX-drp)**.
+- Name of the Drop-off Bucket **(PREFIX-drp-cs-0)**.
+- Composer Service Account Email **(PREFIX-orc-cmp-0@PREFIX-orc.iam.gserviceaccount.com)**.
+- Region in which the EDP resources were created.
+- The endpoint name for the Cloud Function responsible for API ingestion **(PREFIX)**.
+- Grant 'Storage Object Creator' role in the Orchestration Project (**PREFIX-orc**) for the Cloud Build Service Account that is going to be created in the Drop-off project.
 
 You are going to use the above information to create a trigger in Drop-off project, as described in the following steps.
 
@@ -77,7 +77,7 @@ You are going to use the above information to create a trigger in Drop-off proje
 
   ![Create Trigger](docs/img/create-trigger-9.png)
 
-13. Go to Orchestration Project
+13. Go to Orchestration Project (**PREFIX-orc**)
 
   ![Create Trigger](docs/img/project-list-2.png)
 
@@ -85,25 +85,40 @@ You are going to use the above information to create a trigger in Drop-off proje
 
   ![Create Trigger](docs/img/create-trigger-10.png)
 
-15.  Click in **GRANT ACCESS** inform the Service Account email in 'New principals' and select the Role '**Storage Admin(roles/storage.Admin)**', '**Cloud Functions Admin(roles/cloudfunctions.admin)**', '**Security Admin(roles/iam.securityAdmin)**', '**Create Service Account(roles/iam.serviceAccounts.create)**' and '**Service Account User(roles/iamserviceAccountUser)**'
+15.  Click in **GRANT ACCESS** inform the Service Account email in 'New principals' and select the Role '**Storage Object Creator(roles/storage.objectCreator)**'
 
-  ![Create Trigger](docs/img/create-trigger-11.png)
+<p align="left">
+    <img src="docs/img/create-trigger-10-a.png" width="500" height="350">
+</p>
+
+16. Next you select the Dropoff Project (**PREFIX-drp**)
+
+  ![Project List](docs/img/project-list.png)
+
+17. Click in **GRANT ACCESS** inform the Service Account email in 'New principals' and select the Roles:
+
+- '**Storage Admin(roles/storage.Admin)**'
+- '**Service Account User(roles/iamserviceAccountUser)**'
+- '**Create Service Account(roles/iam.serviceAccounts.create)**'
+- '**Cloud Functions Admin(roles/cloudfunctions.admin)**'
+- '**Security Admin(roles/iam.securityAdmin)**' 
+
 
   ![Create Trigger](docs/img/create-trigger-11.1.png)
 
 
 ## How to run
 
-First you need to configure the [gcp_api/config.json](gcp_api/config.json) file according to your parameters.
+After creating the Cloud Build trigger on your drop-off project, you need to configure the [gcp_api/config.json](gcp_api/config.json) file according to your parameters.
 
-You will need to setup all the variables according to your project before running the pipelines.
+You need to setup all the variables according to your project information before running the pipelines (instructions in the following session).
 
-All the files needed will be load automatically on composer using the Cloud Build trigger. The templates for Cloud Build are located [here](cloud-build)
+As soon as you commit the updated config.json file in your GitHub repository, Cloud Build is going to be triggered and all the files needed for this deploy is going to be loaded automatically in your Education Data Platform in GCP.
 
 ## Cloud Function (API)
 
-The API is proposed to consume other APIs and generate files (JSON or CSV) inside a bucket, in the GCP environment.
-The API was built using a cloud function and its use is very flexible, allowing the consumption of several different endpoints in the same processing.
+The API connector in EDP is meant to consume other APIs and generate files (JSON or CSV) inside a bucket, in the GCP environment.
+The API was built using a cloud function and its use is very flexible, allowing the consumption of several endpoints in the same processing.
 
 To use the function, update the configuration file (config.json) in the Dropoff Bucket (PREFIX-drp-cs-0), folder config - in the GCP environment with the following parameters:
 
@@ -124,9 +139,9 @@ Within the list of endpoints, it is necessary to assemble objects with the follo
 
 ## Cloud Composer
 
-The Cloud Composer will be used as a orchestration solution of ingestion pipelines of data from API execution pipeline, besides other process auxiliary DAG's.
+The Cloud Composer is going to be used as a orchestration solution of ingestion pipelines of data from API execution pipeline, besides other process auxiliary DAG's.
 
-In this project we have the following pipelines:
+After deploy the API connector artifacts, you are going to find the following DAGs deployed on Cloud Composer in the orchestration project (**PREFIX-orc**):
 
 - API_pipeline: call the Rest APIs parameterized in the config files and load the json or csv files in the drop off bucket;
-- bq_load: load the json or csv files ingested by the API_pipeline in the BigQuery landing zone.
+- bq_load: load the json or csv files ingested by the API_pipeline DAG in the BigQuery landing zone.
