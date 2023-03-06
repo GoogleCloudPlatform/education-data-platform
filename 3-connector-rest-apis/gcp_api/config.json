@@ -1,6 +1,6 @@
 {
-    "project_id": "your-dropoff-project-id",
-    "bucket": "your-dropoff-cloud-bucket",
+    "project_id": "{your-prefix}-drp",
+    "bucket": "{your-prefix}-drp-cs-0",
     "api_path": "pipeline_api",
     "api_uri": "https://{your-region}-{your-edp-prefix}-drp.cloudfunctions.net/{your-function-prefix}",
     "endpoints": [

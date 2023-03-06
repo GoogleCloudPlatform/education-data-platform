@@ -76,7 +76,7 @@ clean_data = json.loads(read_output)
 
 with DAG(
         dag_id="API_pipeline",
-        schedule_interval='@daily',
+        schedule_interval='0 2 * * *',
         start_date=yesterday,
         catchup=False,
 ) as dag:

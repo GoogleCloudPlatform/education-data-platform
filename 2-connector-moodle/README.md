@@ -139,4 +139,4 @@ You can keep the default values for the following variables or customize them ac
 
 As soon as you push the changes of these variables to your EDP repository in GitHub, the trigger configured in Cloud Build for Load Pipeline is going to run and deploy all the artifacts needed to run the Moodle connector pipelines.
 
-At this point, there is no changes to apply in the orchestration artifacts. So, to deploy them you must run the trigger created on Orchestration project manually. However, anytime changes for Orchestration artifacts are pushed in the EDP Repo, Cloud Build in the orc project is going to be triggerd automatically. 
+At this point, there are no changes to apply in the orchestration artifacts. So, to deploy them you must run the trigger created on Orchestration project manually. However, anytime changes for Orchestration artifacts are pushed in the EDP Repo, Cloud Build in the orc project is going to be triggerd automatically. 

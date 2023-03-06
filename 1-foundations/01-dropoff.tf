@@ -42,7 +42,7 @@ module "drop-project" {
     )
     "roles/storage.objectAdmin"   = [module.load-sa-df-0.iam_email]
     "roles/storage.objectCreator" = [module.drop-sa-cs-0.iam_email]
-    "roles/storage.objectViewer"  = [module.orch-sa-cmp-0.iam_email]
+    "roles/storage.objectAdmin"  = [module.orch-sa-cmp-0.iam_email]
     "roles/storage.admin"         = [module.load-sa-df-0.iam_email]
   }
   services = concat(var.project_services, [
