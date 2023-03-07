@@ -3,7 +3,7 @@
 This repository provides a reference architecture followed by **end-to-end blueprints**, scripts and a **suite of Terraform modules** for Google Cloud Platform (GCP), designed to automate the creation, governance and observability of a modern and robust data repository for educational institutions, looking into becoming a data-driven organization and so adhering digital education.
 
 <p align="center">
-    <img src="img/edp-architecture-v1.png">
+    <img src="img/edp-architecture-v2.png">
 </p>
 
 Some key differentiators of this approach are:

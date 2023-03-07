@@ -7,7 +7,7 @@ The code is intentionally simple, as it's intended to provide a generic initial 
 The following diagram is a high-level reference of the resources created and managed here:
 
 <p align="center">
-    <img src="../img/edp-architecture-v1.png">
+    <img src="../img/edp-architecture-v2.png">
 </p>
 
 A demo Airflow pipeline is also part of this blueprint: it can be built and run on top of the foundational infrastructure to verify or test the setup quickly.
