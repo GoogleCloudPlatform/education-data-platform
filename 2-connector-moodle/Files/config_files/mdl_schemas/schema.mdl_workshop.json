@@ -1,0 +1,154 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "intro",
+    "type": "STRING"
+  },
+  {
+    "name": "introformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "instructauthors",
+    "type": "STRING"
+  },
+  {
+    "name": "instructauthorsformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "instructreviewers",
+    "type": "STRING"
+  },
+  {
+    "name": "instructreviewersformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "phase",
+    "type": "INTEGER"
+  },
+  {
+    "name": "useexamples",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usepeerassessment",
+    "type": "INTEGER"
+  },
+  {
+    "name": "useselfassessment",
+    "type": "INTEGER"
+  },
+  {
+    "name": "grade",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "gradinggrade",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "strategy",
+    "type": "STRING"
+  },
+  {
+    "name": "evaluation",
+    "type": "STRING"
+  },
+  {
+    "name": "gradedecimals",
+    "type": "INTEGER"
+  },
+  {
+    "name": "submissiontypetext",
+    "type": "INTEGER"
+  },
+  {
+    "name": "submissiontypefile",
+    "type": "INTEGER"
+  },
+  {
+    "name": "nattachments",
+    "type": "INTEGER"
+  },
+  {
+    "name": "submissionfiletypes",
+    "type": "STRING"
+  },
+  {
+    "name": "latesubmissions",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maxbytes",
+    "type": "INTEGER"
+  },
+  {
+    "name": "examplesmode",
+    "type": "INTEGER"
+  },
+  {
+    "name": "submissionstart",
+    "type": "INTEGER"
+  },
+  {
+    "name": "submissionend",
+    "type": "INTEGER"
+  },
+  {
+    "name": "assessmentstart",
+    "type": "INTEGER"
+  },
+  {
+    "name": "assessmentend",
+    "type": "INTEGER"
+  },
+  {
+    "name": "phaseswitchassessment",
+    "type": "INTEGER"
+  },
+  {
+    "name": "conclusion",
+    "type": "STRING"
+  },
+  {
+    "name": "conclusionformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "overallfeedbackmode",
+    "type": "INTEGER"
+  },
+  {
+    "name": "overallfeedbackfiles",
+    "type": "INTEGER"
+  },
+  {
+    "name": "overallfeedbackfiletypes",
+    "type": "STRING"
+  },
+  {
+    "name": "overallfeedbackmaxbytes",
+    "type": "INTEGER"
+  }
+]

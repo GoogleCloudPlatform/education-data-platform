@@ -1,0 +1,46 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "enabled",
+    "type": "INTEGER"
+  },
+  {
+    "name": "requiredcapability",
+    "type": "STRING"
+  },
+  {
+    "name": "restrictedusers",
+    "type": "INTEGER"
+  },
+  {
+    "name": "component",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "shortname",
+    "type": "STRING"
+  },
+  {
+    "name": "downloadfiles",
+    "type": "INTEGER"
+  },
+  {
+    "name": "uploadfiles",
+    "type": "INTEGER"
+  }
+]

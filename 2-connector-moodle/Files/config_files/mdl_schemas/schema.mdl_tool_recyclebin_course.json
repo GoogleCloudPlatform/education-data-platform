@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "section",
+    "type": "INTEGER"
+  },
+  {
+    "name": "module",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  }
+]

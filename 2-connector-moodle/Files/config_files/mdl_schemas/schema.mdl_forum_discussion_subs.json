@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "forum",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "discussion",
+    "type": "INTEGER"
+  },
+  {
+    "name": "preference",
+    "type": "INTEGER"
+  }
+]

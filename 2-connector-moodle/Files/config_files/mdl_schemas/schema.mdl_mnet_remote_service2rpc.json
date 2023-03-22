@@ -1,0 +1,14 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "serviceid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "rpcid",
+    "type": "INTEGER"
+  }
+]

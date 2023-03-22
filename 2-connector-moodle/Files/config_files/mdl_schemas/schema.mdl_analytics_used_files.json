@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "modelid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "fileid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "action",
+    "type": "STRING"
+  },
+  {
+    "name": "time",
+    "type": "INTEGER"
+  }
+]

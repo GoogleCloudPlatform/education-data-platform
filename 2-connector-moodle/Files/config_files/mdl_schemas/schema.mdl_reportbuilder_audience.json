@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "reportid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "heading",
+    "type": "STRING"
+  },
+  {
+    "name": "classname",
+    "type": "STRING"
+  },
+  {
+    "name": "configdata",
+    "type": "STRING"
+  },
+  {
+    "name": "usercreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

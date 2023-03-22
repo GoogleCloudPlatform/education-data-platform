@@ -1,0 +1,14 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "externalserviceid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "functionname",
+    "type": "STRING"
+  }
+]

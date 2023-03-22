@@ -1,0 +1,24 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "criterionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "score",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "definition",
+    "type": "STRING"
+  },
+  {
+    "name": "definitionformat",
+    "type": "INTEGER"
+  }
+]

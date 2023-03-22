@@ -1,0 +1,18 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "displayorder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "capability",
+    "type": "STRING"
+  }
+]

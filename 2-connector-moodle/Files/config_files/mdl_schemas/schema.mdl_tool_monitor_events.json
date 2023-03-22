@@ -1,0 +1,34 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "eventname",
+    "type": "STRING"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextlevel",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextinstanceid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "link",
+    "type": "STRING"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  }
+]

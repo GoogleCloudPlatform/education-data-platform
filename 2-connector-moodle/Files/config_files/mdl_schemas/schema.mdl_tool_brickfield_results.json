@@ -1,0 +1,18 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contentid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "checkid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "errorcount",
+    "type": "INTEGER"
+  }
+]

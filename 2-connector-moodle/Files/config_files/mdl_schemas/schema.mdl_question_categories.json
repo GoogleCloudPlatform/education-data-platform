@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "info",
+    "type": "STRING"
+  },
+  {
+    "name": "infoformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "stamp",
+    "type": "STRING"
+  },
+  {
+    "name": "parent",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sortorder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "idnumber",
+    "type": "STRING"
+  }
+]

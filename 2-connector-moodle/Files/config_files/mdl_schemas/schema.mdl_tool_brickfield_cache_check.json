@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER"
+  },
+  {
+    "name": "checkid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "checkcount",
+    "type": "INTEGER"
+  },
+  {
+    "name": "errorcount",
+    "type": "INTEGER"
+  }
+]

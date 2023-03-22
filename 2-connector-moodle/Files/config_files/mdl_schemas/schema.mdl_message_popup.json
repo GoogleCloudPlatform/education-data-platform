@@ -1,0 +1,14 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "messageid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "isread",
+    "type": "INTEGER"
+  }
+]

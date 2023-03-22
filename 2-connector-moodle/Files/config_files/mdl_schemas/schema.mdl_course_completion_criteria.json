@@ -1,0 +1,44 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "criteriatype",
+    "type": "INTEGER"
+  },
+  {
+    "name": "module",
+    "type": "STRING"
+  },
+  {
+    "name": "moduleinstance",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseinstance",
+    "type": "INTEGER"
+  },
+  {
+    "name": "enrolperiod",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeend",
+    "type": "INTEGER"
+  },
+  {
+    "name": "gradepass",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "role",
+    "type": "INTEGER"
+  }
+]

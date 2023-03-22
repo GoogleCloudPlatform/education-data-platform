@@ -1,0 +1,14 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sortorder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "currentversionid",
+    "type": "INTEGER"
+  }
+]

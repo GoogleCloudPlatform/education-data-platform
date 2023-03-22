@@ -1,0 +1,34 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "questionusageid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "slot",
+    "type": "INTEGER"
+  },
+  {
+    "name": "newfraction",
+    "precision": "12",
+    "scale": "7",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "oldfraction",
+    "precision": "12",
+    "scale": "7",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "regraded",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "path",
+    "type": "STRING"
+  },
+  {
+    "name": "depth",
+    "type": "INTEGER"
+  },
+  {
+    "name": "locked",
+    "type": "INTEGER"
+  }
+]

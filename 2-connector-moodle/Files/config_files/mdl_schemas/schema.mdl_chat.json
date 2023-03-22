@@ -1,0 +1,42 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "intro",
+    "type": "STRING"
+  },
+  {
+    "name": "introformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "keepdays",
+    "type": "INTEGER"
+  },
+  {
+    "name": "studentlogs",
+    "type": "INTEGER"
+  },
+  {
+    "name": "chattime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "schedule",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

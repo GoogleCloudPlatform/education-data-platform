@@ -1,0 +1,58 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "forum",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "firstpost",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "groupid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "assessed",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timestart",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeend",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pinned",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timelocked",
+    "type": "INTEGER"
+  }
+]

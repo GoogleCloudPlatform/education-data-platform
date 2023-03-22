@@ -1,0 +1,58 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "docid",
+    "type": "STRING"
+  },
+  {
+    "name": "itemid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "title",
+    "type": "STRING"
+  },
+  {
+    "name": "content",
+    "type": "STRING"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "areaid",
+    "type": "STRING"
+  },
+  {
+    "name": "type",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "owneruserid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "modified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "description1",
+    "type": "STRING"
+  },
+  {
+    "name": "description2",
+    "type": "STRING"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "messageid",
+    "type": "STRING"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "address",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  }
+]

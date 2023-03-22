@@ -1,0 +1,46 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "runid",
+    "type": "STRING"
+  },
+  {
+    "name": "url",
+    "type": "STRING"
+  },
+  {
+    "name": "data",
+    "type": "STRING"
+  },
+  {
+    "name": "totalexecutiontime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "totalcputime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "totalcalls",
+    "type": "INTEGER"
+  },
+  {
+    "name": "totalmemory",
+    "type": "INTEGER"
+  },
+  {
+    "name": "runreference",
+    "type": "INTEGER"
+  },
+  {
+    "name": "runcomment",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  }
+]

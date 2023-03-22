@@ -1,0 +1,32 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "assessmentid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "strategy",
+    "type": "STRING"
+  },
+  {
+    "name": "dimensionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "grade",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "peercomment",
+    "type": "STRING"
+  },
+  {
+    "name": "peercommentformat",
+    "type": "INTEGER"
+  }
+]

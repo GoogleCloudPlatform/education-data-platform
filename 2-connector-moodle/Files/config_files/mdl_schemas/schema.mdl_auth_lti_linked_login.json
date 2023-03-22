@@ -1,0 +1,34 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "issuer",
+    "type": "STRING"
+  },
+  {
+    "name": "issuer256",
+    "type": "STRING"
+  },
+  {
+    "name": "sub",
+    "type": "STRING"
+  },
+  {
+    "name": "sub256",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

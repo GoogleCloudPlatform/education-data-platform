@@ -1,0 +1,24 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "workshopid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "gradinggrade",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "timegraded",
+    "type": "INTEGER"
+  }
+]

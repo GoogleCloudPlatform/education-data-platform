@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "component",
+    "type": "STRING"
+  },
+  {
+    "name": "areaname",
+    "type": "STRING"
+  },
+  {
+    "name": "activemethod",
+    "type": "STRING"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "unexpiredroles",
+    "type": "STRING"
+  },
+  {
+    "name": "expiredroles",
+    "type": "STRING"
+  },
+  {
+    "name": "expired",
+    "type": "INTEGER"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

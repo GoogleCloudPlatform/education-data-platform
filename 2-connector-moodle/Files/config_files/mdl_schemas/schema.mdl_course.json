@@ -1,0 +1,146 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "category",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sortorder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "fullname",
+    "type": "STRING"
+  },
+  {
+    "name": "shortname",
+    "type": "STRING"
+  },
+  {
+    "name": "idnumber",
+    "type": "STRING"
+  },
+  {
+    "name": "summary",
+    "type": "STRING"
+  },
+  {
+    "name": "summaryformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "format",
+    "type": "STRING"
+  },
+  {
+    "name": "showgrades",
+    "type": "INTEGER"
+  },
+  {
+    "name": "newsitems",
+    "type": "INTEGER"
+  },
+  {
+    "name": "startdate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "enddate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "relativedatesmode",
+    "type": "INTEGER"
+  },
+  {
+    "name": "marker",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maxbytes",
+    "type": "INTEGER"
+  },
+  {
+    "name": "legacyfiles",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showreports",
+    "type": "INTEGER"
+  },
+  {
+    "name": "visible",
+    "type": "INTEGER"
+  },
+  {
+    "name": "visibleold",
+    "type": "INTEGER"
+  },
+  {
+    "name": "downloadcontent",
+    "type": "INTEGER"
+  },
+  {
+    "name": "groupmode",
+    "type": "INTEGER"
+  },
+  {
+    "name": "groupmodeforce",
+    "type": "INTEGER"
+  },
+  {
+    "name": "defaultgroupingid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lang",
+    "type": "STRING"
+  },
+  {
+    "name": "calendartype",
+    "type": "STRING"
+  },
+  {
+    "name": "theme",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "requested",
+    "type": "INTEGER"
+  },
+  {
+    "name": "enablecompletion",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionnotify",
+    "type": "INTEGER"
+  },
+  {
+    "name": "cacherev",
+    "type": "INTEGER"
+  },
+  {
+    "name": "originalcourseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showactivitydates",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showcompletionconditions",
+    "type": "INTEGER"
+  }
+]

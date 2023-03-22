@@ -1,0 +1,50 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "chatid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "groupid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "version",
+    "type": "STRING"
+  },
+  {
+    "name": "ip",
+    "type": "STRING"
+  },
+  {
+    "name": "firstping",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lastping",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lastmessageping",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sid",
+    "type": "STRING"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lang",
+    "type": "STRING"
+  }
+]

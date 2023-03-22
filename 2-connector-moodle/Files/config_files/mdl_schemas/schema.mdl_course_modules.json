@@ -1,0 +1,94 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "module",
+    "type": "INTEGER"
+  },
+  {
+    "name": "instance",
+    "type": "INTEGER"
+  },
+  {
+    "name": "section",
+    "type": "INTEGER"
+  },
+  {
+    "name": "idnumber",
+    "type": "STRING"
+  },
+  {
+    "name": "added",
+    "type": "INTEGER"
+  },
+  {
+    "name": "score",
+    "type": "INTEGER"
+  },
+  {
+    "name": "indent",
+    "type": "INTEGER"
+  },
+  {
+    "name": "visible",
+    "type": "INTEGER"
+  },
+  {
+    "name": "visibleoncoursepage",
+    "type": "INTEGER"
+  },
+  {
+    "name": "visibleold",
+    "type": "INTEGER"
+  },
+  {
+    "name": "groupmode",
+    "type": "INTEGER"
+  },
+  {
+    "name": "groupingid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completion",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completiongradeitemnumber",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionview",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionexpected",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionpassgrade",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showdescription",
+    "type": "INTEGER"
+  },
+  {
+    "name": "availability",
+    "type": "STRING"
+  },
+  {
+    "name": "deletioninprogress",
+    "type": "INTEGER"
+  },
+  {
+    "name": "downloadcontent",
+    "type": "INTEGER"
+  }
+]

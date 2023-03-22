@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "adminpresetapplyid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "plugin",
+    "type": "STRING"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "value",
+    "type": "INTEGER"
+  },
+  {
+    "name": "oldvalue",
+    "type": "INTEGER"
+  }
+]

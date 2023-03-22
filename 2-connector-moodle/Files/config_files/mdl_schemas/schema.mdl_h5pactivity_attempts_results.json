@@ -1,0 +1,58 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "attemptid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "subcontent",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "interactiontype",
+    "type": "STRING"
+  },
+  {
+    "name": "description",
+    "type": "STRING"
+  },
+  {
+    "name": "correctpattern",
+    "type": "STRING"
+  },
+  {
+    "name": "response",
+    "type": "STRING"
+  },
+  {
+    "name": "additionals",
+    "type": "STRING"
+  },
+  {
+    "name": "rawscore",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maxscore",
+    "type": "INTEGER"
+  },
+  {
+    "name": "duration",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completion",
+    "type": "INTEGER"
+  },
+  {
+    "name": "success",
+    "type": "INTEGER"
+  }
+]

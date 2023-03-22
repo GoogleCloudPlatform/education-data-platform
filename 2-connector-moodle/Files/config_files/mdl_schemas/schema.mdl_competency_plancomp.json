@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "planid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "competencyid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sortorder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "checktype",
+    "type": "STRING"
+  },
+  {
+    "name": "shortname",
+    "type": "STRING"
+  },
+  {
+    "name": "checkgroup",
+    "type": "INTEGER"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER"
+  },
+  {
+    "name": "severity",
+    "type": "INTEGER"
+  }
+]

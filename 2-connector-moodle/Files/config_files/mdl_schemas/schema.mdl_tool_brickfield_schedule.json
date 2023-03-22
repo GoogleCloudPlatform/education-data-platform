@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextlevel",
+    "type": "INTEGER"
+  },
+  {
+    "name": "instanceid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeanalyzed",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

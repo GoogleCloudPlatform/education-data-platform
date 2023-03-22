@@ -1,0 +1,70 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "useridfrom",
+    "type": "INTEGER"
+  },
+  {
+    "name": "useridto",
+    "type": "INTEGER"
+  },
+  {
+    "name": "subject",
+    "type": "STRING"
+  },
+  {
+    "name": "fullmessage",
+    "type": "STRING"
+  },
+  {
+    "name": "fullmessageformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "fullmessagehtml",
+    "type": "STRING"
+  },
+  {
+    "name": "smallmessage",
+    "type": "STRING"
+  },
+  {
+    "name": "notification",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contexturl",
+    "type": "STRING"
+  },
+  {
+    "name": "contexturlname",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeread",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeuserfromdeleted",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeusertodeleted",
+    "type": "INTEGER"
+  },
+  {
+    "name": "component",
+    "type": "STRING"
+  },
+  {
+    "name": "eventtype",
+    "type": "STRING"
+  }
+]

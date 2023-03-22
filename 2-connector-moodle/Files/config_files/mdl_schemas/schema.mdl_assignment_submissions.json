@@ -1,0 +1,58 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "assignment",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "numfiles",
+    "type": "INTEGER"
+  },
+  {
+    "name": "data1",
+    "type": "STRING"
+  },
+  {
+    "name": "data2",
+    "type": "STRING"
+  },
+  {
+    "name": "grade",
+    "type": "INTEGER"
+  },
+  {
+    "name": "submissioncomment",
+    "type": "STRING"
+  },
+  {
+    "name": "format",
+    "type": "INTEGER"
+  },
+  {
+    "name": "teacher",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemarked",
+    "type": "INTEGER"
+  },
+  {
+    "name": "mailed",
+    "type": "INTEGER"
+  }
+]

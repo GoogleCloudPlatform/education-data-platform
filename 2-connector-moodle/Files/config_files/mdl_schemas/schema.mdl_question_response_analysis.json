@@ -1,0 +1,44 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hashcode",
+    "type": "STRING"
+  },
+  {
+    "name": "whichtries",
+    "type": "STRING"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "questionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "variant",
+    "type": "INTEGER"
+  },
+  {
+    "name": "subqid",
+    "type": "STRING"
+  },
+  {
+    "name": "aid",
+    "type": "STRING"
+  },
+  {
+    "name": "response",
+    "type": "STRING"
+  },
+  {
+    "name": "credit",
+    "precision": "15",
+    "scale": "5",
+    "type": "NUMERIC"
+  }
+]

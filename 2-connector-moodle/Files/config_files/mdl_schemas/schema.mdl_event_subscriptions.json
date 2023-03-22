@@ -1,0 +1,42 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "url",
+    "type": "STRING"
+  },
+  {
+    "name": "categoryid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "groupid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "eventtype",
+    "type": "STRING"
+  },
+  {
+    "name": "pollinterval",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lastupdated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  }
+]

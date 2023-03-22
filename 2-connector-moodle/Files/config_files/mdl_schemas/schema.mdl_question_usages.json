@@ -1,0 +1,18 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "component",
+    "type": "STRING"
+  },
+  {
+    "name": "preferredbehaviour",
+    "type": "STRING"
+  }
+]

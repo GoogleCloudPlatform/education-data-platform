@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lessonid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pageid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "answerid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "retry",
+    "type": "INTEGER"
+  },
+  {
+    "name": "correct",
+    "type": "INTEGER"
+  },
+  {
+    "name": "useranswer",
+    "type": "STRING"
+  },
+  {
+    "name": "timeseen",
+    "type": "INTEGER"
+  }
+]

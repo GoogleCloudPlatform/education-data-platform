@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "h5pid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "libraryid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "dependencytype",
+    "type": "STRING"
+  },
+  {
+    "name": "dropcss",
+    "type": "INTEGER"
+  },
+  {
+    "name": "weight",
+    "type": "INTEGER"
+  }
+]

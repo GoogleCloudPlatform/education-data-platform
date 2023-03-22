@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "question",
+    "type": "INTEGER"
+  },
+  {
+    "name": "answer",
+    "type": "INTEGER"
+  },
+  {
+    "name": "tolerance",
+    "type": "STRING"
+  },
+  {
+    "name": "tolerancetype",
+    "type": "INTEGER"
+  },
+  {
+    "name": "correctanswerlength",
+    "type": "INTEGER"
+  },
+  {
+    "name": "correctanswerformat",
+    "type": "INTEGER"
+  }
+]

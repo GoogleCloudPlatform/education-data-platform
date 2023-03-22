@@ -1,0 +1,14 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "workshopid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "comparison",
+    "type": "INTEGER"
+  }
+]

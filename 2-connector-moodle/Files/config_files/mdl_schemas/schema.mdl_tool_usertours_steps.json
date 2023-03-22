@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "tourid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "title",
+    "type": "STRING"
+  },
+  {
+    "name": "content",
+    "type": "STRING"
+  },
+  {
+    "name": "contentformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "targettype",
+    "type": "INTEGER"
+  },
+  {
+    "name": "targetvalue",
+    "type": "STRING"
+  },
+  {
+    "name": "sortorder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "configdata",
+    "type": "STRING"
+  }
+]

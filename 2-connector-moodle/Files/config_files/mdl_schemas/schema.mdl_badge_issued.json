@@ -1,0 +1,34 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "badgeid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "uniquehash",
+    "type": "STRING"
+  },
+  {
+    "name": "dateissued",
+    "type": "INTEGER"
+  },
+  {
+    "name": "dateexpire",
+    "type": "INTEGER"
+  },
+  {
+    "name": "visible",
+    "type": "INTEGER"
+  },
+  {
+    "name": "issuernotified",
+    "type": "INTEGER"
+  }
+]

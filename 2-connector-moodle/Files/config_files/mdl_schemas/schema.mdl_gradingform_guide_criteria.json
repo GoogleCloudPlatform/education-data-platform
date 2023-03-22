@@ -1,0 +1,40 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "definitionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sortorder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "shortname",
+    "type": "STRING"
+  },
+  {
+    "name": "description",
+    "type": "STRING"
+  },
+  {
+    "name": "descriptionformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "descriptionmarkers",
+    "type": "STRING"
+  },
+  {
+    "name": "descriptionmarkersformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maxscore",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  }
+]

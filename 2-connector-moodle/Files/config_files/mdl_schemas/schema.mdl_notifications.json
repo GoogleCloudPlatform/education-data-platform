@@ -1,0 +1,62 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "useridfrom",
+    "type": "INTEGER"
+  },
+  {
+    "name": "useridto",
+    "type": "INTEGER"
+  },
+  {
+    "name": "subject",
+    "type": "STRING"
+  },
+  {
+    "name": "fullmessage",
+    "type": "STRING"
+  },
+  {
+    "name": "fullmessageformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "fullmessagehtml",
+    "type": "STRING"
+  },
+  {
+    "name": "smallmessage",
+    "type": "STRING"
+  },
+  {
+    "name": "component",
+    "type": "STRING"
+  },
+  {
+    "name": "eventtype",
+    "type": "STRING"
+  },
+  {
+    "name": "contexturl",
+    "type": "STRING"
+  },
+  {
+    "name": "contexturlname",
+    "type": "STRING"
+  },
+  {
+    "name": "timeread",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "customdata",
+    "type": "STRING"
+  }
+]

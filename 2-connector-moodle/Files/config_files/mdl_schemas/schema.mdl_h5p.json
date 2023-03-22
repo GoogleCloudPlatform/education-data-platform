@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "jsoncontent",
+    "type": "STRING"
+  },
+  {
+    "name": "mainlibraryid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "displayoptions",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pathnamehash",
+    "type": "STRING"
+  },
+  {
+    "name": "contenthash",
+    "type": "STRING"
+  },
+  {
+    "name": "filtered",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

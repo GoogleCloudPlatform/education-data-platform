@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "questionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "_no",
+    "type": "INTEGER"
+  },
+  {
+    "name": "label",
+    "type": "STRING"
+  },
+  {
+    "name": "infinite",
+    "type": "INTEGER"
+  },
+  {
+    "name": "noofdrags",
+    "type": "INTEGER"
+  }
+]

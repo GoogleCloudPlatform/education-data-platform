@@ -1,0 +1,42 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "shortname",
+    "type": "STRING"
+  },
+  {
+    "name": "fullname",
+    "type": "STRING"
+  },
+  {
+    "name": "scaleid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "description",
+    "type": "STRING"
+  },
+  {
+    "name": "descriptionformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  }
+]

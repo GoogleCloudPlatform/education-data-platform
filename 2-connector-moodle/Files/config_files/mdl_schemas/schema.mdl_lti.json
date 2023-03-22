@@ -1,0 +1,106 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "intro",
+    "type": "STRING"
+  },
+  {
+    "name": "introformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "typeid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "toolurl",
+    "type": "STRING"
+  },
+  {
+    "name": "securetoolurl",
+    "type": "STRING"
+  },
+  {
+    "name": "instructorchoicesendname",
+    "type": "INTEGER"
+  },
+  {
+    "name": "instructorchoicesendemailaddr",
+    "type": "INTEGER"
+  },
+  {
+    "name": "instructorchoiceallowroster",
+    "type": "INTEGER"
+  },
+  {
+    "name": "instructorchoiceallowsetting",
+    "type": "INTEGER"
+  },
+  {
+    "name": "instructorcustomparameters",
+    "type": "STRING"
+  },
+  {
+    "name": "instructorchoiceacceptgrades",
+    "type": "INTEGER"
+  },
+  {
+    "name": "grade",
+    "type": "INTEGER"
+  },
+  {
+    "name": "launchcontainer",
+    "type": "INTEGER"
+  },
+  {
+    "name": "resourcekey",
+    "type": "STRING"
+  },
+  {
+    "name": "password",
+    "type": "STRING"
+  },
+  {
+    "name": "debuglaunch",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showtitlelaunch",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showdescriptionlaunch",
+    "type": "INTEGER"
+  },
+  {
+    "name": "servicesalt",
+    "type": "STRING"
+  },
+  {
+    "name": "icon",
+    "type": "STRING"
+  },
+  {
+    "name": "secureicon",
+    "type": "STRING"
+  }
+]

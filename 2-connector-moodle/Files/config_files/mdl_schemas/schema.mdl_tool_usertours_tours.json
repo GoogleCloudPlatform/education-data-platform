@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "description",
+    "type": "STRING"
+  },
+  {
+    "name": "pathmatch",
+    "type": "STRING"
+  },
+  {
+    "name": "enabled",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sortorder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "endtourlabel",
+    "type": "STRING"
+  },
+  {
+    "name": "configdata",
+    "type": "STRING"
+  },
+  {
+    "name": "displaystepnumbers",
+    "type": "INTEGER"
+  }
+]

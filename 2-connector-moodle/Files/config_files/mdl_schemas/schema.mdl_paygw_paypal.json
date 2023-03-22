@@ -1,0 +1,14 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "paymentid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pp_orderid",
+    "type": "STRING"
+  }
+]

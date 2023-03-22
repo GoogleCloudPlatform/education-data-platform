@@ -1,0 +1,54 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "regurl",
+    "type": "STRING"
+  },
+  {
+    "name": "state",
+    "type": "INTEGER"
+  },
+  {
+    "name": "guid",
+    "type": "STRING"
+  },
+  {
+    "name": "secret",
+    "type": "STRING"
+  },
+  {
+    "name": "vendorcode",
+    "type": "STRING"
+  },
+  {
+    "name": "capabilityoffered",
+    "type": "STRING"
+  },
+  {
+    "name": "serviceoffered",
+    "type": "STRING"
+  },
+  {
+    "name": "toolproxy",
+    "type": "STRING"
+  },
+  {
+    "name": "createdby",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

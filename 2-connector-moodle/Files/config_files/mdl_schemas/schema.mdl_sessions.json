@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "state",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sid",
+    "type": "STRING"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sessdata",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "firstip",
+    "type": "STRING"
+  },
+  {
+    "name": "lastip",
+    "type": "STRING"
+  }
+]

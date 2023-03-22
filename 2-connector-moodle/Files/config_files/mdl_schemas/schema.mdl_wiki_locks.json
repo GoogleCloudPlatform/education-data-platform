@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pageid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sectionname",
+    "type": "STRING"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lockedat",
+    "type": "INTEGER"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "areaid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contenthash",
+    "type": "STRING"
+  },
+  {
+    "name": "iscurrent",
+    "type": "INTEGER"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timechecked",
+    "type": "INTEGER"
+  }
+]

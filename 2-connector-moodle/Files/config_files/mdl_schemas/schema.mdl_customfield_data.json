@@ -1,0 +1,52 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "fieldid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "instanceid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "intvalue",
+    "type": "INTEGER"
+  },
+  {
+    "name": "decvalue",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "shortcharvalue",
+    "type": "STRING"
+  },
+  {
+    "name": "charvalue",
+    "type": "STRING"
+  },
+  {
+    "name": "value",
+    "type": "STRING"
+  },
+  {
+    "name": "valueformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  }
+]

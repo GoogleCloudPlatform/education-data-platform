@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "coursemoduleid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionstate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "viewed",
+    "type": "INTEGER"
+  },
+  {
+    "name": "overrideby",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

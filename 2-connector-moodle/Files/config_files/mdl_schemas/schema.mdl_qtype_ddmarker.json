@@ -1,0 +1,46 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "questionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "shuffleanswers",
+    "type": "INTEGER"
+  },
+  {
+    "name": "correctfeedback",
+    "type": "STRING"
+  },
+  {
+    "name": "correctfeedbackformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "partiallycorrectfeedback",
+    "type": "STRING"
+  },
+  {
+    "name": "partiallycorrectfeedbackformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "incorrectfeedback",
+    "type": "STRING"
+  },
+  {
+    "name": "incorrectfeedbackformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "shownumcorrect",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showmisplaced",
+    "type": "INTEGER"
+  }
+]

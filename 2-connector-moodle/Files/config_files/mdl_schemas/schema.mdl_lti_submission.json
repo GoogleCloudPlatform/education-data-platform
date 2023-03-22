@@ -1,0 +1,42 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "ltiid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "datesubmitted",
+    "type": "INTEGER"
+  },
+  {
+    "name": "dateupdated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "gradepercent",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "originalgrade",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "launchid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "state",
+    "type": "INTEGER"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "slot",
+    "type": "INTEGER"
+  },
+  {
+    "name": "quizid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "page",
+    "type": "INTEGER"
+  },
+  {
+    "name": "requireprevious",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maxmark",
+    "precision": "12",
+    "scale": "7",
+    "type": "NUMERIC"
+  }
+]

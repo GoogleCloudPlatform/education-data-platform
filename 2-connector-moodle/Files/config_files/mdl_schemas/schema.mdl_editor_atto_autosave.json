@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "elementid",
+    "type": "STRING"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pagehash",
+    "type": "STRING"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "drafttext",
+    "type": "STRING"
+  },
+  {
+    "name": "draftid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pageinstance",
+    "type": "STRING"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

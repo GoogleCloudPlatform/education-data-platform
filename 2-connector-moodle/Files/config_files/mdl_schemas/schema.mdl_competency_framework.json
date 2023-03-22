@@ -1,0 +1,54 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "shortname",
+    "type": "STRING"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "idnumber",
+    "type": "STRING"
+  },
+  {
+    "name": "description",
+    "type": "STRING"
+  },
+  {
+    "name": "descriptionformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "scaleid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "scaleconfiguration",
+    "type": "STRING"
+  },
+  {
+    "name": "visible",
+    "type": "INTEGER"
+  },
+  {
+    "name": "taxonomies",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  }
+]

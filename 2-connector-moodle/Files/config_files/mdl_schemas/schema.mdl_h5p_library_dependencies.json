@@ -1,0 +1,18 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "libraryid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "requiredlibraryid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "dependencytype",
+    "type": "STRING"
+  }
+]

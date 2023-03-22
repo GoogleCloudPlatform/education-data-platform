@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "consumerid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lticontextkey",
+    "type": "STRING"
+  },
+  {
+    "name": "type",
+    "type": "STRING"
+  },
+  {
+    "name": "settings",
+    "type": "STRING"
+  },
+  {
+    "name": "created",
+    "type": "INTEGER"
+  },
+  {
+    "name": "updated",
+    "type": "INTEGER"
+  }
+]

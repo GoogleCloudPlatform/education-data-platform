@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "assignment",
+    "type": "INTEGER"
+  },
+  {
+    "name": "grade",
+    "type": "INTEGER"
+  },
+  {
+    "name": "commenttext",
+    "type": "STRING"
+  },
+  {
+    "name": "commentformat",
+    "type": "INTEGER"
+  }
+]

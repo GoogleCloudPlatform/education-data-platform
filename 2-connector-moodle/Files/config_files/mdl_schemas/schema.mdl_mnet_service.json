@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "description",
+    "type": "STRING"
+  },
+  {
+    "name": "apiversion",
+    "type": "STRING"
+  },
+  {
+    "name": "offer",
+    "type": "INTEGER"
+  }
+]

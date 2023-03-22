@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "queuedeventid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "handlerid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER"
+  },
+  {
+    "name": "errormessage",
+    "type": "STRING"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

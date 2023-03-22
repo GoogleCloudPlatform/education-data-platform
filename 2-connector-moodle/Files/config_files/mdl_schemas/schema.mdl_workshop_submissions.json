@@ -1,0 +1,82 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "workshopid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "example",
+    "type": "INTEGER"
+  },
+  {
+    "name": "authorid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "title",
+    "type": "STRING"
+  },
+  {
+    "name": "content",
+    "type": "STRING"
+  },
+  {
+    "name": "contentformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contenttrust",
+    "type": "INTEGER"
+  },
+  {
+    "name": "attachment",
+    "type": "INTEGER"
+  },
+  {
+    "name": "grade",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "gradeover",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "gradeoverby",
+    "type": "INTEGER"
+  },
+  {
+    "name": "feedbackauthor",
+    "type": "STRING"
+  },
+  {
+    "name": "feedbackauthorformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timegraded",
+    "type": "INTEGER"
+  },
+  {
+    "name": "published",
+    "type": "INTEGER"
+  },
+  {
+    "name": "late",
+    "type": "INTEGER"
+  }
+]

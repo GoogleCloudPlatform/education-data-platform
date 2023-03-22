@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "scoid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "conditioncombination",
+    "type": "STRING"
+  },
+  {
+    "name": "ruletype",
+    "type": "INTEGER"
+  },
+  {
+    "name": "action",
+    "type": "STRING"
+  }
+]

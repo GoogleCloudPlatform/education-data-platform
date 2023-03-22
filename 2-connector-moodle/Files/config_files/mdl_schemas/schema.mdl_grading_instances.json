@@ -1,0 +1,40 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "definitionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "raterid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "itemid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "rawgrade",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER"
+  },
+  {
+    "name": "feedback",
+    "type": "STRING"
+  },
+  {
+    "name": "feedbackformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

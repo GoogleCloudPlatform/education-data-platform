@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lessonid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "starttime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lessontime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completed",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodifiedoffline",
+    "type": "INTEGER"
+  }
+]

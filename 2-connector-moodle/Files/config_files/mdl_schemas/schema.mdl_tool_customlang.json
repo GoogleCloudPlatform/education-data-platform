@@ -1,0 +1,46 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lang",
+    "type": "STRING"
+  },
+  {
+    "name": "componentid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "stringid",
+    "type": "STRING"
+  },
+  {
+    "name": "original",
+    "type": "STRING"
+  },
+  {
+    "name": "master",
+    "type": "STRING"
+  },
+  {
+    "name": "local",
+    "type": "STRING"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecustomized",
+    "type": "INTEGER"
+  },
+  {
+    "name": "outdated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "modified",
+    "type": "INTEGER"
+  }
+]

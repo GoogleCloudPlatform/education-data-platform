@@ -1,0 +1,54 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "enabled",
+    "type": "INTEGER"
+  },
+  {
+    "name": "trained",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "target",
+    "type": "STRING"
+  },
+  {
+    "name": "indicators",
+    "type": "STRING"
+  },
+  {
+    "name": "timesplitting",
+    "type": "STRING"
+  },
+  {
+    "name": "predictionsprocessor",
+    "type": "STRING"
+  },
+  {
+    "name": "version",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextids",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hostid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "serviceid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "publish",
+    "type": "INTEGER"
+  },
+  {
+    "name": "subscribe",
+    "type": "INTEGER"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "fieldid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "data",
+    "type": "STRING"
+  },
+  {
+    "name": "dataformat",
+    "type": "INTEGER"
+  }
+]

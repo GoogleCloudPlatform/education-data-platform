@@ -1,0 +1,118 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "quizid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "cmid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "templateid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "requiresafeexambrowser",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showsebtaskbar",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showwificontrol",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showreloadbutton",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showtime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showkeyboardlayout",
+    "type": "INTEGER"
+  },
+  {
+    "name": "allowuserquitseb",
+    "type": "INTEGER"
+  },
+  {
+    "name": "quitpassword",
+    "type": "STRING"
+  },
+  {
+    "name": "linkquitseb",
+    "type": "STRING"
+  },
+  {
+    "name": "userconfirmquit",
+    "type": "INTEGER"
+  },
+  {
+    "name": "enableaudiocontrol",
+    "type": "INTEGER"
+  },
+  {
+    "name": "muteonstartup",
+    "type": "INTEGER"
+  },
+  {
+    "name": "allowspellchecking",
+    "type": "INTEGER"
+  },
+  {
+    "name": "allowreloadinexam",
+    "type": "INTEGER"
+  },
+  {
+    "name": "activateurlfiltering",
+    "type": "INTEGER"
+  },
+  {
+    "name": "filterembeddedcontent",
+    "type": "INTEGER"
+  },
+  {
+    "name": "expressionsallowed",
+    "type": "STRING"
+  },
+  {
+    "name": "regexallowed",
+    "type": "STRING"
+  },
+  {
+    "name": "expressionsblocked",
+    "type": "STRING"
+  },
+  {
+    "name": "regexblocked",
+    "type": "STRING"
+  },
+  {
+    "name": "allowedbrowserexamkeys",
+    "type": "STRING"
+  },
+  {
+    "name": "showsebdownloadlink",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

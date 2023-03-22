@@ -1,0 +1,86 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "business",
+    "type": "STRING"
+  },
+  {
+    "name": "receiver_email",
+    "type": "STRING"
+  },
+  {
+    "name": "receiver_id",
+    "type": "STRING"
+  },
+  {
+    "name": "item_name",
+    "type": "STRING"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "instanceid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "memo",
+    "type": "STRING"
+  },
+  {
+    "name": "tax",
+    "type": "STRING"
+  },
+  {
+    "name": "option_name1",
+    "type": "STRING"
+  },
+  {
+    "name": "option_selection1_x",
+    "type": "STRING"
+  },
+  {
+    "name": "option_name2",
+    "type": "STRING"
+  },
+  {
+    "name": "option_selection2_x",
+    "type": "STRING"
+  },
+  {
+    "name": "payment_status",
+    "type": "STRING"
+  },
+  {
+    "name": "pending_reason",
+    "type": "STRING"
+  },
+  {
+    "name": "reason_code",
+    "type": "STRING"
+  },
+  {
+    "name": "txn_id",
+    "type": "STRING"
+  },
+  {
+    "name": "parent_txn_id",
+    "type": "STRING"
+  },
+  {
+    "name": "payment_type",
+    "type": "STRING"
+  },
+  {
+    "name": "timeupdated",
+    "type": "INTEGER"
+  }
+]

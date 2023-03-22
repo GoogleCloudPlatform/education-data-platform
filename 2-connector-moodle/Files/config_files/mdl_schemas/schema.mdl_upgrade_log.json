@@ -1,0 +1,42 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "type",
+    "type": "INTEGER"
+  },
+  {
+    "name": "plugin",
+    "type": "STRING"
+  },
+  {
+    "name": "version",
+    "type": "STRING"
+  },
+  {
+    "name": "targetversion",
+    "type": "STRING"
+  },
+  {
+    "name": "info",
+    "type": "STRING"
+  },
+  {
+    "name": "details",
+    "type": "STRING"
+  },
+  {
+    "name": "backtrace",
+    "type": "STRING"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

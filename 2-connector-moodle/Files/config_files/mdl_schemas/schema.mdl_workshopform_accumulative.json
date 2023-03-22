@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "workshopid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sort",
+    "type": "INTEGER"
+  },
+  {
+    "name": "description",
+    "type": "STRING"
+  },
+  {
+    "name": "descriptionformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "grade",
+    "type": "INTEGER"
+  },
+  {
+    "name": "weight",
+    "type": "INTEGER"
+  }
+]

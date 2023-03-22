@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course_id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "item",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completed",
+    "type": "INTEGER"
+  },
+  {
+    "name": "tmp_completed",
+    "type": "INTEGER"
+  },
+  {
+    "name": "value",
+    "type": "STRING"
+  }
+]

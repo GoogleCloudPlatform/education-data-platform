@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lessonid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "grade",
+    "type": "FLOAT"
+  },
+  {
+    "name": "late",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completed",
+    "type": "INTEGER"
+  }
+]

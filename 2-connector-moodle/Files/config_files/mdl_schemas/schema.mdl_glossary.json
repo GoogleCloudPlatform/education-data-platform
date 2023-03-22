@@ -1,0 +1,114 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "intro",
+    "type": "STRING"
+  },
+  {
+    "name": "introformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "allowduplicatedentries",
+    "type": "INTEGER"
+  },
+  {
+    "name": "displayformat",
+    "type": "STRING"
+  },
+  {
+    "name": "mainglossary",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showspecial",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showalphabet",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showall",
+    "type": "INTEGER"
+  },
+  {
+    "name": "allowcomments",
+    "type": "INTEGER"
+  },
+  {
+    "name": "allowprintview",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usedynalink",
+    "type": "INTEGER"
+  },
+  {
+    "name": "approval",
+    "type": "INTEGER"
+  },
+  {
+    "name": "approvaldisplayformat",
+    "type": "STRING"
+  },
+  {
+    "name": "globalglossary",
+    "type": "INTEGER"
+  },
+  {
+    "name": "entbypage",
+    "type": "INTEGER"
+  },
+  {
+    "name": "editalways",
+    "type": "INTEGER"
+  },
+  {
+    "name": "rsstype",
+    "type": "INTEGER"
+  },
+  {
+    "name": "rssarticles",
+    "type": "INTEGER"
+  },
+  {
+    "name": "assessed",
+    "type": "INTEGER"
+  },
+  {
+    "name": "assesstimestart",
+    "type": "INTEGER"
+  },
+  {
+    "name": "assesstimefinish",
+    "type": "INTEGER"
+  },
+  {
+    "name": "scale",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionentries",
+    "type": "INTEGER"
+  }
+]

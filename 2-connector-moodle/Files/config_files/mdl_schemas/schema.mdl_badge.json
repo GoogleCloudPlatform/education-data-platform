@@ -1,0 +1,106 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "description",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usercreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "issuername",
+    "type": "STRING"
+  },
+  {
+    "name": "issuerurl",
+    "type": "STRING"
+  },
+  {
+    "name": "issuercontact",
+    "type": "STRING"
+  },
+  {
+    "name": "expiredate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "expireperiod",
+    "type": "INTEGER"
+  },
+  {
+    "name": "type",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "message",
+    "type": "STRING"
+  },
+  {
+    "name": "messagesubject",
+    "type": "STRING"
+  },
+  {
+    "name": "attachment",
+    "type": "INTEGER"
+  },
+  {
+    "name": "notification",
+    "type": "INTEGER"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER"
+  },
+  {
+    "name": "nextcron",
+    "type": "INTEGER"
+  },
+  {
+    "name": "version",
+    "type": "STRING"
+  },
+  {
+    "name": "language",
+    "type": "STRING"
+  },
+  {
+    "name": "imageauthorname",
+    "type": "STRING"
+  },
+  {
+    "name": "imageauthoremail",
+    "type": "STRING"
+  },
+  {
+    "name": "imageauthorurl",
+    "type": "STRING"
+  },
+  {
+    "name": "imagecaption",
+    "type": "STRING"
+  }
+]

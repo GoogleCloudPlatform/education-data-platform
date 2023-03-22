@@ -1,0 +1,62 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "deleted",
+    "type": "INTEGER"
+  },
+  {
+    "name": "wwwroot",
+    "type": "STRING"
+  },
+  {
+    "name": "ip_address",
+    "type": "STRING"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "public_key",
+    "type": "STRING"
+  },
+  {
+    "name": "public_key_expires",
+    "type": "INTEGER"
+  },
+  {
+    "name": "transport",
+    "type": "INTEGER"
+  },
+  {
+    "name": "portno",
+    "type": "INTEGER"
+  },
+  {
+    "name": "last_connect_time",
+    "type": "INTEGER"
+  },
+  {
+    "name": "last_log_id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "force_theme",
+    "type": "INTEGER"
+  },
+  {
+    "name": "theme",
+    "type": "STRING"
+  },
+  {
+    "name": "applicationid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sslverification",
+    "type": "INTEGER"
+  }
+]

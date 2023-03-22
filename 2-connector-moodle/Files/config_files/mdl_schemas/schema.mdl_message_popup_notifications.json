@@ -1,0 +1,10 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "notificationid",
+    "type": "INTEGER"
+  }
+]

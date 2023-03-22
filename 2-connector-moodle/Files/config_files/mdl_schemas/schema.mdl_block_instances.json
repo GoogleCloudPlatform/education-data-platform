@@ -1,0 +1,50 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "blockname",
+    "type": "STRING"
+  },
+  {
+    "name": "parentcontextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showinsubcontexts",
+    "type": "INTEGER"
+  },
+  {
+    "name": "requiredbytheme",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pagetypepattern",
+    "type": "STRING"
+  },
+  {
+    "name": "subpagepattern",
+    "type": "STRING"
+  },
+  {
+    "name": "region",
+    "type": "STRING"
+  },
+  {
+    "name": "weight",
+    "type": "INTEGER"
+  },
+  {
+    "name": "configdata",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

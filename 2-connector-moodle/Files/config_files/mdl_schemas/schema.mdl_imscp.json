@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "intro",
+    "type": "STRING"
+  },
+  {
+    "name": "introformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "revision",
+    "type": "INTEGER"
+  },
+  {
+    "name": "keepold",
+    "type": "INTEGER"
+  },
+  {
+    "name": "structure",
+    "type": "STRING"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

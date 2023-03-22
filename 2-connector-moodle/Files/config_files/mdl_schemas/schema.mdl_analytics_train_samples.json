@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "modelid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "analysableid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timesplitting",
+    "type": "STRING"
+  },
+  {
+    "name": "sampleids",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  }
+]

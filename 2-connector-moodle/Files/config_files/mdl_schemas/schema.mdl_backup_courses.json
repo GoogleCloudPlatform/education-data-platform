@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "laststarttime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lastendtime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "laststatus",
+    "type": "STRING"
+  },
+  {
+    "name": "nextstarttime",
+    "type": "INTEGER"
+  }
+]

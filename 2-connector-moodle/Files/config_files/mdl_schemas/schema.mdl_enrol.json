@@ -1,0 +1,146 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "enrol",
+    "type": "STRING"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sortorder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "enrolperiod",
+    "type": "INTEGER"
+  },
+  {
+    "name": "enrolstartdate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "enrolenddate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "expirynotify",
+    "type": "INTEGER"
+  },
+  {
+    "name": "expirythreshold",
+    "type": "INTEGER"
+  },
+  {
+    "name": "notifyall",
+    "type": "INTEGER"
+  },
+  {
+    "name": "password",
+    "type": "STRING"
+  },
+  {
+    "name": "cost",
+    "type": "STRING"
+  },
+  {
+    "name": "currency",
+    "type": "STRING"
+  },
+  {
+    "name": "roleid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "customint1",
+    "type": "INTEGER"
+  },
+  {
+    "name": "customint2",
+    "type": "INTEGER"
+  },
+  {
+    "name": "customint3",
+    "type": "INTEGER"
+  },
+  {
+    "name": "customint4",
+    "type": "INTEGER"
+  },
+  {
+    "name": "customint5",
+    "type": "INTEGER"
+  },
+  {
+    "name": "customint6",
+    "type": "INTEGER"
+  },
+  {
+    "name": "customint7",
+    "type": "INTEGER"
+  },
+  {
+    "name": "customint8",
+    "type": "INTEGER"
+  },
+  {
+    "name": "customchar1",
+    "type": "STRING"
+  },
+  {
+    "name": "customchar2",
+    "type": "STRING"
+  },
+  {
+    "name": "customchar3",
+    "type": "STRING"
+  },
+  {
+    "name": "customdec1",
+    "precision": "12",
+    "scale": "7",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "customdec2",
+    "precision": "12",
+    "scale": "7",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "customtext1",
+    "type": "STRING"
+  },
+  {
+    "name": "customtext2",
+    "type": "STRING"
+  },
+  {
+    "name": "customtext3",
+    "type": "STRING"
+  },
+  {
+    "name": "customtext4",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

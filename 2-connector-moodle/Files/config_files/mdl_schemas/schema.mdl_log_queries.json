@@ -1,0 +1,40 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "qtype",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sqltext",
+    "type": "STRING"
+  },
+  {
+    "name": "sqlparams",
+    "type": "STRING"
+  },
+  {
+    "name": "error",
+    "type": "INTEGER"
+  },
+  {
+    "name": "info",
+    "type": "STRING"
+  },
+  {
+    "name": "backtrace",
+    "type": "STRING"
+  },
+  {
+    "name": "exectime",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "timelogged",
+    "type": "INTEGER"
+  }
+]

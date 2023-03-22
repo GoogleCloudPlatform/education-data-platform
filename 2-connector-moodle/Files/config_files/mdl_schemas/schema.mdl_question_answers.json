@@ -1,0 +1,32 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "question",
+    "type": "INTEGER"
+  },
+  {
+    "name": "answer",
+    "type": "STRING"
+  },
+  {
+    "name": "answerformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "fraction",
+    "precision": "12",
+    "scale": "7",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "feedback",
+    "type": "STRING"
+  },
+  {
+    "name": "feedbackformat",
+    "type": "INTEGER"
+  }
+]

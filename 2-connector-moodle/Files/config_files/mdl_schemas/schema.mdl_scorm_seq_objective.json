@@ -1,0 +1,28 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "scoid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "primaryobj",
+    "type": "INTEGER"
+  },
+  {
+    "name": "objectiveid",
+    "type": "STRING"
+  },
+  {
+    "name": "satisfiedbymeasure",
+    "type": "INTEGER"
+  },
+  {
+    "name": "minnormalizedmeasure",
+    "precision": "11",
+    "scale": "4",
+    "type": "NUMERIC"
+  }
+]

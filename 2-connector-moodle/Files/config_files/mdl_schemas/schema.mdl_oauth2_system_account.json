@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "issuerid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "refreshtoken",
+    "type": "STRING"
+  },
+  {
+    "name": "grantedscopes",
+    "type": "STRING"
+  },
+  {
+    "name": "email",
+    "type": "STRING"
+  },
+  {
+    "name": "username",
+    "type": "STRING"
+  }
+]

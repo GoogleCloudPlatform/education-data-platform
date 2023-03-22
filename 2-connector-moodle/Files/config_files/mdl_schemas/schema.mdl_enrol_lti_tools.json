@@ -1,0 +1,94 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "enrolid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "ltiversion",
+    "type": "STRING"
+  },
+  {
+    "name": "institution",
+    "type": "STRING"
+  },
+  {
+    "name": "lang",
+    "type": "STRING"
+  },
+  {
+    "name": "timezone",
+    "type": "STRING"
+  },
+  {
+    "name": "maxenrolled",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maildisplay",
+    "type": "INTEGER"
+  },
+  {
+    "name": "city",
+    "type": "STRING"
+  },
+  {
+    "name": "country",
+    "type": "STRING"
+  },
+  {
+    "name": "gradesync",
+    "type": "INTEGER"
+  },
+  {
+    "name": "gradesynccompletion",
+    "type": "INTEGER"
+  },
+  {
+    "name": "membersync",
+    "type": "INTEGER"
+  },
+  {
+    "name": "membersyncmode",
+    "type": "INTEGER"
+  },
+  {
+    "name": "roleinstructor",
+    "type": "INTEGER"
+  },
+  {
+    "name": "rolelearner",
+    "type": "INTEGER"
+  },
+  {
+    "name": "secret",
+    "type": "STRING"
+  },
+  {
+    "name": "uuid",
+    "type": "STRING"
+  },
+  {
+    "name": "provisioningmodelearner",
+    "type": "INTEGER"
+  },
+  {
+    "name": "provisioningmodeinstructor",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

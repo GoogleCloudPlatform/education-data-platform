@@ -1,0 +1,58 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "description",
+    "type": "STRING"
+  },
+  {
+    "name": "descriptionformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "plugin",
+    "type": "STRING"
+  },
+  {
+    "name": "eventname",
+    "type": "STRING"
+  },
+  {
+    "name": "template",
+    "type": "STRING"
+  },
+  {
+    "name": "templateformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "frequency",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timewindow",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  }
+]

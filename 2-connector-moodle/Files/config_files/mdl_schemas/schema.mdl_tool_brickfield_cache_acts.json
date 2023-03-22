@@ -1,0 +1,34 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER"
+  },
+  {
+    "name": "component",
+    "type": "STRING"
+  },
+  {
+    "name": "totalactivities",
+    "type": "INTEGER"
+  },
+  {
+    "name": "failedactivities",
+    "type": "INTEGER"
+  },
+  {
+    "name": "passedactivities",
+    "type": "INTEGER"
+  },
+  {
+    "name": "errorcount",
+    "type": "INTEGER"
+  }
+]

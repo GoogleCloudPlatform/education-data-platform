@@ -1,0 +1,50 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "bigbluebuttonbnid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "groupid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "recordingid",
+    "type": "STRING"
+  },
+  {
+    "name": "headless",
+    "type": "INTEGER"
+  },
+  {
+    "name": "imported",
+    "type": "INTEGER"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER"
+  },
+  {
+    "name": "importeddata",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

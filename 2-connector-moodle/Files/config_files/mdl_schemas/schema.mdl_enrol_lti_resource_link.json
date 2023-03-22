@@ -1,0 +1,58 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "resourcelinkid",
+    "type": "STRING"
+  },
+  {
+    "name": "ltideploymentid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "resourceid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lticontextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lineitemsservice",
+    "type": "STRING"
+  },
+  {
+    "name": "lineitemservice",
+    "type": "STRING"
+  },
+  {
+    "name": "lineitemscope",
+    "type": "STRING"
+  },
+  {
+    "name": "resultscope",
+    "type": "STRING"
+  },
+  {
+    "name": "scorescope",
+    "type": "STRING"
+  },
+  {
+    "name": "contextmembershipsurl",
+    "type": "STRING"
+  },
+  {
+    "name": "nrpsserviceversions",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

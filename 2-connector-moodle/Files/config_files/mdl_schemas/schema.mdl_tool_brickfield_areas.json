@@ -1,0 +1,54 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "type",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "component",
+    "type": "STRING"
+  },
+  {
+    "name": "tablename",
+    "type": "STRING"
+  },
+  {
+    "name": "fieldorarea",
+    "type": "STRING"
+  },
+  {
+    "name": "itemid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "filename",
+    "type": "STRING"
+  },
+  {
+    "name": "reftable",
+    "type": "STRING"
+  },
+  {
+    "name": "refid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "cmid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "categoryid",
+    "type": "INTEGER"
+  }
+]

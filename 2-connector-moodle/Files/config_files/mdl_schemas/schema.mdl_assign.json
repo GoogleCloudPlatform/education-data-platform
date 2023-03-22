@@ -1,0 +1,138 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "intro",
+    "type": "STRING"
+  },
+  {
+    "name": "introformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "alwaysshowdescription",
+    "type": "INTEGER"
+  },
+  {
+    "name": "nosubmissions",
+    "type": "INTEGER"
+  },
+  {
+    "name": "submissiondrafts",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sendnotifications",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sendlatenotifications",
+    "type": "INTEGER"
+  },
+  {
+    "name": "duedate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "allowsubmissionsfromdate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "grade",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "requiresubmissionstatement",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionsubmit",
+    "type": "INTEGER"
+  },
+  {
+    "name": "cutoffdate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "gradingduedate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "teamsubmission",
+    "type": "INTEGER"
+  },
+  {
+    "name": "requireallteammemberssubmit",
+    "type": "INTEGER"
+  },
+  {
+    "name": "teamsubmissiongroupingid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "blindmarking",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hidegrader",
+    "type": "INTEGER"
+  },
+  {
+    "name": "revealidentities",
+    "type": "INTEGER"
+  },
+  {
+    "name": "attemptreopenmethod",
+    "type": "STRING"
+  },
+  {
+    "name": "maxattempts",
+    "type": "INTEGER"
+  },
+  {
+    "name": "markingworkflow",
+    "type": "INTEGER"
+  },
+  {
+    "name": "markingallocation",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sendstudentnotifications",
+    "type": "INTEGER"
+  },
+  {
+    "name": "preventsubmissionnotingroup",
+    "type": "INTEGER"
+  },
+  {
+    "name": "activity",
+    "type": "STRING"
+  },
+  {
+    "name": "activityformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timelimit",
+    "type": "INTEGER"
+  },
+  {
+    "name": "submissionattachments",
+    "type": "INTEGER"
+  }
+]

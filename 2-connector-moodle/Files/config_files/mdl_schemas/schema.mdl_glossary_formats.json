@@ -1,0 +1,42 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "popupformatname",
+    "type": "STRING"
+  },
+  {
+    "name": "visible",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showgroup",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showtabs",
+    "type": "STRING"
+  },
+  {
+    "name": "mode",
+    "type": "STRING"
+  },
+  {
+    "name": "hook",
+    "type": "STRING"
+  },
+  {
+    "name": "sortkey",
+    "type": "STRING"
+  },
+  {
+    "name": "sortorder",
+    "type": "STRING"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "scormid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "scoid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "attempt",
+    "type": "INTEGER"
+  },
+  {
+    "name": "element",
+    "type": "STRING"
+  },
+  {
+    "name": "value",
+    "type": "STRING"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

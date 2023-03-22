@@ -1,0 +1,166 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "scormtype",
+    "type": "STRING"
+  },
+  {
+    "name": "reference",
+    "type": "STRING"
+  },
+  {
+    "name": "intro",
+    "type": "STRING"
+  },
+  {
+    "name": "introformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "version",
+    "type": "STRING"
+  },
+  {
+    "name": "maxgrade",
+    "type": "FLOAT"
+  },
+  {
+    "name": "grademethod",
+    "type": "INTEGER"
+  },
+  {
+    "name": "whatgrade",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maxattempt",
+    "type": "INTEGER"
+  },
+  {
+    "name": "forcecompleted",
+    "type": "INTEGER"
+  },
+  {
+    "name": "forcenewattempt",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lastattemptlock",
+    "type": "INTEGER"
+  },
+  {
+    "name": "masteryoverride",
+    "type": "INTEGER"
+  },
+  {
+    "name": "displayattemptstatus",
+    "type": "INTEGER"
+  },
+  {
+    "name": "displaycoursestructure",
+    "type": "INTEGER"
+  },
+  {
+    "name": "updatefreq",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sha1hash",
+    "type": "STRING"
+  },
+  {
+    "name": "md5hash",
+    "type": "STRING"
+  },
+  {
+    "name": "revision",
+    "type": "INTEGER"
+  },
+  {
+    "name": "launch",
+    "type": "INTEGER"
+  },
+  {
+    "name": "skipview",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hidebrowse",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hidetoc",
+    "type": "INTEGER"
+  },
+  {
+    "name": "nav",
+    "type": "INTEGER"
+  },
+  {
+    "name": "navpositionleft",
+    "type": "INTEGER"
+  },
+  {
+    "name": "navpositiontop",
+    "type": "INTEGER"
+  },
+  {
+    "name": "auto",
+    "type": "INTEGER"
+  },
+  {
+    "name": "popup",
+    "type": "INTEGER"
+  },
+  {
+    "name": "options",
+    "type": "STRING"
+  },
+  {
+    "name": "width",
+    "type": "INTEGER"
+  },
+  {
+    "name": "height",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeopen",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeclose",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionstatusrequired",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionscorerequired",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionstatusallscos",
+    "type": "INTEGER"
+  },
+  {
+    "name": "autocommit",
+    "type": "INTEGER"
+  }
+]

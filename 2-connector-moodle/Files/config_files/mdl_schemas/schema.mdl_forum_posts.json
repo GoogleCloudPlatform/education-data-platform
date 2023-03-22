@@ -1,0 +1,74 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "discussion",
+    "type": "INTEGER"
+  },
+  {
+    "name": "parent",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "created",
+    "type": "INTEGER"
+  },
+  {
+    "name": "modified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "mailed",
+    "type": "INTEGER"
+  },
+  {
+    "name": "subject",
+    "type": "STRING"
+  },
+  {
+    "name": "message",
+    "type": "STRING"
+  },
+  {
+    "name": "messageformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "messagetrust",
+    "type": "INTEGER"
+  },
+  {
+    "name": "attachment",
+    "type": "STRING"
+  },
+  {
+    "name": "totalscore",
+    "type": "INTEGER"
+  },
+  {
+    "name": "mailnow",
+    "type": "INTEGER"
+  },
+  {
+    "name": "deleted",
+    "type": "INTEGER"
+  },
+  {
+    "name": "privatereplyto",
+    "type": "INTEGER"
+  },
+  {
+    "name": "wordcount",
+    "type": "INTEGER"
+  },
+  {
+    "name": "charcount",
+    "type": "INTEGER"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "searcharea",
+    "type": "STRING"
+  },
+  {
+    "name": "timerequested",
+    "type": "INTEGER"
+  },
+  {
+    "name": "partialarea",
+    "type": "STRING"
+  },
+  {
+    "name": "partialtime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "indexpriority",
+    "type": "INTEGER"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "bookid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pagenum",
+    "type": "INTEGER"
+  },
+  {
+    "name": "subchapter",
+    "type": "INTEGER"
+  },
+  {
+    "name": "title",
+    "type": "STRING"
+  },
+  {
+    "name": "content",
+    "type": "STRING"
+  },
+  {
+    "name": "contentformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hidden",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "importsrc",
+    "type": "STRING"
+  }
+]

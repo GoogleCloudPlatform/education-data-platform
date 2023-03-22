@@ -1,0 +1,110 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER"
+  },
+  {
+    "name": "activities",
+    "type": "INTEGER"
+  },
+  {
+    "name": "activitiespassed",
+    "type": "INTEGER"
+  },
+  {
+    "name": "activitiesfailed",
+    "type": "INTEGER"
+  },
+  {
+    "name": "errorschecktype1",
+    "type": "INTEGER"
+  },
+  {
+    "name": "errorschecktype2",
+    "type": "INTEGER"
+  },
+  {
+    "name": "errorschecktype3",
+    "type": "INTEGER"
+  },
+  {
+    "name": "errorschecktype4",
+    "type": "INTEGER"
+  },
+  {
+    "name": "errorschecktype5",
+    "type": "INTEGER"
+  },
+  {
+    "name": "errorschecktype6",
+    "type": "INTEGER"
+  },
+  {
+    "name": "errorschecktype7",
+    "type": "INTEGER"
+  },
+  {
+    "name": "failedchecktype1",
+    "type": "INTEGER"
+  },
+  {
+    "name": "failedchecktype2",
+    "type": "INTEGER"
+  },
+  {
+    "name": "failedchecktype3",
+    "type": "INTEGER"
+  },
+  {
+    "name": "failedchecktype4",
+    "type": "INTEGER"
+  },
+  {
+    "name": "failedchecktype5",
+    "type": "INTEGER"
+  },
+  {
+    "name": "failedchecktype6",
+    "type": "INTEGER"
+  },
+  {
+    "name": "failedchecktype7",
+    "type": "INTEGER"
+  },
+  {
+    "name": "percentchecktype1",
+    "type": "INTEGER"
+  },
+  {
+    "name": "percentchecktype2",
+    "type": "INTEGER"
+  },
+  {
+    "name": "percentchecktype3",
+    "type": "INTEGER"
+  },
+  {
+    "name": "percentchecktype4",
+    "type": "INTEGER"
+  },
+  {
+    "name": "percentchecktype5",
+    "type": "INTEGER"
+  },
+  {
+    "name": "percentchecktype6",
+    "type": "INTEGER"
+  },
+  {
+    "name": "percentchecktype7",
+    "type": "INTEGER"
+  }
+]

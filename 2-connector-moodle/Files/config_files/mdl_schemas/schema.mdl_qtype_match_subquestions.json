@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "questionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "questiontext",
+    "type": "STRING"
+  },
+  {
+    "name": "questiontextformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "answertext",
+    "type": "STRING"
+  }
+]

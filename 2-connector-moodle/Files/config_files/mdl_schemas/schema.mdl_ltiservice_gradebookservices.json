@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "gradeitemid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "toolproxyid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "typeid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "baseurl",
+    "type": "STRING"
+  },
+  {
+    "name": "ltilinkid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "resourceid",
+    "type": "STRING"
+  },
+  {
+    "name": "tag",
+    "type": "STRING"
+  }
+]

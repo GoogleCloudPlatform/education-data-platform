@@ -1,0 +1,24 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "criteriatype",
+    "type": "INTEGER"
+  },
+  {
+    "name": "method",
+    "type": "INTEGER"
+  },
+  {
+    "name": "value",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  }
+]

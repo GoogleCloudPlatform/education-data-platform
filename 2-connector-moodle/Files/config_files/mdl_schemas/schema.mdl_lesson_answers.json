@@ -1,0 +1,54 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lessonid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pageid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "jumpto",
+    "type": "INTEGER"
+  },
+  {
+    "name": "grade",
+    "type": "INTEGER"
+  },
+  {
+    "name": "score",
+    "type": "INTEGER"
+  },
+  {
+    "name": "flags",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "answer",
+    "type": "STRING"
+  },
+  {
+    "name": "answerformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "response",
+    "type": "STRING"
+  },
+  {
+    "name": "responseformat",
+    "type": "INTEGER"
+  }
+]

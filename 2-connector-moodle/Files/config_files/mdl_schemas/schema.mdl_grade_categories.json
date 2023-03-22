@@ -1,0 +1,58 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "parent",
+    "type": "INTEGER"
+  },
+  {
+    "name": "depth",
+    "type": "INTEGER"
+  },
+  {
+    "name": "path",
+    "type": "STRING"
+  },
+  {
+    "name": "fullname",
+    "type": "STRING"
+  },
+  {
+    "name": "aggregation",
+    "type": "INTEGER"
+  },
+  {
+    "name": "keephigh",
+    "type": "INTEGER"
+  },
+  {
+    "name": "droplow",
+    "type": "INTEGER"
+  },
+  {
+    "name": "aggregateonlygraded",
+    "type": "INTEGER"
+  },
+  {
+    "name": "aggregateoutcomes",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hidden",
+    "type": "INTEGER"
+  }
+]

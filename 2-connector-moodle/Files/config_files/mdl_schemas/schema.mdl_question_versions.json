@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "questionbankentryid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "version",
+    "type": "INTEGER"
+  },
+  {
+    "name": "questionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "status",
+    "type": "STRING"
+  }
+]

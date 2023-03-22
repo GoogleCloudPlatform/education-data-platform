@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pageid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "content",
+    "type": "STRING"
+  },
+  {
+    "name": "contentformat",
+    "type": "STRING"
+  },
+  {
+    "name": "version",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  }
+]

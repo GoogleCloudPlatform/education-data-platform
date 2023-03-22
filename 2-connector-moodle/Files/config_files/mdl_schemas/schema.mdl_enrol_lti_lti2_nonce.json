@@ -1,0 +1,18 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "consumerid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "value",
+    "type": "STRING"
+  },
+  {
+    "name": "expires",
+    "type": "INTEGER"
+  }
+]

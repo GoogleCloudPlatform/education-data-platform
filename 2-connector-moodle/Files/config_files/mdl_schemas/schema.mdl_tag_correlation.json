@@ -1,0 +1,14 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "tagid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "correlatedtags",
+    "type": "STRING"
+  }
+]

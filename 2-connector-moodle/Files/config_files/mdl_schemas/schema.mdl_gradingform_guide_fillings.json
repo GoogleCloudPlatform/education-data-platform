@@ -1,0 +1,28 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "instanceid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "criterionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "remark",
+    "type": "STRING"
+  },
+  {
+    "name": "remarkformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "score",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  }
+]

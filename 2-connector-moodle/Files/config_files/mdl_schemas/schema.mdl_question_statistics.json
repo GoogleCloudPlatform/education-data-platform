@@ -1,0 +1,88 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hashcode",
+    "type": "STRING"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "questionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "slot",
+    "type": "INTEGER"
+  },
+  {
+    "name": "subquestion",
+    "type": "INTEGER"
+  },
+  {
+    "name": "variant",
+    "type": "INTEGER"
+  },
+  {
+    "name": "s",
+    "type": "INTEGER"
+  },
+  {
+    "name": "effectiveweight",
+    "precision": "15",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "negcovar",
+    "type": "INTEGER"
+  },
+  {
+    "name": "discriminationindex",
+    "precision": "15",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "discriminativeefficiency",
+    "precision": "15",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "sd",
+    "precision": "15",
+    "scale": "9",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "facility",
+    "precision": "15",
+    "scale": "9",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "subquestions",
+    "type": "STRING"
+  },
+  {
+    "name": "maxmark",
+    "precision": "12",
+    "scale": "7",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "positions",
+    "type": "STRING"
+  },
+  {
+    "name": "randomguessscore",
+    "precision": "12",
+    "scale": "7",
+    "type": "NUMERIC"
+  }
+]

@@ -1,0 +1,194 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "auth",
+    "type": "STRING"
+  },
+  {
+    "name": "confirmed",
+    "type": "INTEGER"
+  },
+  {
+    "name": "policyagreed",
+    "type": "INTEGER"
+  },
+  {
+    "name": "deleted",
+    "type": "INTEGER"
+  },
+  {
+    "name": "suspended",
+    "type": "INTEGER"
+  },
+  {
+    "name": "mnethostid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "username",
+    "type": "STRING"
+  },
+  {
+    "name": "password",
+    "type": "STRING"
+  },
+  {
+    "name": "idnumber",
+    "type": "STRING"
+  },
+  {
+    "name": "firstname",
+    "type": "STRING"
+  },
+  {
+    "name": "lastname",
+    "type": "STRING"
+  },
+  {
+    "name": "email",
+    "type": "STRING"
+  },
+  {
+    "name": "emailstop",
+    "type": "INTEGER"
+  },
+  {
+    "name": "phone1",
+    "type": "STRING"
+  },
+  {
+    "name": "phone2",
+    "type": "STRING"
+  },
+  {
+    "name": "institution",
+    "type": "STRING"
+  },
+  {
+    "name": "department",
+    "type": "STRING"
+  },
+  {
+    "name": "address",
+    "type": "STRING"
+  },
+  {
+    "name": "city",
+    "type": "STRING"
+  },
+  {
+    "name": "country",
+    "type": "STRING"
+  },
+  {
+    "name": "lang",
+    "type": "STRING"
+  },
+  {
+    "name": "calendartype",
+    "type": "STRING"
+  },
+  {
+    "name": "theme",
+    "type": "STRING"
+  },
+  {
+    "name": "timezone",
+    "type": "STRING"
+  },
+  {
+    "name": "firstaccess",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lastaccess",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lastlogin",
+    "type": "INTEGER"
+  },
+  {
+    "name": "currentlogin",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lastip",
+    "type": "STRING"
+  },
+  {
+    "name": "secret",
+    "type": "STRING"
+  },
+  {
+    "name": "picture",
+    "type": "INTEGER"
+  },
+  {
+    "name": "description",
+    "type": "STRING"
+  },
+  {
+    "name": "descriptionformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "mailformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maildigest",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maildisplay",
+    "type": "INTEGER"
+  },
+  {
+    "name": "autosubscribe",
+    "type": "INTEGER"
+  },
+  {
+    "name": "trackforums",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "trustbitmask",
+    "type": "INTEGER"
+  },
+  {
+    "name": "imagealt",
+    "type": "STRING"
+  },
+  {
+    "name": "lastnamephonetic",
+    "type": "STRING"
+  },
+  {
+    "name": "firstnamephonetic",
+    "type": "STRING"
+  },
+  {
+    "name": "middlename",
+    "type": "STRING"
+  },
+  {
+    "name": "alternatename",
+    "type": "STRING"
+  },
+  {
+    "name": "moodlenetprofile",
+    "type": "STRING"
+  }
+]

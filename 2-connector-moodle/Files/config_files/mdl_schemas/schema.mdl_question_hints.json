@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "questionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hint",
+    "type": "STRING"
+  },
+  {
+    "name": "hintformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "shownumcorrect",
+    "type": "INTEGER"
+  },
+  {
+    "name": "clearwrong",
+    "type": "INTEGER"
+  },
+  {
+    "name": "options",
+    "type": "STRING"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "scoid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "ruleconditionsid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "refrencedobjective",
+    "type": "STRING"
+  },
+  {
+    "name": "measurethreshold",
+    "precision": "11",
+    "scale": "4",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "operator",
+    "type": "STRING"
+  },
+  {
+    "name": "cond",
+    "type": "STRING"
+  }
+]

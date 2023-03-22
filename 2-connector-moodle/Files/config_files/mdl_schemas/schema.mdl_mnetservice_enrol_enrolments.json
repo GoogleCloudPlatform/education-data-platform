@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hostid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "remotecourseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "rolename",
+    "type": "STRING"
+  },
+  {
+    "name": "enroltime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "enroltype",
+    "type": "STRING"
+  }
+]

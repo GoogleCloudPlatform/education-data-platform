@@ -1,0 +1,20 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "workshopid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "nonegative",
+    "type": "INTEGER"
+  },
+  {
+    "name": "grade",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  }
+]

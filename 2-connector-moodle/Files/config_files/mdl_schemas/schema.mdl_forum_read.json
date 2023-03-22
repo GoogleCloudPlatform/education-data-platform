@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "forumid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "discussionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "postid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "firstread",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lastread",
+    "type": "INTEGER"
+  }
+]

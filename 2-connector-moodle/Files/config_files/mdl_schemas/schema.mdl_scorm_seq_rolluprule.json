@@ -1,0 +1,32 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "scoid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "childactivityset",
+    "type": "STRING"
+  },
+  {
+    "name": "minimumcount",
+    "type": "INTEGER"
+  },
+  {
+    "name": "minimumpercent",
+    "precision": "11",
+    "scale": "4",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "conditioncombination",
+    "type": "STRING"
+  },
+  {
+    "name": "action",
+    "type": "STRING"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "issuedid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "critid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "datemet",
+    "type": "INTEGER"
+  }
+]

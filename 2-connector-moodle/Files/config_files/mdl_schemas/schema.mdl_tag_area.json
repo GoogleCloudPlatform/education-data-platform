@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "component",
+    "type": "STRING"
+  },
+  {
+    "name": "itemtype",
+    "type": "STRING"
+  },
+  {
+    "name": "enabled",
+    "type": "INTEGER"
+  },
+  {
+    "name": "tagcollid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "callback",
+    "type": "STRING"
+  },
+  {
+    "name": "callbackfile",
+    "type": "STRING"
+  },
+  {
+    "name": "showstandard",
+    "type": "INTEGER"
+  },
+  {
+    "name": "multiplecontexts",
+    "type": "INTEGER"
+  }
+]

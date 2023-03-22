@@ -1,0 +1,14 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userdeviceid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "enable",
+    "type": "INTEGER"
+  }
+]

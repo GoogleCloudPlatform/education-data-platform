@@ -1,0 +1,34 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "shortname",
+    "type": "STRING"
+  },
+  {
+    "name": "fullname",
+    "type": "STRING"
+  },
+  {
+    "name": "source",
+    "type": "STRING"
+  },
+  {
+    "name": "enabled",
+    "type": "INTEGER"
+  },
+  {
+    "name": "version",
+    "type": "INTEGER"
+  },
+  {
+    "name": "custom",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sortorder",
+    "type": "INTEGER"
+  }
+]

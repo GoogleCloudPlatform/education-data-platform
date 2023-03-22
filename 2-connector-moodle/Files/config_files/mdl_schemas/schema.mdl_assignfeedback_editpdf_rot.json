@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "gradeid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pageno",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pathnamehash",
+    "type": "STRING"
+  },
+  {
+    "name": "isrotated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "degree",
+    "type": "INTEGER"
+  }
+]

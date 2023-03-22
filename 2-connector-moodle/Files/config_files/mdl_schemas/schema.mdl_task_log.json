@@ -1,0 +1,58 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "type",
+    "type": "INTEGER"
+  },
+  {
+    "name": "component",
+    "type": "STRING"
+  },
+  {
+    "name": "classname",
+    "type": "STRING"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timestart",
+    "precision": "20",
+    "scale": "9",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "timeend",
+    "precision": "20",
+    "scale": "9",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "dbreads",
+    "type": "INTEGER"
+  },
+  {
+    "name": "dbwrites",
+    "type": "INTEGER"
+  },
+  {
+    "name": "result",
+    "type": "INTEGER"
+  },
+  {
+    "name": "output",
+    "type": "STRING"
+  },
+  {
+    "name": "hostname",
+    "type": "STRING"
+  },
+  {
+    "name": "pid",
+    "type": "INTEGER"
+  }
+]

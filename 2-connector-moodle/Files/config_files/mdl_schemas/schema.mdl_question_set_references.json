@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usingcontextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "component",
+    "type": "STRING"
+  },
+  {
+    "name": "questionarea",
+    "type": "STRING"
+  },
+  {
+    "name": "itemid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "questionscontextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "filtercondition",
+    "type": "STRING"
+  }
+]

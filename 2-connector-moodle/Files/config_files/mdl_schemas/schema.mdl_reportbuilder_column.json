@@ -1,0 +1,54 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "reportid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "uniqueidentifier",
+    "type": "STRING"
+  },
+  {
+    "name": "aggregation",
+    "type": "STRING"
+  },
+  {
+    "name": "heading",
+    "type": "STRING"
+  },
+  {
+    "name": "columnorder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sortenabled",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sortdirection",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sortorder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usercreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "reportid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "enabled",
+    "type": "INTEGER"
+  },
+  {
+    "name": "audiences",
+    "type": "STRING"
+  },
+  {
+    "name": "format",
+    "type": "STRING"
+  },
+  {
+    "name": "subject",
+    "type": "STRING"
+  },
+  {
+    "name": "message",
+    "type": "STRING"
+  },
+  {
+    "name": "messageformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userviewas",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timescheduled",
+    "type": "INTEGER"
+  },
+  {
+    "name": "recurrence",
+    "type": "INTEGER"
+  },
+  {
+    "name": "reportempty",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timelastsent",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timenextsend",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usercreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

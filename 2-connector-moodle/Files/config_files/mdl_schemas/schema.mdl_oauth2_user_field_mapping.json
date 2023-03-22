@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "issuerid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "externalfield",
+    "type": "STRING"
+  },
+  {
+    "name": "internalfield",
+    "type": "STRING"
+  }
+]

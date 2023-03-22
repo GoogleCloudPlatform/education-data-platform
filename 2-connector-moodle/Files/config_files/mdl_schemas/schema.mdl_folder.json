@@ -1,0 +1,46 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "intro",
+    "type": "STRING"
+  },
+  {
+    "name": "introformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "revision",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "display",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showexpanded",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showdownloadfolder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "forcedownload",
+    "type": "INTEGER"
+  }
+]

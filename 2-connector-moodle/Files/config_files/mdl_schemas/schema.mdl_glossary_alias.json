@@ -1,0 +1,14 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "entryid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "alias",
+    "type": "STRING"
+  }
+]

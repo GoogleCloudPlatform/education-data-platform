@@ -1,0 +1,32 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "criteriaid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "gradefinal",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "unenroled",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecompleted",
+    "type": "INTEGER"
+  }
+]

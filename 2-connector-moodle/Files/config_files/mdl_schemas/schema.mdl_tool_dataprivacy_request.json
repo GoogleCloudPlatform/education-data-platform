@@ -1,0 +1,62 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "type",
+    "type": "INTEGER"
+  },
+  {
+    "name": "comments",
+    "type": "STRING"
+  },
+  {
+    "name": "commentsformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "requestedby",
+    "type": "INTEGER"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER"
+  },
+  {
+    "name": "dpo",
+    "type": "INTEGER"
+  },
+  {
+    "name": "dpocomment",
+    "type": "STRING"
+  },
+  {
+    "name": "dpocommentformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "systemapproved",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "creationmethod",
+    "type": "INTEGER"
+  }
+]

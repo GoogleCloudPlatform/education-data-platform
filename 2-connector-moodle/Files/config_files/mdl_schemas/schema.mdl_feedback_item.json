@@ -1,0 +1,54 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "feedback",
+    "type": "INTEGER"
+  },
+  {
+    "name": "template",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "label",
+    "type": "STRING"
+  },
+  {
+    "name": "presentation",
+    "type": "STRING"
+  },
+  {
+    "name": "typ",
+    "type": "STRING"
+  },
+  {
+    "name": "hasvalue",
+    "type": "INTEGER"
+  },
+  {
+    "name": "position",
+    "type": "INTEGER"
+  },
+  {
+    "name": "required",
+    "type": "INTEGER"
+  },
+  {
+    "name": "dependitem",
+    "type": "INTEGER"
+  },
+  {
+    "name": "dependvalue",
+    "type": "STRING"
+  },
+  {
+    "name": "options",
+    "type": "STRING"
+  }
+]

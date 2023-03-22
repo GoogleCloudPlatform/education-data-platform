@@ -1,0 +1,72 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "backupid",
+    "type": "STRING"
+  },
+  {
+    "name": "operation",
+    "type": "STRING"
+  },
+  {
+    "name": "type",
+    "type": "STRING"
+  },
+  {
+    "name": "itemid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "format",
+    "type": "STRING"
+  },
+  {
+    "name": "interactive",
+    "type": "INTEGER"
+  },
+  {
+    "name": "purpose",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER"
+  },
+  {
+    "name": "execution",
+    "type": "INTEGER"
+  },
+  {
+    "name": "executiontime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "checksum",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "progress",
+    "precision": "15",
+    "scale": "9",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "controller",
+    "type": "STRING"
+  }
+]

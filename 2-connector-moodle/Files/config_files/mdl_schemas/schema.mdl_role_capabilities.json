@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "roleid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "capability",
+    "type": "STRING"
+  },
+  {
+    "name": "permission",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "modifierid",
+    "type": "INTEGER"
+  }
+]

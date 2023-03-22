@@ -1,0 +1,74 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "baseurl",
+    "type": "STRING"
+  },
+  {
+    "name": "tooldomain",
+    "type": "STRING"
+  },
+  {
+    "name": "state",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "coursevisible",
+    "type": "INTEGER"
+  },
+  {
+    "name": "ltiversion",
+    "type": "STRING"
+  },
+  {
+    "name": "clientid",
+    "type": "STRING"
+  },
+  {
+    "name": "toolproxyid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "enabledcapability",
+    "type": "STRING"
+  },
+  {
+    "name": "parameter",
+    "type": "STRING"
+  },
+  {
+    "name": "icon",
+    "type": "STRING"
+  },
+  {
+    "name": "secureicon",
+    "type": "STRING"
+  },
+  {
+    "name": "createdby",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "description",
+    "type": "STRING"
+  }
+]

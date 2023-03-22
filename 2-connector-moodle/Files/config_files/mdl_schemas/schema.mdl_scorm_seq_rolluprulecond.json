@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "scoid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "rollupruleid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "operator",
+    "type": "STRING"
+  },
+  {
+    "name": "cond",
+    "type": "STRING"
+  }
+]

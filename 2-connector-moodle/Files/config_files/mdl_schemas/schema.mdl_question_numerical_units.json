@@ -1,0 +1,20 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "question",
+    "type": "INTEGER"
+  },
+  {
+    "name": "multiplier",
+    "precision": "38",
+    "scale": "9",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "unit",
+    "type": "STRING"
+  }
+]

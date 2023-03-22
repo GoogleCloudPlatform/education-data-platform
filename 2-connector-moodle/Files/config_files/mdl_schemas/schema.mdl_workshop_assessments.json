@@ -1,0 +1,68 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "submissionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "reviewerid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "weight",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "grade",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "gradinggrade",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "gradinggradeover",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "gradinggradeoverby",
+    "type": "INTEGER"
+  },
+  {
+    "name": "feedbackauthor",
+    "type": "STRING"
+  },
+  {
+    "name": "feedbackauthorformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "feedbackauthorattachment",
+    "type": "INTEGER"
+  },
+  {
+    "name": "feedbackreviewer",
+    "type": "STRING"
+  },
+  {
+    "name": "feedbackreviewerformat",
+    "type": "INTEGER"
+  }
+]

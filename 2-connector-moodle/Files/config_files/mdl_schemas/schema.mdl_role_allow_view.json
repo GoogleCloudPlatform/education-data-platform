@@ -1,0 +1,14 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "roleid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "allowview",
+    "type": "INTEGER"
+  }
+]

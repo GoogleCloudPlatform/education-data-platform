@@ -1,0 +1,46 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "functionname",
+    "type": "STRING"
+  },
+  {
+    "name": "xmlrpcpath",
+    "type": "STRING"
+  },
+  {
+    "name": "plugintype",
+    "type": "STRING"
+  },
+  {
+    "name": "pluginname",
+    "type": "STRING"
+  },
+  {
+    "name": "enabled",
+    "type": "INTEGER"
+  },
+  {
+    "name": "help",
+    "type": "STRING"
+  },
+  {
+    "name": "profile",
+    "type": "STRING"
+  },
+  {
+    "name": "filename",
+    "type": "STRING"
+  },
+  {
+    "name": "classname",
+    "type": "STRING"
+  },
+  {
+    "name": "static",
+    "type": "INTEGER"
+  }
+]

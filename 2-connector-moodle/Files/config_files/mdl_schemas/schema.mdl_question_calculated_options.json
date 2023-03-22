@@ -1,0 +1,54 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "question",
+    "type": "INTEGER"
+  },
+  {
+    "name": "synchronize",
+    "type": "INTEGER"
+  },
+  {
+    "name": "single",
+    "type": "INTEGER"
+  },
+  {
+    "name": "shuffleanswers",
+    "type": "INTEGER"
+  },
+  {
+    "name": "correctfeedback",
+    "type": "STRING"
+  },
+  {
+    "name": "correctfeedbackformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "partiallycorrectfeedback",
+    "type": "STRING"
+  },
+  {
+    "name": "partiallycorrectfeedbackformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "incorrectfeedback",
+    "type": "STRING"
+  },
+  {
+    "name": "incorrectfeedbackformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "answernumbering",
+    "type": "STRING"
+  },
+  {
+    "name": "shownumcorrect",
+    "type": "INTEGER"
+  }
+]

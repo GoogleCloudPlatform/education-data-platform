@@ -1,0 +1,46 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "gradeid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pageno",
+    "type": "INTEGER"
+  },
+  {
+    "name": "x",
+    "type": "INTEGER"
+  },
+  {
+    "name": "y",
+    "type": "INTEGER"
+  },
+  {
+    "name": "endx",
+    "type": "INTEGER"
+  },
+  {
+    "name": "endy",
+    "type": "INTEGER"
+  },
+  {
+    "name": "path",
+    "type": "STRING"
+  },
+  {
+    "name": "type",
+    "type": "STRING"
+  },
+  {
+    "name": "colour",
+    "type": "STRING"
+  },
+  {
+    "name": "draft",
+    "type": "INTEGER"
+  }
+]

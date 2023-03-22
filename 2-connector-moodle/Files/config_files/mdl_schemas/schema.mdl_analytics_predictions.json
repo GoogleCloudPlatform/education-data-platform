@@ -1,0 +1,50 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "modelid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sampleid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "rangeindex",
+    "type": "INTEGER"
+  },
+  {
+    "name": "prediction",
+    "precision": "10",
+    "scale": "2",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "predictionscore",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "calculations",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timestart",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeend",
+    "type": "INTEGER"
+  }
+]

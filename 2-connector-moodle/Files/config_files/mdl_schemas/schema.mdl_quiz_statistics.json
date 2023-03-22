@@ -1,0 +1,100 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hashcode",
+    "type": "STRING"
+  },
+  {
+    "name": "whichattempts",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "firstattemptscount",
+    "type": "INTEGER"
+  },
+  {
+    "name": "highestattemptscount",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lastattemptscount",
+    "type": "INTEGER"
+  },
+  {
+    "name": "allattemptscount",
+    "type": "INTEGER"
+  },
+  {
+    "name": "firstattemptsavg",
+    "precision": "15",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "highestattemptsavg",
+    "precision": "15",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "lastattemptsavg",
+    "precision": "15",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "allattemptsavg",
+    "precision": "15",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "median",
+    "precision": "15",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "standarddeviation",
+    "precision": "15",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "skewness",
+    "precision": "15",
+    "scale": "9",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "kurtosis",
+    "precision": "15",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "cic",
+    "precision": "15",
+    "scale": "9",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "errorratio",
+    "precision": "15",
+    "scale": "9",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "standarderror",
+    "precision": "15",
+    "scale": "9",
+    "type": "NUMERIC"
+  }
+]

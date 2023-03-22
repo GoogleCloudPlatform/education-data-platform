@@ -1,0 +1,118 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "type",
+    "type": "STRING"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "intro",
+    "type": "STRING"
+  },
+  {
+    "name": "introformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "duedate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "cutoffdate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "assessed",
+    "type": "INTEGER"
+  },
+  {
+    "name": "assesstimestart",
+    "type": "INTEGER"
+  },
+  {
+    "name": "assesstimefinish",
+    "type": "INTEGER"
+  },
+  {
+    "name": "scale",
+    "type": "INTEGER"
+  },
+  {
+    "name": "grade_forum",
+    "type": "INTEGER"
+  },
+  {
+    "name": "grade_forum_notify",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maxbytes",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maxattachments",
+    "type": "INTEGER"
+  },
+  {
+    "name": "forcesubscribe",
+    "type": "INTEGER"
+  },
+  {
+    "name": "trackingtype",
+    "type": "INTEGER"
+  },
+  {
+    "name": "rsstype",
+    "type": "INTEGER"
+  },
+  {
+    "name": "rssarticles",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "warnafter",
+    "type": "INTEGER"
+  },
+  {
+    "name": "blockafter",
+    "type": "INTEGER"
+  },
+  {
+    "name": "blockperiod",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completiondiscussions",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionreplies",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionposts",
+    "type": "INTEGER"
+  },
+  {
+    "name": "displaywordcount",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lockdiscussionafter",
+    "type": "INTEGER"
+  }
+]

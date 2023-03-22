@@ -1,0 +1,140 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "categoryid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "itemname",
+    "type": "STRING"
+  },
+  {
+    "name": "itemtype",
+    "type": "STRING"
+  },
+  {
+    "name": "itemmodule",
+    "type": "STRING"
+  },
+  {
+    "name": "iteminstance",
+    "type": "INTEGER"
+  },
+  {
+    "name": "itemnumber",
+    "type": "INTEGER"
+  },
+  {
+    "name": "iteminfo",
+    "type": "STRING"
+  },
+  {
+    "name": "idnumber",
+    "type": "STRING"
+  },
+  {
+    "name": "calculation",
+    "type": "STRING"
+  },
+  {
+    "name": "gradetype",
+    "type": "INTEGER"
+  },
+  {
+    "name": "grademax",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "grademin",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "scaleid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "outcomeid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "gradepass",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "multfactor",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "plusfactor",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "aggregationcoef",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "aggregationcoef2",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "sortorder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "display",
+    "type": "INTEGER"
+  },
+  {
+    "name": "decimals",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hidden",
+    "type": "INTEGER"
+  },
+  {
+    "name": "locked",
+    "type": "INTEGER"
+  },
+  {
+    "name": "locktime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "needsupdate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "weightoverride",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

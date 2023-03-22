@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "backpackid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "collectionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "entityid",
+    "type": "STRING"
+  },
+  {
+    "name": "assertion",
+    "type": "STRING"
+  }
+]

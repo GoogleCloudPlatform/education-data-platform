@@ -1,0 +1,14 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "adminpresetapplyid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "configlogid",
+    "type": "INTEGER"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "resultid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "linenumber",
+    "type": "INTEGER"
+  },
+  {
+    "name": "errordata",
+    "type": "STRING"
+  },
+  {
+    "name": "htmlcode",
+    "type": "STRING"
+  }
+]

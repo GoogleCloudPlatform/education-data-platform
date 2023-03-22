@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "backupid",
+    "type": "STRING"
+  },
+  {
+    "name": "loglevel",
+    "type": "INTEGER"
+  },
+  {
+    "name": "message",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  }
+]

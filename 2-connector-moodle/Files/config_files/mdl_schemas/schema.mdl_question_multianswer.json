@@ -1,0 +1,14 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "question",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sequence",
+    "type": "STRING"
+  }
+]

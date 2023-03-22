@@ -1,0 +1,78 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "consumerkey256",
+    "type": "STRING"
+  },
+  {
+    "name": "consumerkey",
+    "type": "STRING"
+  },
+  {
+    "name": "secret",
+    "type": "STRING"
+  },
+  {
+    "name": "ltiversion",
+    "type": "STRING"
+  },
+  {
+    "name": "consumername",
+    "type": "STRING"
+  },
+  {
+    "name": "consumerversion",
+    "type": "STRING"
+  },
+  {
+    "name": "consumerguid",
+    "type": "STRING"
+  },
+  {
+    "name": "profile",
+    "type": "STRING"
+  },
+  {
+    "name": "toolproxy",
+    "type": "STRING"
+  },
+  {
+    "name": "settings",
+    "type": "STRING"
+  },
+  {
+    "name": "protected",
+    "type": "INTEGER"
+  },
+  {
+    "name": "enabled",
+    "type": "INTEGER"
+  },
+  {
+    "name": "enablefrom",
+    "type": "INTEGER"
+  },
+  {
+    "name": "enableuntil",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lastaccess",
+    "type": "INTEGER"
+  },
+  {
+    "name": "created",
+    "type": "INTEGER"
+  },
+  {
+    "name": "updated",
+    "type": "INTEGER"
+  }
+]

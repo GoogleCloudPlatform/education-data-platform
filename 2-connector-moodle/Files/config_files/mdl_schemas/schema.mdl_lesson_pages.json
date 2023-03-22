@@ -1,0 +1,54 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lessonid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "prevpageid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "nextpageid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "qtype",
+    "type": "INTEGER"
+  },
+  {
+    "name": "qoption",
+    "type": "INTEGER"
+  },
+  {
+    "name": "layout",
+    "type": "INTEGER"
+  },
+  {
+    "name": "display",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "title",
+    "type": "STRING"
+  },
+  {
+    "name": "contents",
+    "type": "STRING"
+  },
+  {
+    "name": "contentsformat",
+    "type": "INTEGER"
+  }
+]

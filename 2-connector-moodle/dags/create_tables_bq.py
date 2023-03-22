@@ -14,12 +14,15 @@
 
 import datetime
 from airflow.models import DAG
-from airflow.operators.bash_operator import BashOperator
-from airflow.operators.dummy_operator import DummyOperator
+from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateEmptyTableOperator
 import os
 from google.cloud import storage
 import json
 
+
+if __name__ == '__main__':
+    logging.getLogger().setLevel(logging.INFO)
+    logging.info("Starting the create tables Pipeline...")
 
 #Dataflow/BigQuery config file
 bucket_name = os.environ.get("LOD_GCS_STAGING")
@@ -35,30 +38,39 @@ ret_time = int(clean_data['retention_data'])
 nm_dtst = clean_data['dataset_name']
 default_dag_args = {}
 
-params_list = {
-    "dir_schm": dir_schm,
-    "ret_time": ret_time,
-    "nm_dtst": nm_dtst,
-    "prj_id": project_id_bq,
-    }
-
 yesterday = datetime.datetime.combine(
     datetime.datetime.today() - datetime.timedelta(1),
     datetime.datetime.min.time())
 
-with DAG('create_table_bq',
-         schedule_interval=None,
-         start_date=yesterday,
-         template_searchpath=['/home/airflow/gcs/data'],
-         catchup=False) as dag:
-    Bash = BashOperator(
-        task_id="create_tables",
-        retries=0,
-        bash_command="create_tables_bq.sh",
-        params=params_list,
-        dag=dag
-    )
-    dummy_task_start = DummyOperator(task_id='start', retries=3)
-    dummy_task_end = DummyOperator(task_id='end', retries=3)
+with DAG(
+        dag_id="create_table_bq",
+        schedule_interval=None,
+        start_date=yesterday,
+        max_active_tasks=5,
+        template_searchpath=['/home/airflow/gcs/data'],
+        catchup=False,
+) as dag:
+    for table in clean_data['tables']:
 
-    dummy_task_start >> Bash >> dummy_task_end
+        schema_table_location = dir_schm + "/schema." + table + ".json"
+
+        if ret_time is not None:
+            BigQueryCreateEmptyTableOperator(
+                task_id="create_table_"+table,
+                project_id=project_id_bq,
+                dataset_id=nm_dtst,
+                table_id=table,
+                gcs_schema_object=schema_table_location,
+                time_partitioning={
+                    "type": "HOUR",
+                    "expirationMs": ret_time,
+                },
+            )
+        else:
+            BigQueryCreateEmptyTableOperator(
+                task_id="create_table_"+table,
+                project_id=project_id_bq,
+                dataset_id=nm_dtst,
+                table_id=table,
+                gcs_schema_object=schema_table_location,
+            )

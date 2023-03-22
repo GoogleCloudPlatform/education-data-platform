@@ -1,0 +1,50 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "action",
+    "type": "INTEGER"
+  },
+  {
+    "name": "oldid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "source",
+    "type": "STRING"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "loggeduser",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "shortname",
+    "type": "STRING"
+  },
+  {
+    "name": "fullname",
+    "type": "STRING"
+  },
+  {
+    "name": "scaleid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "description",
+    "type": "STRING"
+  },
+  {
+    "name": "descriptionformat",
+    "type": "INTEGER"
+  }
+]

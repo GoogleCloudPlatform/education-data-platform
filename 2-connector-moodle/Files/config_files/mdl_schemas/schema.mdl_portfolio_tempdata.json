@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "data",
+    "type": "STRING"
+  },
+  {
+    "name": "expirytime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "instance",
+    "type": "INTEGER"
+  },
+  {
+    "name": "queued",
+    "type": "INTEGER"
+  }
+]

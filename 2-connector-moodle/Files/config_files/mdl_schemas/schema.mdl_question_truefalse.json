@@ -1,0 +1,18 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "question",
+    "type": "INTEGER"
+  },
+  {
+    "name": "trueanswer",
+    "type": "INTEGER"
+  },
+  {
+    "name": "falseanswer",
+    "type": "INTEGER"
+  }
+]

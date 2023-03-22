@@ -1,0 +1,42 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "scorm",
+    "type": "INTEGER"
+  },
+  {
+    "name": "manifest",
+    "type": "STRING"
+  },
+  {
+    "name": "organization",
+    "type": "STRING"
+  },
+  {
+    "name": "parent",
+    "type": "STRING"
+  },
+  {
+    "name": "identifier",
+    "type": "STRING"
+  },
+  {
+    "name": "launch",
+    "type": "STRING"
+  },
+  {
+    "name": "scormtype",
+    "type": "STRING"
+  },
+  {
+    "name": "title",
+    "type": "STRING"
+  },
+  {
+    "name": "sortorder",
+    "type": "INTEGER"
+  }
+]

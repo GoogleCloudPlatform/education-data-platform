@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "workshopid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "enabled",
+    "type": "INTEGER"
+  },
+  {
+    "name": "submissionend",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeallocated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "settings",
+    "type": "STRING"
+  },
+  {
+    "name": "resultstatus",
+    "type": "INTEGER"
+  },
+  {
+    "name": "resultmessage",
+    "type": "STRING"
+  },
+  {
+    "name": "resultlog",
+    "type": "STRING"
+  }
+]

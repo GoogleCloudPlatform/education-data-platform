@@ -1,0 +1,174 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "type",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "intro",
+    "type": "STRING"
+  },
+  {
+    "name": "introformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "meetingid",
+    "type": "STRING"
+  },
+  {
+    "name": "moderatorpass",
+    "type": "STRING"
+  },
+  {
+    "name": "viewerpass",
+    "type": "STRING"
+  },
+  {
+    "name": "wait",
+    "type": "INTEGER"
+  },
+  {
+    "name": "record",
+    "type": "INTEGER"
+  },
+  {
+    "name": "recordallfromstart",
+    "type": "INTEGER"
+  },
+  {
+    "name": "recordhidebutton",
+    "type": "INTEGER"
+  },
+  {
+    "name": "welcome",
+    "type": "STRING"
+  },
+  {
+    "name": "voicebridge",
+    "type": "INTEGER"
+  },
+  {
+    "name": "openingtime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "closingtime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "presentation",
+    "type": "STRING"
+  },
+  {
+    "name": "participants",
+    "type": "STRING"
+  },
+  {
+    "name": "userlimit",
+    "type": "INTEGER"
+  },
+  {
+    "name": "recordings_html",
+    "type": "INTEGER"
+  },
+  {
+    "name": "recordings_deleted",
+    "type": "INTEGER"
+  },
+  {
+    "name": "recordings_imported",
+    "type": "INTEGER"
+  },
+  {
+    "name": "recordings_preview",
+    "type": "INTEGER"
+  },
+  {
+    "name": "clienttype",
+    "type": "INTEGER"
+  },
+  {
+    "name": "muteonstart",
+    "type": "INTEGER"
+  },
+  {
+    "name": "disablecam",
+    "type": "INTEGER"
+  },
+  {
+    "name": "disablemic",
+    "type": "INTEGER"
+  },
+  {
+    "name": "disableprivatechat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "disablepublicchat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "disablenote",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hideuserlist",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lockedlayout",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lockonjoin",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lockonjoinconfigurable",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionattendance",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionengagementchats",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionengagementtalks",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionengagementraisehand",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionengagementpollvotes",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionengagementemojis",
+    "type": "INTEGER"
+  }
+]

@@ -1,0 +1,150 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "intro",
+    "type": "STRING"
+  },
+  {
+    "name": "introformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "comments",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeavailablefrom",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeavailableto",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeviewfrom",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeviewto",
+    "type": "INTEGER"
+  },
+  {
+    "name": "requiredentries",
+    "type": "INTEGER"
+  },
+  {
+    "name": "requiredentriestoview",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maxentries",
+    "type": "INTEGER"
+  },
+  {
+    "name": "rssarticles",
+    "type": "INTEGER"
+  },
+  {
+    "name": "singletemplate",
+    "type": "STRING"
+  },
+  {
+    "name": "listtemplate",
+    "type": "STRING"
+  },
+  {
+    "name": "listtemplateheader",
+    "type": "STRING"
+  },
+  {
+    "name": "listtemplatefooter",
+    "type": "STRING"
+  },
+  {
+    "name": "addtemplate",
+    "type": "STRING"
+  },
+  {
+    "name": "rsstemplate",
+    "type": "STRING"
+  },
+  {
+    "name": "rsstitletemplate",
+    "type": "STRING"
+  },
+  {
+    "name": "csstemplate",
+    "type": "STRING"
+  },
+  {
+    "name": "jstemplate",
+    "type": "STRING"
+  },
+  {
+    "name": "asearchtemplate",
+    "type": "STRING"
+  },
+  {
+    "name": "approval",
+    "type": "INTEGER"
+  },
+  {
+    "name": "manageapproved",
+    "type": "INTEGER"
+  },
+  {
+    "name": "scale",
+    "type": "INTEGER"
+  },
+  {
+    "name": "assessed",
+    "type": "INTEGER"
+  },
+  {
+    "name": "assesstimestart",
+    "type": "INTEGER"
+  },
+  {
+    "name": "assesstimefinish",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sort",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sortdir",
+    "type": "INTEGER"
+  },
+  {
+    "name": "editany",
+    "type": "INTEGER"
+  },
+  {
+    "name": "notification",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "config",
+    "type": "STRING"
+  },
+  {
+    "name": "completionentries",
+    "type": "INTEGER"
+  }
+]

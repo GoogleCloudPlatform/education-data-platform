@@ -1,0 +1,42 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "assignment",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timestarted",
+    "type": "INTEGER"
+  },
+  {
+    "name": "status",
+    "type": "STRING"
+  },
+  {
+    "name": "groupid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "attemptnumber",
+    "type": "INTEGER"
+  },
+  {
+    "name": "latest",
+    "type": "INTEGER"
+  }
+]

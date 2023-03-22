@@ -1,0 +1,170 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "intro",
+    "type": "STRING"
+  },
+  {
+    "name": "introformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeopen",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeclose",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timelimit",
+    "type": "INTEGER"
+  },
+  {
+    "name": "overduehandling",
+    "type": "STRING"
+  },
+  {
+    "name": "graceperiod",
+    "type": "INTEGER"
+  },
+  {
+    "name": "preferredbehaviour",
+    "type": "STRING"
+  },
+  {
+    "name": "canredoquestions",
+    "type": "INTEGER"
+  },
+  {
+    "name": "attempts",
+    "type": "INTEGER"
+  },
+  {
+    "name": "attemptonlast",
+    "type": "INTEGER"
+  },
+  {
+    "name": "grademethod",
+    "type": "INTEGER"
+  },
+  {
+    "name": "decimalpoints",
+    "type": "INTEGER"
+  },
+  {
+    "name": "questiondecimalpoints",
+    "type": "INTEGER"
+  },
+  {
+    "name": "reviewattempt",
+    "type": "INTEGER"
+  },
+  {
+    "name": "reviewcorrectness",
+    "type": "INTEGER"
+  },
+  {
+    "name": "reviewmarks",
+    "type": "INTEGER"
+  },
+  {
+    "name": "reviewspecificfeedback",
+    "type": "INTEGER"
+  },
+  {
+    "name": "reviewgeneralfeedback",
+    "type": "INTEGER"
+  },
+  {
+    "name": "reviewrightanswer",
+    "type": "INTEGER"
+  },
+  {
+    "name": "reviewoverallfeedback",
+    "type": "INTEGER"
+  },
+  {
+    "name": "questionsperpage",
+    "type": "INTEGER"
+  },
+  {
+    "name": "navmethod",
+    "type": "STRING"
+  },
+  {
+    "name": "shuffleanswers",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sumgrades",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "grade",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "password",
+    "type": "STRING"
+  },
+  {
+    "name": "subnet",
+    "type": "STRING"
+  },
+  {
+    "name": "browsersecurity",
+    "type": "STRING"
+  },
+  {
+    "name": "delay1",
+    "type": "INTEGER"
+  },
+  {
+    "name": "delay2",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showuserpicture",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showblocks",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionattemptsexhausted",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionminattempts",
+    "type": "INTEGER"
+  },
+  {
+    "name": "allowofflineattempts",
+    "type": "INTEGER"
+  }
+]

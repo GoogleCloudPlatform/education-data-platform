@@ -1,0 +1,34 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "classname",
+    "type": "STRING"
+  },
+  {
+    "name": "methodname",
+    "type": "STRING"
+  },
+  {
+    "name": "classpath",
+    "type": "STRING"
+  },
+  {
+    "name": "component",
+    "type": "STRING"
+  },
+  {
+    "name": "capabilities",
+    "type": "STRING"
+  },
+  {
+    "name": "services",
+    "type": "STRING"
+  }
+]

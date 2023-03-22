@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "text",
+    "type": "STRING"
+  },
+  {
+    "name": "shorttext",
+    "type": "STRING"
+  },
+  {
+    "name": "multi",
+    "type": "STRING"
+  },
+  {
+    "name": "intro",
+    "type": "STRING"
+  },
+  {
+    "name": "type",
+    "type": "INTEGER"
+  },
+  {
+    "name": "options",
+    "type": "STRING"
+  }
+]

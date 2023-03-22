@@ -1,0 +1,52 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "modelid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "version",
+    "type": "INTEGER"
+  },
+  {
+    "name": "evaluationmode",
+    "type": "STRING"
+  },
+  {
+    "name": "target",
+    "type": "STRING"
+  },
+  {
+    "name": "indicators",
+    "type": "STRING"
+  },
+  {
+    "name": "timesplitting",
+    "type": "STRING"
+  },
+  {
+    "name": "score",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "info",
+    "type": "STRING"
+  },
+  {
+    "name": "dir",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  }
+]

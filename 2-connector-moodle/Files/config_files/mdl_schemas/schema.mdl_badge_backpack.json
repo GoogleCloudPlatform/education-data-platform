@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "email",
+    "type": "STRING"
+  },
+  {
+    "name": "backpackuid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "autosync",
+    "type": "INTEGER"
+  },
+  {
+    "name": "password",
+    "type": "STRING"
+  },
+  {
+    "name": "externalbackpackid",
+    "type": "INTEGER"
+  }
+]

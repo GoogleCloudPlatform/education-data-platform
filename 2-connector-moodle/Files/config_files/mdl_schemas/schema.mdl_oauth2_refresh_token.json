@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "issuerid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "token",
+    "type": "STRING"
+  },
+  {
+    "name": "scopehash",
+    "type": "STRING"
+  }
+]

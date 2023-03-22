@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "repositoryid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lastsync",
+    "type": "INTEGER"
+  },
+  {
+    "name": "reference",
+    "type": "STRING"
+  },
+  {
+    "name": "referencehash",
+    "type": "STRING"
+  }
+]

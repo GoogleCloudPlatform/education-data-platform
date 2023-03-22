@@ -1,0 +1,34 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "huburl",
+    "type": "STRING"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timepublished",
+    "type": "INTEGER"
+  },
+  {
+    "name": "enrollable",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hubcourseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timechecked",
+    "type": "INTEGER"
+  }
+]

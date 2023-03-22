@@ -1,0 +1,42 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "intro",
+    "type": "STRING"
+  },
+  {
+    "name": "introformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "externalurl",
+    "type": "STRING"
+  },
+  {
+    "name": "display",
+    "type": "INTEGER"
+  },
+  {
+    "name": "displayoptions",
+    "type": "STRING"
+  },
+  {
+    "name": "parameters",
+    "type": "STRING"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

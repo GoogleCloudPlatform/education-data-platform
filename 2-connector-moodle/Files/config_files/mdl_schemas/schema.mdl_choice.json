@@ -1,0 +1,78 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "intro",
+    "type": "STRING"
+  },
+  {
+    "name": "introformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "publish",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showresults",
+    "type": "INTEGER"
+  },
+  {
+    "name": "display",
+    "type": "INTEGER"
+  },
+  {
+    "name": "allowupdate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "allowmultiple",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showunanswered",
+    "type": "INTEGER"
+  },
+  {
+    "name": "includeinactive",
+    "type": "INTEGER"
+  },
+  {
+    "name": "limitanswers",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeopen",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeclose",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showpreview",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionsubmit",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showavailable",
+    "type": "INTEGER"
+  }
+]

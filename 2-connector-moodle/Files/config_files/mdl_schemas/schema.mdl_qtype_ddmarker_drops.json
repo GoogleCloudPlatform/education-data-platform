@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "questionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "_no",
+    "type": "INTEGER"
+  },
+  {
+    "name": "shape",
+    "type": "STRING"
+  },
+  {
+    "name": "coords",
+    "type": "STRING"
+  },
+  {
+    "name": "choice",
+    "type": "INTEGER"
+  }
+]

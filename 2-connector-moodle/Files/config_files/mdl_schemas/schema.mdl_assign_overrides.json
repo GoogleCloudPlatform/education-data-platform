@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "assignid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "groupid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sortorder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "allowsubmissionsfromdate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "duedate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "cutoffdate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timelimit",
+    "type": "INTEGER"
+  }
+]

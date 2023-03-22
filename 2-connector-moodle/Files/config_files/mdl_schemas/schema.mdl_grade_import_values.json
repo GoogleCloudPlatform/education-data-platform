@@ -1,0 +1,40 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "itemid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "newgradeitem",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "finalgrade",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "feedback",
+    "type": "STRING"
+  },
+  {
+    "name": "importcode",
+    "type": "INTEGER"
+  },
+  {
+    "name": "importer",
+    "type": "INTEGER"
+  },
+  {
+    "name": "importonlyfeedback",
+    "type": "INTEGER"
+  }
+]

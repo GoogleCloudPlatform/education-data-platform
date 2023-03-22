@@ -1,0 +1,46 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sourcefileid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "targetformat",
+    "type": "STRING"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER"
+  },
+  {
+    "name": "statusmessage",
+    "type": "STRING"
+  },
+  {
+    "name": "converter",
+    "type": "STRING"
+  },
+  {
+    "name": "destfileid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "data",
+    "type": "STRING"
+  }
+]

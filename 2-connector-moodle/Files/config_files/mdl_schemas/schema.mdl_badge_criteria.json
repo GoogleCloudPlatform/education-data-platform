@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "badgeid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "criteriatype",
+    "type": "INTEGER"
+  },
+  {
+    "name": "method",
+    "type": "INTEGER"
+  },
+  {
+    "name": "description",
+    "type": "STRING"
+  },
+  {
+    "name": "descriptionformat",
+    "type": "INTEGER"
+  }
+]

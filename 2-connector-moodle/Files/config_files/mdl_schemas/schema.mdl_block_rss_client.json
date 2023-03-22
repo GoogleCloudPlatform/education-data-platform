@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "title",
+    "type": "STRING"
+  },
+  {
+    "name": "preferredtitle",
+    "type": "STRING"
+  },
+  {
+    "name": "description",
+    "type": "STRING"
+  },
+  {
+    "name": "shared",
+    "type": "INTEGER"
+  },
+  {
+    "name": "url",
+    "type": "STRING"
+  },
+  {
+    "name": "skiptime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "skipuntil",
+    "type": "INTEGER"
+  }
+]

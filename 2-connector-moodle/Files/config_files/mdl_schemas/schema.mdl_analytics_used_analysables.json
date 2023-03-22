@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "modelid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "action",
+    "type": "STRING"
+  },
+  {
+    "name": "analysableid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "firstanalysis",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeanalysed",
+    "type": "INTEGER"
+  }
+]

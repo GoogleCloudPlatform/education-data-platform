@@ -1,0 +1,86 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "eventname",
+    "type": "STRING"
+  },
+  {
+    "name": "component",
+    "type": "STRING"
+  },
+  {
+    "name": "action",
+    "type": "STRING"
+  },
+  {
+    "name": "target",
+    "type": "STRING"
+  },
+  {
+    "name": "objecttable",
+    "type": "STRING"
+  },
+  {
+    "name": "objectid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "crud",
+    "type": "STRING"
+  },
+  {
+    "name": "edulevel",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextlevel",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextinstanceid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "courseid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "relateduserid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "anonymous",
+    "type": "INTEGER"
+  },
+  {
+    "name": "other",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "origin",
+    "type": "STRING"
+  },
+  {
+    "name": "ip",
+    "type": "STRING"
+  },
+  {
+    "name": "realuserid",
+    "type": "INTEGER"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "display_name",
+    "type": "STRING"
+  },
+  {
+    "name": "xmlrpc_server_url",
+    "type": "STRING"
+  },
+  {
+    "name": "sso_land_url",
+    "type": "STRING"
+  },
+  {
+    "name": "sso_jump_url",
+    "type": "STRING"
+  }
+]

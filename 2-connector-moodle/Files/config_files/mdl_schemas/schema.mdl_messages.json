@@ -1,0 +1,46 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "useridfrom",
+    "type": "INTEGER"
+  },
+  {
+    "name": "conversationid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "subject",
+    "type": "STRING"
+  },
+  {
+    "name": "fullmessage",
+    "type": "STRING"
+  },
+  {
+    "name": "fullmessageformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "fullmessagehtml",
+    "type": "STRING"
+  },
+  {
+    "name": "smallmessage",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "fullmessagetrust",
+    "type": "INTEGER"
+  },
+  {
+    "name": "customdata",
+    "type": "STRING"
+  }
+]

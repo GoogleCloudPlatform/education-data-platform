@@ -1,0 +1,54 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "platformid",
+    "type": "STRING"
+  },
+  {
+    "name": "clientid",
+    "type": "STRING"
+  },
+  {
+    "name": "uniqueid",
+    "type": "STRING"
+  },
+  {
+    "name": "platformclienthash",
+    "type": "STRING"
+  },
+  {
+    "name": "platformuniqueidhash",
+    "type": "STRING"
+  },
+  {
+    "name": "authenticationrequesturl",
+    "type": "STRING"
+  },
+  {
+    "name": "jwksurl",
+    "type": "STRING"
+  },
+  {
+    "name": "accesstokenurl",
+    "type": "STRING"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

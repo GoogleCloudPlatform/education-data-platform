@@ -1,0 +1,170 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "intro",
+    "type": "STRING"
+  },
+  {
+    "name": "introformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "practice",
+    "type": "INTEGER"
+  },
+  {
+    "name": "modattempts",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usepassword",
+    "type": "INTEGER"
+  },
+  {
+    "name": "password",
+    "type": "STRING"
+  },
+  {
+    "name": "dependency",
+    "type": "INTEGER"
+  },
+  {
+    "name": "conditions",
+    "type": "STRING"
+  },
+  {
+    "name": "grade",
+    "type": "INTEGER"
+  },
+  {
+    "name": "custom",
+    "type": "INTEGER"
+  },
+  {
+    "name": "ongoing",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usemaxgrade",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maxanswers",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maxattempts",
+    "type": "INTEGER"
+  },
+  {
+    "name": "review",
+    "type": "INTEGER"
+  },
+  {
+    "name": "nextpage",
+    "type": "INTEGER"
+  },
+  {
+    "name": "feedback",
+    "type": "INTEGER"
+  },
+  {
+    "name": "minquestions",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maxpages",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timelimit",
+    "type": "INTEGER"
+  },
+  {
+    "name": "retake",
+    "type": "INTEGER"
+  },
+  {
+    "name": "activitylink",
+    "type": "INTEGER"
+  },
+  {
+    "name": "mediafile",
+    "type": "STRING"
+  },
+  {
+    "name": "mediaheight",
+    "type": "INTEGER"
+  },
+  {
+    "name": "mediawidth",
+    "type": "INTEGER"
+  },
+  {
+    "name": "mediaclose",
+    "type": "INTEGER"
+  },
+  {
+    "name": "slideshow",
+    "type": "INTEGER"
+  },
+  {
+    "name": "width",
+    "type": "INTEGER"
+  },
+  {
+    "name": "height",
+    "type": "INTEGER"
+  },
+  {
+    "name": "bgcolor",
+    "type": "STRING"
+  },
+  {
+    "name": "displayleft",
+    "type": "INTEGER"
+  },
+  {
+    "name": "displayleftif",
+    "type": "INTEGER"
+  },
+  {
+    "name": "progressbar",
+    "type": "INTEGER"
+  },
+  {
+    "name": "available",
+    "type": "INTEGER"
+  },
+  {
+    "name": "deadline",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionendreached",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completiontimespent",
+    "type": "INTEGER"
+  },
+  {
+    "name": "allowofflineattempts",
+    "type": "INTEGER"
+  }
+]

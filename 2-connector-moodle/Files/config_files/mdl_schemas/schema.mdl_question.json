@@ -1,0 +1,70 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "parent",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "questiontext",
+    "type": "STRING"
+  },
+  {
+    "name": "questiontextformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "generalfeedback",
+    "type": "STRING"
+  },
+  {
+    "name": "generalfeedbackformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "mark",
+    "precision": "12",
+    "scale": "7",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "penalty",
+    "precision": "12",
+    "scale": "7",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "qtype",
+    "type": "STRING"
+  },
+  {
+    "name": "length",
+    "type": "INTEGER"
+  },
+  {
+    "name": "stamp",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "createdby",
+    "type": "INTEGER"
+  },
+  {
+    "name": "modifiedby",
+    "type": "INTEGER"
+  }
+]

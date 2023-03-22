@@ -1,0 +1,54 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hostid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "remoteid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "time",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "ip",
+    "type": "STRING"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "coursename",
+    "type": "STRING"
+  },
+  {
+    "name": "module",
+    "type": "STRING"
+  },
+  {
+    "name": "cmid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "action",
+    "type": "STRING"
+  },
+  {
+    "name": "url",
+    "type": "STRING"
+  },
+  {
+    "name": "info",
+    "type": "STRING"
+  }
+]

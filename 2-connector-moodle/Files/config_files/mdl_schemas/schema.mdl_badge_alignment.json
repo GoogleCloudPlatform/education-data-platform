@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "badgeid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "targetname",
+    "type": "STRING"
+  },
+  {
+    "name": "targeturl",
+    "type": "STRING"
+  },
+  {
+    "name": "targetdescription",
+    "type": "STRING"
+  },
+  {
+    "name": "targetframework",
+    "type": "STRING"
+  },
+  {
+    "name": "targetcode",
+    "type": "STRING"
+  }
+]

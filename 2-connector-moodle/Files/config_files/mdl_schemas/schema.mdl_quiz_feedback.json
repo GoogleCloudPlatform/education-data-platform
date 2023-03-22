@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "quizid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "feedbacktext",
+    "type": "STRING"
+  },
+  {
+    "name": "feedbacktextformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "mingrade",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "maxgrade",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  }
+]

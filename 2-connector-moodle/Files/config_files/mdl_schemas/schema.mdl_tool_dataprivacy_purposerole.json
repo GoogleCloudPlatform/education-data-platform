@@ -1,0 +1,42 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "purposeid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "roleid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lawfulbases",
+    "type": "STRING"
+  },
+  {
+    "name": "sensitivedatareasons",
+    "type": "STRING"
+  },
+  {
+    "name": "retentionperiod",
+    "type": "STRING"
+  },
+  {
+    "name": "protected",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

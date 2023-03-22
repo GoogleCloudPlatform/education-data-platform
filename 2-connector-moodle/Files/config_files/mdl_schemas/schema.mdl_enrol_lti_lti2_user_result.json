@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "resourcelinkid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "ltiuserkey",
+    "type": "STRING"
+  },
+  {
+    "name": "ltiresultsourcedid",
+    "type": "STRING"
+  },
+  {
+    "name": "created",
+    "type": "INTEGER"
+  },
+  {
+    "name": "updated",
+    "type": "INTEGER"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextlevel",
+    "type": "INTEGER"
+  },
+  {
+    "name": "instanceid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "path",
+    "type": "STRING"
+  },
+  {
+    "name": "depth",
+    "type": "INTEGER"
+  },
+  {
+    "name": "locked",
+    "type": "INTEGER"
+  }
+]

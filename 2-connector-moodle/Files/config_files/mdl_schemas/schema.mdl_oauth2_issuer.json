@@ -1,0 +1,90 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "image",
+    "type": "STRING"
+  },
+  {
+    "name": "baseurl",
+    "type": "STRING"
+  },
+  {
+    "name": "clientid",
+    "type": "STRING"
+  },
+  {
+    "name": "clientsecret",
+    "type": "STRING"
+  },
+  {
+    "name": "loginscopes",
+    "type": "STRING"
+  },
+  {
+    "name": "loginscopesoffline",
+    "type": "STRING"
+  },
+  {
+    "name": "loginparams",
+    "type": "STRING"
+  },
+  {
+    "name": "loginparamsoffline",
+    "type": "STRING"
+  },
+  {
+    "name": "alloweddomains",
+    "type": "STRING"
+  },
+  {
+    "name": "scopessupported",
+    "type": "STRING"
+  },
+  {
+    "name": "enabled",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showonloginpage",
+    "type": "INTEGER"
+  },
+  {
+    "name": "basicauth",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sortorder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "requireconfirmation",
+    "type": "INTEGER"
+  },
+  {
+    "name": "servicetype",
+    "type": "STRING"
+  },
+  {
+    "name": "loginpagename",
+    "type": "STRING"
+  }
+]

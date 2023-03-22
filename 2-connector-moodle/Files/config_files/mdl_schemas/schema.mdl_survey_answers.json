@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "survey",
+    "type": "INTEGER"
+  },
+  {
+    "name": "question",
+    "type": "INTEGER"
+  },
+  {
+    "name": "time",
+    "type": "INTEGER"
+  },
+  {
+    "name": "answer1",
+    "type": "STRING"
+  },
+  {
+    "name": "answer2",
+    "type": "STRING"
+  }
+]

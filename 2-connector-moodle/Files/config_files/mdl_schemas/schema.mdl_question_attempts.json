@@ -1,0 +1,64 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "questionusageid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "slot",
+    "type": "INTEGER"
+  },
+  {
+    "name": "behaviour",
+    "type": "STRING"
+  },
+  {
+    "name": "questionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "variant",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maxmark",
+    "precision": "12",
+    "scale": "7",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "minfraction",
+    "precision": "12",
+    "scale": "7",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "maxfraction",
+    "precision": "12",
+    "scale": "7",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "flagged",
+    "type": "INTEGER"
+  },
+  {
+    "name": "questionsummary",
+    "type": "STRING"
+  },
+  {
+    "name": "rightanswer",
+    "type": "STRING"
+  },
+  {
+    "name": "responsesummary",
+    "type": "STRING"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

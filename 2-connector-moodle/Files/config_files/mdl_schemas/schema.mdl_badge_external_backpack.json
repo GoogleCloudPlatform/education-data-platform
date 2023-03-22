@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "backpackapiurl",
+    "type": "STRING"
+  },
+  {
+    "name": "backpackweburl",
+    "type": "STRING"
+  },
+  {
+    "name": "apiversion",
+    "type": "STRING"
+  },
+  {
+    "name": "sortorder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "oauth2_issuerid",
+    "type": "INTEGER"
+  }
+]

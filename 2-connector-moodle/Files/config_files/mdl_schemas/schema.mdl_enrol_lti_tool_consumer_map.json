@@ -1,0 +1,14 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "toolid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "consumerid",
+    "type": "INTEGER"
+  }
+]

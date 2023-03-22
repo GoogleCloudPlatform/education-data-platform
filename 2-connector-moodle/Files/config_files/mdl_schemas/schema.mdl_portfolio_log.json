@@ -1,0 +1,46 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "time",
+    "type": "INTEGER"
+  },
+  {
+    "name": "portfolio",
+    "type": "INTEGER"
+  },
+  {
+    "name": "caller_class",
+    "type": "STRING"
+  },
+  {
+    "name": "caller_file",
+    "type": "STRING"
+  },
+  {
+    "name": "caller_component",
+    "type": "STRING"
+  },
+  {
+    "name": "caller_sha1",
+    "type": "STRING"
+  },
+  {
+    "name": "tempdataid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "returnurl",
+    "type": "STRING"
+  },
+  {
+    "name": "continueurl",
+    "type": "STRING"
+  }
+]

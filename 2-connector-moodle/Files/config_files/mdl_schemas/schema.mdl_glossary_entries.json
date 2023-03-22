@@ -1,0 +1,66 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "glossaryid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "concept",
+    "type": "STRING"
+  },
+  {
+    "name": "definition",
+    "type": "STRING"
+  },
+  {
+    "name": "definitionformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "definitiontrust",
+    "type": "INTEGER"
+  },
+  {
+    "name": "attachment",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "teacherentry",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sourceglossaryid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usedynalink",
+    "type": "INTEGER"
+  },
+  {
+    "name": "casesensitive",
+    "type": "INTEGER"
+  },
+  {
+    "name": "fullmatch",
+    "type": "INTEGER"
+  },
+  {
+    "name": "approved",
+    "type": "INTEGER"
+  }
+]

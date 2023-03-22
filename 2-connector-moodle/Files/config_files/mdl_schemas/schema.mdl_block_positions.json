@@ -1,0 +1,34 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "blockinstanceid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pagetype",
+    "type": "STRING"
+  },
+  {
+    "name": "subpage",
+    "type": "STRING"
+  },
+  {
+    "name": "visible",
+    "type": "INTEGER"
+  },
+  {
+    "name": "region",
+    "type": "STRING"
+  },
+  {
+    "name": "weight",
+    "type": "INTEGER"
+  }
+]

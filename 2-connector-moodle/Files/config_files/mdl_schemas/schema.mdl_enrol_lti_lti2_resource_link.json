@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "consumerid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "ltiresourcelinkkey",
+    "type": "STRING"
+  },
+  {
+    "name": "settings",
+    "type": "STRING"
+  },
+  {
+    "name": "primaryresourcelinkid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "shareapproved",
+    "type": "INTEGER"
+  },
+  {
+    "name": "created",
+    "type": "INTEGER"
+  },
+  {
+    "name": "updated",
+    "type": "INTEGER"
+  }
+]

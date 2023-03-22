@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "chatid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "groupid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "issystem",
+    "type": "INTEGER"
+  },
+  {
+    "name": "message",
+    "type": "STRING"
+  },
+  {
+    "name": "timestamp",
+    "type": "INTEGER"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "type",
+    "type": "STRING"
+  },
+  {
+    "name": "reference",
+    "type": "STRING"
+  },
+  {
+    "name": "intro",
+    "type": "STRING"
+  },
+  {
+    "name": "introformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "alltext",
+    "type": "STRING"
+  },
+  {
+    "name": "popup",
+    "type": "STRING"
+  },
+  {
+    "name": "options",
+    "type": "STRING"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "oldid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "cmid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "newmodule",
+    "type": "STRING"
+  },
+  {
+    "name": "newid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "migrated",
+    "type": "INTEGER"
+  }
+]

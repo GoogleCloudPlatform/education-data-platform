@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "username",
+    "type": "STRING"
+  },
+  {
+    "name": "token",
+    "type": "STRING"
+  },
+  {
+    "name": "mnethostid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "useragent",
+    "type": "STRING"
+  },
+  {
+    "name": "confirm_timeout",
+    "type": "INTEGER"
+  },
+  {
+    "name": "session_id",
+    "type": "STRING"
+  },
+  {
+    "name": "expires",
+    "type": "INTEGER"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "libraryid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "_hash",
+    "type": "STRING"
+  }
+]

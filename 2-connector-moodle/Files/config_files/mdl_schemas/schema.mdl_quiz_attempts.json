@@ -1,0 +1,68 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "quiz",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "attempt",
+    "type": "INTEGER"
+  },
+  {
+    "name": "uniqueid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "layout",
+    "type": "STRING"
+  },
+  {
+    "name": "currentpage",
+    "type": "INTEGER"
+  },
+  {
+    "name": "preview",
+    "type": "INTEGER"
+  },
+  {
+    "name": "state",
+    "type": "STRING"
+  },
+  {
+    "name": "timestart",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timefinish",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodifiedoffline",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecheckstate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sumgrades",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "gradednotificationsenttime",
+    "type": "INTEGER"
+  }
+]

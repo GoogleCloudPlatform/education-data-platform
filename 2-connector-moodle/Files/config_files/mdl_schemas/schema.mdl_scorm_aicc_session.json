@@ -1,0 +1,50 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "scormid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hacpsession",
+    "type": "STRING"
+  },
+  {
+    "name": "scoid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "scormmode",
+    "type": "STRING"
+  },
+  {
+    "name": "scormstatus",
+    "type": "STRING"
+  },
+  {
+    "name": "attempt",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lessonstatus",
+    "type": "STRING"
+  },
+  {
+    "name": "sessiontime",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

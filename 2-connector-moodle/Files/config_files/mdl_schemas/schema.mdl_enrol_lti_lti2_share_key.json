@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sharekey",
+    "type": "STRING"
+  },
+  {
+    "name": "resourcelinkid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "autoapprove",
+    "type": "INTEGER"
+  },
+  {
+    "name": "expires",
+    "type": "INTEGER"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "instanceid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "criterionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "levelid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "remark",
+    "type": "STRING"
+  },
+  {
+    "name": "remarkformat",
+    "type": "INTEGER"
+  }
+]

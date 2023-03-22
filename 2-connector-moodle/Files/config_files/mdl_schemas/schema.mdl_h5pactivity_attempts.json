@@ -1,0 +1,52 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "h5pactivityid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "attempt",
+    "type": "INTEGER"
+  },
+  {
+    "name": "rawscore",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maxscore",
+    "type": "INTEGER"
+  },
+  {
+    "name": "scaled",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "duration",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completion",
+    "type": "INTEGER"
+  },
+  {
+    "name": "success",
+    "type": "INTEGER"
+  }
+]

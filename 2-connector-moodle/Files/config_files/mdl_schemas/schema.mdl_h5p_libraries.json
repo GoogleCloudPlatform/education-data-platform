@@ -1,0 +1,82 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "machinename",
+    "type": "STRING"
+  },
+  {
+    "name": "title",
+    "type": "STRING"
+  },
+  {
+    "name": "majorversion",
+    "type": "INTEGER"
+  },
+  {
+    "name": "minorversion",
+    "type": "INTEGER"
+  },
+  {
+    "name": "patchversion",
+    "type": "INTEGER"
+  },
+  {
+    "name": "runnable",
+    "type": "INTEGER"
+  },
+  {
+    "name": "fullscreen",
+    "type": "INTEGER"
+  },
+  {
+    "name": "embedtypes",
+    "type": "STRING"
+  },
+  {
+    "name": "preloadedjs",
+    "type": "STRING"
+  },
+  {
+    "name": "preloadedcss",
+    "type": "STRING"
+  },
+  {
+    "name": "droplibrarycss",
+    "type": "STRING"
+  },
+  {
+    "name": "semantics",
+    "type": "STRING"
+  },
+  {
+    "name": "addto",
+    "type": "STRING"
+  },
+  {
+    "name": "coremajor",
+    "type": "INTEGER"
+  },
+  {
+    "name": "coreminor",
+    "type": "INTEGER"
+  },
+  {
+    "name": "metadatasettings",
+    "type": "STRING"
+  },
+  {
+    "name": "tutorial",
+    "type": "STRING"
+  },
+  {
+    "name": "example",
+    "type": "STRING"
+  },
+  {
+    "name": "enabled",
+    "type": "INTEGER"
+  }
+]

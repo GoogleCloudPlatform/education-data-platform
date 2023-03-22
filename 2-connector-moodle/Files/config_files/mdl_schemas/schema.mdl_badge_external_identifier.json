@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sitebackpackid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "internalid",
+    "type": "STRING"
+  },
+  {
+    "name": "externalid",
+    "type": "STRING"
+  },
+  {
+    "name": "type",
+    "type": "STRING"
+  }
+]

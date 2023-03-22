@@ -1,0 +1,82 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "shortname",
+    "type": "STRING"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "datatype",
+    "type": "STRING"
+  },
+  {
+    "name": "description",
+    "type": "STRING"
+  },
+  {
+    "name": "descriptionformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "categoryid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sortorder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "required",
+    "type": "INTEGER"
+  },
+  {
+    "name": "locked",
+    "type": "INTEGER"
+  },
+  {
+    "name": "visible",
+    "type": "INTEGER"
+  },
+  {
+    "name": "forceunique",
+    "type": "INTEGER"
+  },
+  {
+    "name": "signup",
+    "type": "INTEGER"
+  },
+  {
+    "name": "data",
+    "type": "STRING"
+  },
+  {
+    "name": "dataformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "param1",
+    "type": "STRING"
+  },
+  {
+    "name": "param2",
+    "type": "STRING"
+  },
+  {
+    "name": "param3",
+    "type": "STRING"
+  },
+  {
+    "name": "param4",
+    "type": "STRING"
+  },
+  {
+    "name": "param5",
+    "type": "STRING"
+  }
+]

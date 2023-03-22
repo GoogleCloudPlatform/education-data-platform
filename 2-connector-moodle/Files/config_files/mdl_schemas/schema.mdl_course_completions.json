@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeenrolled",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timestarted",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecompleted",
+    "type": "INTEGER"
+  },
+  {
+    "name": "reaggregate",
+    "type": "INTEGER"
+  }
+]

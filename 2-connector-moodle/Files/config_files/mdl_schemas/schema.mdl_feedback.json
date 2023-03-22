@@ -1,0 +1,70 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "intro",
+    "type": "STRING"
+  },
+  {
+    "name": "introformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "anonymous",
+    "type": "INTEGER"
+  },
+  {
+    "name": "email_notification",
+    "type": "INTEGER"
+  },
+  {
+    "name": "multiple_submit",
+    "type": "INTEGER"
+  },
+  {
+    "name": "autonumbering",
+    "type": "INTEGER"
+  },
+  {
+    "name": "site_after_submit",
+    "type": "STRING"
+  },
+  {
+    "name": "page_after_submit",
+    "type": "STRING"
+  },
+  {
+    "name": "page_after_submitformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "publish_stats",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeopen",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeclose",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionsubmit",
+    "type": "INTEGER"
+  }
+]

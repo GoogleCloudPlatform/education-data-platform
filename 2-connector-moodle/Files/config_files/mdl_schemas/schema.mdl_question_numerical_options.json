@@ -1,0 +1,28 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "question",
+    "type": "INTEGER"
+  },
+  {
+    "name": "showunits",
+    "type": "INTEGER"
+  },
+  {
+    "name": "unitsleft",
+    "type": "INTEGER"
+  },
+  {
+    "name": "unitgradingtype",
+    "type": "INTEGER"
+  },
+  {
+    "name": "unitpenalty",
+    "precision": "12",
+    "scale": "7",
+    "type": "NUMERIC"
+  }
+]

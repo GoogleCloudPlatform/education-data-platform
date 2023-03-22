@@ -1,0 +1,34 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "assignment",
+    "type": "INTEGER"
+  },
+  {
+    "name": "locked",
+    "type": "INTEGER"
+  },
+  {
+    "name": "mailed",
+    "type": "INTEGER"
+  },
+  {
+    "name": "extensionduedate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "workflowstate",
+    "type": "STRING"
+  },
+  {
+    "name": "allocatedmarker",
+    "type": "INTEGER"
+  }
+]

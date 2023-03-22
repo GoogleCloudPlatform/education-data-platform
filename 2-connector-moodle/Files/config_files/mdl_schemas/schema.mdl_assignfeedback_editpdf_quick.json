@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "rawtext",
+    "type": "STRING"
+  },
+  {
+    "name": "width",
+    "type": "INTEGER"
+  },
+  {
+    "name": "colour",
+    "type": "STRING"
+  }
+]

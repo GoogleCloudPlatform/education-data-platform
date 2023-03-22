@@ -1,0 +1,46 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "name": "comments",
+    "type": "STRING"
+  },
+  {
+    "name": "site",
+    "type": "STRING"
+  },
+  {
+    "name": "author",
+    "type": "STRING"
+  },
+  {
+    "name": "moodleversion",
+    "type": "STRING"
+  },
+  {
+    "name": "moodlerelease",
+    "type": "STRING"
+  },
+  {
+    "name": "iscore",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timeimported",
+    "type": "INTEGER"
+  }
+]

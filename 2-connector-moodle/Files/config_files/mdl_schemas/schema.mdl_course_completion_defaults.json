@@ -1,0 +1,38 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "course",
+    "type": "INTEGER"
+  },
+  {
+    "name": "module",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completion",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionview",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionusegrade",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionpassgrade",
+    "type": "INTEGER"
+  },
+  {
+    "name": "completionexpected",
+    "type": "INTEGER"
+  },
+  {
+    "name": "customrules",
+    "type": "STRING"
+  }
+]

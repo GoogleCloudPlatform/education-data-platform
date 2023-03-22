@@ -1,0 +1,54 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "token",
+    "type": "STRING"
+  },
+  {
+    "name": "privatetoken",
+    "type": "STRING"
+  },
+  {
+    "name": "tokentype",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "externalserviceid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sid",
+    "type": "STRING"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "creatorid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "iprestriction",
+    "type": "STRING"
+  },
+  {
+    "name": "validuntil",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lastaccess",
+    "type": "INTEGER"
+  }
+]

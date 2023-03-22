@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "token",
+    "type": "STRING"
+  },
+  {
+    "name": "hubname",
+    "type": "STRING"
+  },
+  {
+    "name": "huburl",
+    "type": "STRING"
+  },
+  {
+    "name": "confirmed",
+    "type": "INTEGER"
+  },
+  {
+    "name": "secret",
+    "type": "STRING"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

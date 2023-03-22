@@ -1,0 +1,46 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lessonid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "groupid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "available",
+    "type": "INTEGER"
+  },
+  {
+    "name": "deadline",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timelimit",
+    "type": "INTEGER"
+  },
+  {
+    "name": "review",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maxattempts",
+    "type": "INTEGER"
+  },
+  {
+    "name": "retake",
+    "type": "INTEGER"
+  },
+  {
+    "name": "password",
+    "type": "STRING"
+  }
+]

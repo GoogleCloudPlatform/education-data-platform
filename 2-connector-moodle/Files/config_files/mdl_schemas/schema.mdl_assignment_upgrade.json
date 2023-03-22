@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "oldcmid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "oldinstance",
+    "type": "INTEGER"
+  },
+  {
+    "name": "newcmid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "newinstance",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  }
+]

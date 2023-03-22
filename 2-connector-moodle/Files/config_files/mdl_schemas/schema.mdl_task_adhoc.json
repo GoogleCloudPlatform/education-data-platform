@@ -1,0 +1,50 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "component",
+    "type": "STRING"
+  },
+  {
+    "name": "classname",
+    "type": "STRING"
+  },
+  {
+    "name": "nextruntime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "faildelay",
+    "type": "INTEGER"
+  },
+  {
+    "name": "customdata",
+    "type": "STRING"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "blocking",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timestarted",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hostname",
+    "type": "STRING"
+  },
+  {
+    "name": "pid",
+    "type": "INTEGER"
+  }
+]

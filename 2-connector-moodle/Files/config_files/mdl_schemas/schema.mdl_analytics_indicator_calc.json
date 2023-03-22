@@ -1,0 +1,40 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "starttime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "endtime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "contextid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sampleorigin",
+    "type": "STRING"
+  },
+  {
+    "name": "sampleid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "indicator",
+    "type": "STRING"
+  },
+  {
+    "name": "value",
+    "precision": "10",
+    "scale": "2",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  }
+]

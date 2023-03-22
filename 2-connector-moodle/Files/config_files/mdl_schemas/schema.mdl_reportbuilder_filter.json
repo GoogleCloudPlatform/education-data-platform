@@ -1,0 +1,42 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "reportid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "uniqueidentifier",
+    "type": "STRING"
+  },
+  {
+    "name": "heading",
+    "type": "STRING"
+  },
+  {
+    "name": "iscondition",
+    "type": "INTEGER"
+  },
+  {
+    "name": "filterorder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usercreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  }
+]

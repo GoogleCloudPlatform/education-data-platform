@@ -1,0 +1,56 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "toolid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "serviceurl",
+    "type": "STRING"
+  },
+  {
+    "name": "sourceid",
+    "type": "STRING"
+  },
+  {
+    "name": "ltideploymentid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "consumerkey",
+    "type": "STRING"
+  },
+  {
+    "name": "consumersecret",
+    "type": "STRING"
+  },
+  {
+    "name": "membershipsurl",
+    "type": "STRING"
+  },
+  {
+    "name": "membershipsid",
+    "type": "STRING"
+  },
+  {
+    "name": "lastgrade",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "lastaccess",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  }
+]

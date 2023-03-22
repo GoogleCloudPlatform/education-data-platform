@@ -1,0 +1,58 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hostid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "remoteid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "categoryid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "categoryname",
+    "type": "STRING"
+  },
+  {
+    "name": "sortorder",
+    "type": "INTEGER"
+  },
+  {
+    "name": "fullname",
+    "type": "STRING"
+  },
+  {
+    "name": "shortname",
+    "type": "STRING"
+  },
+  {
+    "name": "idnumber",
+    "type": "STRING"
+  },
+  {
+    "name": "summary",
+    "type": "STRING"
+  },
+  {
+    "name": "summaryformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "startdate",
+    "type": "INTEGER"
+  },
+  {
+    "name": "roleid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "rolename",
+    "type": "STRING"
+  }
+]

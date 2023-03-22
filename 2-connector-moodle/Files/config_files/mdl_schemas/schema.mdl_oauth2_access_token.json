@@ -1,0 +1,34 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "issuerid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "token",
+    "type": "STRING"
+  },
+  {
+    "name": "expires",
+    "type": "INTEGER"
+  },
+  {
+    "name": "scope",
+    "type": "STRING"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "module",
+    "type": "STRING"
+  },
+  {
+    "name": "action",
+    "type": "STRING"
+  },
+  {
+    "name": "mtable",
+    "type": "STRING"
+  },
+  {
+    "name": "field",
+    "type": "STRING"
+  },
+  {
+    "name": "component",
+    "type": "STRING"
+  }
+]

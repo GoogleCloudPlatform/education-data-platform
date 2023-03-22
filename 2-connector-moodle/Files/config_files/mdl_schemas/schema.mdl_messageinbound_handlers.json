@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "component",
+    "type": "STRING"
+  },
+  {
+    "name": "classname",
+    "type": "STRING"
+  },
+  {
+    "name": "expiration",
+    "type": "INTEGER"
+  },
+  {
+    "name": "validateaddress",
+    "type": "INTEGER"
+  },
+  {
+    "name": "enabled",
+    "type": "INTEGER"
+  }
+]

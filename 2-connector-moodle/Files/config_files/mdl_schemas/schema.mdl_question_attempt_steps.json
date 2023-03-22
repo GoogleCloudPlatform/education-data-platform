@@ -1,0 +1,32 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "questionattemptid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "sequencenumber",
+    "type": "INTEGER"
+  },
+  {
+    "name": "state",
+    "type": "STRING"
+  },
+  {
+    "name": "fraction",
+    "precision": "12",
+    "scale": "7",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  }
+]

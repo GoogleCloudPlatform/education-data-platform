@@ -1,0 +1,106 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "action",
+    "type": "INTEGER"
+  },
+  {
+    "name": "oldid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "source",
+    "type": "STRING"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "loggeduser",
+    "type": "INTEGER"
+  },
+  {
+    "name": "itemid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "rawgrade",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "rawgrademax",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "rawgrademin",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "rawscaleid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "finalgrade",
+    "precision": "10",
+    "scale": "5",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "hidden",
+    "type": "INTEGER"
+  },
+  {
+    "name": "locked",
+    "type": "INTEGER"
+  },
+  {
+    "name": "locktime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "exported",
+    "type": "INTEGER"
+  },
+  {
+    "name": "overridden",
+    "type": "INTEGER"
+  },
+  {
+    "name": "excluded",
+    "type": "INTEGER"
+  },
+  {
+    "name": "feedback",
+    "type": "STRING"
+  },
+  {
+    "name": "feedbackformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "information",
+    "type": "STRING"
+  },
+  {
+    "name": "informationformat",
+    "type": "INTEGER"
+  }
+]

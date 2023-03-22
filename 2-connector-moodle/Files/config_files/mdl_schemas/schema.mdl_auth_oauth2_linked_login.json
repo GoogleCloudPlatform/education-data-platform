@@ -1,0 +1,42 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "issuerid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "username",
+    "type": "STRING"
+  },
+  {
+    "name": "email",
+    "type": "STRING"
+  },
+  {
+    "name": "confirmtoken",
+    "type": "STRING"
+  },
+  {
+    "name": "confirmtokenexpires",
+    "type": "INTEGER"
+  }
+]

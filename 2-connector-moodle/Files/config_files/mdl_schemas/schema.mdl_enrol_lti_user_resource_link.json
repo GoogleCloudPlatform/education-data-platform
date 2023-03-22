@@ -1,0 +1,14 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "ltiuserid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "resourcelinkid",
+    "type": "INTEGER"
+  }
+]

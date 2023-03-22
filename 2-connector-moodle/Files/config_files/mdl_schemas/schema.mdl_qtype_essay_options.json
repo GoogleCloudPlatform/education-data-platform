@@ -1,0 +1,62 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "questionid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "responseformat",
+    "type": "STRING"
+  },
+  {
+    "name": "responserequired",
+    "type": "INTEGER"
+  },
+  {
+    "name": "responsefieldlines",
+    "type": "INTEGER"
+  },
+  {
+    "name": "minwordlimit",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maxwordlimit",
+    "type": "INTEGER"
+  },
+  {
+    "name": "attachments",
+    "type": "INTEGER"
+  },
+  {
+    "name": "attachmentsrequired",
+    "type": "INTEGER"
+  },
+  {
+    "name": "graderinfo",
+    "type": "STRING"
+  },
+  {
+    "name": "graderinfoformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "responsetemplate",
+    "type": "STRING"
+  },
+  {
+    "name": "responsetemplateformat",
+    "type": "INTEGER"
+  },
+  {
+    "name": "maxbytes",
+    "type": "INTEGER"
+  },
+  {
+    "name": "filetypeslist",
+    "type": "STRING"
+  }
+]

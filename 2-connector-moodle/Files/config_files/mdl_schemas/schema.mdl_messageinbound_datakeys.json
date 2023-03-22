@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "handler",
+    "type": "INTEGER"
+  },
+  {
+    "name": "datavalue",
+    "type": "INTEGER"
+  },
+  {
+    "name": "datakey",
+    "type": "STRING"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "expires",
+    "type": "INTEGER"
+  }
+]

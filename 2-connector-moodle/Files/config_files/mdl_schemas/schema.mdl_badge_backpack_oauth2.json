@@ -1,0 +1,46 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timecreated",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timemodified",
+    "type": "INTEGER"
+  },
+  {
+    "name": "userid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "issuerid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "externalbackpackid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "token",
+    "type": "STRING"
+  },
+  {
+    "name": "refreshtoken",
+    "type": "STRING"
+  },
+  {
+    "name": "expires",
+    "type": "INTEGER"
+  },
+  {
+    "name": "scope",
+    "type": "STRING"
+  }
+]

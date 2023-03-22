@@ -1,0 +1,70 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "component",
+    "type": "STRING"
+  },
+  {
+    "name": "classname",
+    "type": "STRING"
+  },
+  {
+    "name": "lastruntime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "nextruntime",
+    "type": "INTEGER"
+  },
+  {
+    "name": "blocking",
+    "type": "INTEGER"
+  },
+  {
+    "name": "minute",
+    "type": "STRING"
+  },
+  {
+    "name": "hour",
+    "type": "STRING"
+  },
+  {
+    "name": "day",
+    "type": "STRING"
+  },
+  {
+    "name": "month",
+    "type": "STRING"
+  },
+  {
+    "name": "dayofweek",
+    "type": "STRING"
+  },
+  {
+    "name": "faildelay",
+    "type": "INTEGER"
+  },
+  {
+    "name": "customised",
+    "type": "INTEGER"
+  },
+  {
+    "name": "disabled",
+    "type": "INTEGER"
+  },
+  {
+    "name": "timestarted",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hostname",
+    "type": "STRING"
+  },
+  {
+    "name": "pid",
+    "type": "INTEGER"
+  }
+]

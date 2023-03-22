@@ -1,0 +1,26 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "toolproxykey",
+    "type": "STRING"
+  },
+  {
+    "name": "consumerid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "toolproxy",
+    "type": "STRING"
+  },
+  {
+    "name": "created",
+    "type": "INTEGER"
+  },
+  {
+    "name": "updated",
+    "type": "INTEGER"
+  }
+]
