@@ -15,6 +15,7 @@
 import datetime
 from airflow.models import DAG
 from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateEmptyTableOperator
+from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateEmptyDatasetOperator
 import os
 from google.cloud import storage
 import json
@@ -50,12 +51,20 @@ with DAG(
         template_searchpath=['/home/airflow/gcs/data'],
         catchup=False,
 ) as dag:
+
+    create_dataset =BigQueryCreateEmptyDatasetOperator(
+        dataset_id=nm_dtst,
+        project_id=project_id_bq,
+        task_id='DatasetCreator',
+        dag=dag,
+    )
+
     for table in clean_data['tables']:
 
         schema_table_location = dir_schm + "/schema." + table + ".json"
 
         if ret_time is not None:
-            BigQueryCreateEmptyTableOperator(
+            bq_table_part_time = BigQueryCreateEmptyTableOperator(
                 task_id="create_table_"+table,
                 project_id=project_id_bq,
                 dataset_id=nm_dtst,
@@ -67,10 +76,11 @@ with DAG(
                 },
             )
         else:
-            BigQueryCreateEmptyTableOperator(
+            bq_table = BigQueryCreateEmptyTableOperator(
                 task_id="create_table_"+table,
                 project_id=project_id_bq,
                 dataset_id=nm_dtst,
                 table_id=table,
                 gcs_schema_object=schema_table_location,
             )
+        create_dataset >> bq_table_part_time
