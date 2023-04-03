@@ -140,3 +140,37 @@ You can keep the default values for the following variables or customize them ac
 As soon as you push the changes of these variables to your EDP repository in GitHub, the trigger configured in Cloud Build for Load Pipeline is going to run and deploy all the artifacts needed to run the Moodle connector pipelines.
 
 At this point, there are no changes to apply in the orchestration artifacts. So, to deploy them you must run the trigger created on Orchestration project manually. However, anytime changes for Orchestration artifacts are pushed in the EDP Repo, Cloud Build in the orc project is going to be triggerd automatically. 
+
+## 3. Adding tag polices in Big Query
+
+First step is, add **tables_with_polices** in config.json, and then specify the tables that you'll add column policies.
+
+"tables_with_polices":[
+    "tableA",
+    "tableB",
+    "..."
+]
+
+Second, select each table schema (go File/config_files/mdl_schema) and add this 'policyTags' in column that you want to attach a policy.
+Specify your own projectId, locationId, taxonomyId and policyTagId.
+
+"policyTags": {
+    "names": [
+        "projects/**projectId**/locations/**locationId**/taxonomies/**taxonomyId**/policyTags/**policyTagId**"
+    ]
+}
+
+
+Here it's a example that you can follow:
+
+{
+    "name": "columnName",
+    "type": "ColumnType",
+    **"policyTags": {**
+    **"names": [**
+        "projects/**projectId**/locations/**locationId**/taxonomies/**taxonomyId**/policyTags/**policyTagId**"
+    **]**
+    **}**
+},
+
+Third and the last, run the dag called: update_table_bq
