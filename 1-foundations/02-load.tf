@@ -98,7 +98,7 @@ module "load-cs-df-0" {
   prefix         = var.prefix
   name           = "load-cs-0"
   location       = var.location
-  storage_class  = "MULTI_REGIONAL"
+  storage_class  = "REGIONAL"
   encryption_key = try(local.service_encryption_keys.storage, null)
 }
 

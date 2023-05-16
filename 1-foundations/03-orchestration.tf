@@ -108,7 +108,7 @@ module "orch-cs-0" {
   prefix         = var.prefix
   name           = "orc-cs-0"
   location       = var.location
-  storage_class  = "MULTI_REGIONAL"
+  storage_class  = "REGIONAL"
   encryption_key = try(local.service_encryption_keys.storage, null)
 }
 
