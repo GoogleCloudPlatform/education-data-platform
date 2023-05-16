@@ -67,7 +67,8 @@ You are going to use the above information to create a trigger in Drop-off proje
 | _DATAFLOW_COMPOSER_BUCKET | REGION-PREFIX-orc-cmp-0-RANDOM_ID-bucket            | Name of Composer Bucket             |
 | _PREFIX                   | api                                                 | Name of Cloud Function prefix       |
 | _PROJECT_ID               | PREFIX-drp                                          | ID of the Drop-off project          |
-| _REGION                   | europe-west1                                        | Region of the deploy                |
+| _REGION                   | us-west1                                            | Region of the deploy                |
+| _INSTANCES                | 5                                                   | Cloud Function maximum instances    |
 
   ![Create Trigger](docs/img/create-trigger-8.png)
 
