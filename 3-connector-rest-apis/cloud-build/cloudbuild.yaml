@@ -66,6 +66,7 @@ steps:
         -var 'bucket_id=$_BUCKET_ID' \
         -var 'composer_iam_email=$_COMPOSER_IAM_EMAIL' \
         -var 'prefix=$_PREFIX' \
+        -var 'instances=$_INSTANCES' \
         -out api.tfplan|| exit 1
 
 - id: 'tf apply'

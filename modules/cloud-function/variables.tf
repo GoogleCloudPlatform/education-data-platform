@@ -56,17 +56,17 @@ variable "environment_variables" {
 }
 
 variable "function_config" {
-  description = "Cloud function configuration. Defaults to using main as entrypoint, 1 instance with 256MiB of memory, and 180 second timeout."
+  description = "Cloud function configuration. Defaults to using main as entrypoint, 10 instances with 256MiB of memory, and 180 second timeout."
   type = object({
     entry_point     = optional(string, "main")
-    instance_count  = optional(number, 1)
+    instance_count  = optional(number, 10)
     memory_mb       = optional(number, 256) # Memory in MB
     runtime         = optional(string, "python310")
     timeout_seconds = optional(number, 180)
   })
   default = {
     entry_point     = "main"
-    instance_count  = 1
+    instance_count  = 10
     memory_mb       = 256
     runtime         = "python310"
     timeout_seconds = 180

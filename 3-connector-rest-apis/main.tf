@@ -68,7 +68,7 @@ module "function" {
   }
   function_config = {
     entry_point = "main"
-    instances   = var.instances
+    instance_count   = var.instances
     memory      = 256
     runtime     = "python39"
     timeout     = 480 # Timeout in seconds, increase it if your CF timeouts and use v2 if > 9 minutes.
