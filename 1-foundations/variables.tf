@@ -68,7 +68,7 @@ variable "groups" {
 variable "location" {
   description = "Location used for multi-regional resources."
   type        = string
-  default     = "eu"
+  default     = "us"
 }
 
 variable "network_config" {
@@ -129,7 +129,7 @@ variable "project_suffix" {
 variable "region" {
   description = "Region used for regional resources."
   type        = string
-  default     = "europe-west1"
+  default     = "us-west1"
 }
 
 variable "service_encryption_keys" {
