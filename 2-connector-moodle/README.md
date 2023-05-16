@@ -173,4 +173,6 @@ Here it's a example that you can follow:
     **}**
 },
 
-Third and the last, run the dag called: update_table_bq
+Third, you need to grant the role "Data Catalog Admin" to Cloud Composer service account ({prefix}-orc-cmp-0@${prefix}-orc.iam.gserviceaccount.com) in Common Project ({prefix}-cmn).
+
+Fourth and the last, run the dag called: update_table_bq
