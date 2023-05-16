@@ -35,6 +35,7 @@ path_file_api = 'gs://{0}/{1}'.format(bucket_api, api_path)
 project_id_bq = clean_data['project_id_bq']
 bq_dataset = clean_data['dataset_name']
 ret_time = int(clean_data['retention_data'])
+location = clean_data['region']
 
 default_dag_args = {}
 
@@ -42,7 +43,8 @@ params_list = {
     "prj_id": project_id_bq,
     "dtst_nm": bq_dataset,
     "dir_orig": path_file_api,
-    "ret_time": ret_time
+    "ret_time": ret_time,
+    "location": location
     }
 
 yesterday = datetime.datetime.combine(
