@@ -4,6 +4,7 @@
   "prj_id_bq_cur": "{your-prefix}-dwh-cur",
   "dataset_name": "your-moodle-raw-database-name",
   "dts_nm_cur": "your-moodle-curated-database-name",
+  "location": "your-gcp-locatin",
   "region": "your-gcp-region",
   "url_template": "gs://dataflow-templates-{0}/latest/Jdbc_to_BigQuery",
   "driver_jar": "Driver-JDBC/mysql-connector-j-8.0.31.jar",
