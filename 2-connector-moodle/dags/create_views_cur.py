@@ -34,7 +34,7 @@ project_id_bq = clean_data['project_id_bq']
 nm_dtst = clean_data['dataset_name']
 proj_id_bq_cur = clean_data['prj_id_bq_cur']
 dts_name_cur = clean_data['dts_nm_cur']
-location = clean_data['region']
+location = clean_data['location']
 
 default_dag_args = {}
 
