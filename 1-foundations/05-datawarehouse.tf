@@ -202,7 +202,7 @@ module "dwh-lnd-cs-0" {
   project_id     = module.dwh-lnd-project.project_id
   prefix         = var.prefix
   name           = "dwh-lnd-cs-0"
-  location       = var.location
+  location       = var.region
   storage_class  = "REGIONAL"
   encryption_key = try(local.service_encryption_keys.storage, null)
   force_destroy  = var.data_force_destroy
@@ -213,7 +213,7 @@ module "dwh-cur-cs-0" {
   project_id     = module.dwh-cur-project.project_id
   prefix         = var.prefix
   name           = "dwh-cur-cs-0"
-  location       = var.location
+  location       = var.region
   storage_class  = "REGIONAL"
   encryption_key = try(local.service_encryption_keys.storage, null)
   force_destroy  = var.data_force_destroy
@@ -224,7 +224,7 @@ module "dwh-conf-cs-0" {
   project_id     = module.dwh-conf-project.project_id
   prefix         = var.prefix
   name           = "dwh-conf-cs-0"
-  location       = var.location
+  location       = var.region
   storage_class  = "REGIONAL"
   encryption_key = try(local.service_encryption_keys.storage, null)
   force_destroy  = var.data_force_destroy
@@ -235,7 +235,7 @@ module "dwh-plg-cs-0" {
   project_id     = module.dwh-plg-project.project_id
   prefix         = var.prefix
   name           = "dwh-plg-cs-0"
-  location       = var.location
+  location       = var.region
   storage_class  = "REGIONAL"
   encryption_key = try(local.service_encryption_keys.storage, null)
   force_destroy  = var.data_force_destroy
