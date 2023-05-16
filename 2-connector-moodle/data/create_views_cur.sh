@@ -19,6 +19,7 @@ prj_id_ld="{{ params.prj_id_ld }}"
 dts_nm_ld="{{ params.dts_nm_ld }}"
 prj_id_cr="{{ params.prj_id_cr }}"
 dts_nm_cr="{{ params.dts_nm_cr }}"
+location="{{ params.location }}"
 
 #Exemplo de comando
 #./create_views.sh gs://edp-dataflow/config_files/mdl_views_cur.tar.gz edp-dataflow moodle_db_5 edp-dataflow dwh_cur_views
@@ -64,7 +65,7 @@ else
             exit_code=0
         else
             echo "Creating $dts_nm_cr"
-            bq mk -d $prj_id_cr:$dts_nm_cr
+            bq mk -d --data_location=$location $prj_id_cr:$dts_nm_cr
             exit_code=$?
         fi
 
