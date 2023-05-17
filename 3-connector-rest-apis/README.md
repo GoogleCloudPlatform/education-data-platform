@@ -128,6 +128,8 @@ To use the function, update the configuration file (config.json) in the Dropoff 
 - "api_path": "Folder name where the function will save the returned APIs consumed in JSON or CSV format;
 - "api_uri": "http or https address of the function (trigger)";
 - "endpoints": "List of objects containing the necessary information for the correct functioning of the function";
+- "location": GCP location for multi regional resources on BigQuery (if applicable to the region);
+- "region": GCP region.
 
 Within the list of endpoints, it is necessary to assemble objects with the following structure:
 
