@@ -35,7 +35,7 @@ path_file_api = 'gs://{0}/{1}'.format(bucket_api, api_path)
 project_id_bq = clean_data['project_id_bq']
 bq_dataset = clean_data['dataset_name']
 ret_time = int(clean_data['retention_data'])
-location = clean_data['region']
+location = clean_data['location']
 
 default_dag_args = {}
 
