@@ -119,6 +119,7 @@ Before deploying the Moodle Connector's artifacts, you need to configure the [Fi
 - **"prj_id_bq_cur": "{your-prefix}-dwh-cur"** = Data Warehouse project for curated data
 - **"dataset_name": "your-moodle-raw-database-name"** = BigQuery dataset name to load raw data in the landing project ({your-prefix}-dwh-lnd)
 - **"dts_nm_cur": "your-moodle-curated-database-name"** = BigQuery dataset name to load enriched data in the curated project ({your-prefix}-dwh-cur)
+- **"location": "your-gcp-location"** = The location in which you are creating the Google Cloud resources
 - **"region": "your-gcp-region"** = The region in which you are creating the Google Cloud resources
 - **"conn_url":"jdbc:mysql://{your-moodle-database-server-ip}/{your-database-name}"** = Connection URL for Moodle repository
 - **"conn_user": "your-moodle-database-user"** = Username to connect to your Moodle database
@@ -173,4 +174,6 @@ Here it's a example that you can follow:
     **}**
 },
 
-Third and the last, run the dag called: update_table_bq
+Third, you need to grant the role "Data Catalog Admin" to Cloud Composer service account ({prefix}-orc-cmp-0@${prefix}-orc.iam.gserviceaccount.com) in Common Project ({prefix}-cmn).
+
+Fourth and the last, run the dag called: update_table_bq

@@ -101,8 +101,8 @@ module "transf-cs-df-0" {
   project_id     = module.transf-project.project_id
   prefix         = var.prefix
   name           = "trf-cs-0"
-  location       = var.location
-  storage_class  = "MULTI_REGIONAL"
+  location       = var.region
+  storage_class  = "REGIONAL"
   encryption_key = try(local.service_encryption_keys.storage, null)
 }
 

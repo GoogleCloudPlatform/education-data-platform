@@ -67,7 +67,8 @@ You are going to use the above information to create a trigger in Drop-off proje
 | _DATAFLOW_COMPOSER_BUCKET | REGION-PREFIX-orc-cmp-0-RANDOM_ID-bucket            | Name of Composer Bucket             |
 | _PREFIX                   | api                                                 | Name of Cloud Function prefix       |
 | _PROJECT_ID               | PREFIX-drp                                          | ID of the Drop-off project          |
-| _REGION                   | europe-west1                                        | Region of the deploy                |
+| _REGION                   | us-west1                                            | Region of the deploy                |
+| _INSTANCES                | 5                                                   | Cloud Function maximum instances    |
 
   ![Create Trigger](docs/img/create-trigger-8.png)
 
@@ -127,6 +128,8 @@ To use the function, update the configuration file (config.json) in the Dropoff 
 - "api_path": "Folder name where the function will save the returned APIs consumed in JSON or CSV format;
 - "api_uri": "http or https address of the function (trigger)";
 - "endpoints": "List of objects containing the necessary information for the correct functioning of the function";
+- "location": GCP location for multi regional resources on BigQuery (if applicable to the region);
+- "region": GCP region.
 
 Within the list of endpoints, it is necessary to assemble objects with the following structure:
 

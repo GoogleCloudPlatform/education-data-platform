@@ -18,6 +18,7 @@ prj_id="{{ params.prj_id }}"
 dtst_nm="{{ params.dtst_nm }}"
 dir_orig="{{ params.dir_orig }}"
 ret_time="{{ params.ret_time }}"
+location="{{ params.location }}"
 
 #Exemplo
 #./bq_load-v4.sh edp-dataflow moodle_db_4 gs://edp-dataflow/api_files 600
@@ -115,7 +116,7 @@ else
             exit_code=0
         else
             echo "Creating $dtst_nm"
-            bq mk -d $prj_id:$dtst_nm
+            bq mk -d --data_location=$location  $prj_id:$dtst_nm
             exit_code=$?
         fi
 

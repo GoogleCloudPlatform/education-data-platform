@@ -87,8 +87,8 @@ module "drop-cs-0" {
   project_id     = module.drop-project.project_id
   prefix         = var.prefix
   name           = "drp-cs-0"
-  location       = var.location
-  storage_class  = "MULTI_REGIONAL"
+  location       = var.region
+  storage_class  = "REGIONAL"
   encryption_key = try(local.service_encryption_keys.storage, null)
   force_destroy  = var.data_force_destroy
   # retention_policy = {

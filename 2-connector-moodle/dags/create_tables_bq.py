@@ -34,6 +34,7 @@ blob = source_bucket.get_blob(f"Files/config_files/config.json")
 read_output = blob.download_as_text()
 clean_data = json.loads(read_output)
 project_id_bq = clean_data['project_id_bq']
+location = clean_data['location']
 dir_schm = clean_data['dir_schm']
 ret_time = int(clean_data['retention_data'])
 nm_dtst = clean_data['dataset_name']
@@ -56,6 +57,7 @@ with DAG(
         dataset_id=nm_dtst,
         project_id=project_id_bq,
         task_id='DatasetCreator',
+        location=location,
         dag=dag,
     )
 

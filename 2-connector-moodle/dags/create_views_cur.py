@@ -34,6 +34,7 @@ project_id_bq = clean_data['project_id_bq']
 nm_dtst = clean_data['dataset_name']
 proj_id_bq_cur = clean_data['prj_id_bq_cur']
 dts_name_cur = clean_data['dts_nm_cur']
+location = clean_data['location']
 
 default_dag_args = {}
 
@@ -42,7 +43,8 @@ params_list = {
     "prj_id_ld": project_id_bq,
     "dts_nm_ld": nm_dtst,
     "prj_id_cr": proj_id_bq_cur,
-    "dts_nm_cr": dts_name_cur
+    "dts_nm_cr": dts_name_cur,
+    "location": location
     }
 
 yesterday = datetime.datetime.combine(

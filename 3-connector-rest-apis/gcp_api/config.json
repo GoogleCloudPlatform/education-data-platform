@@ -2,6 +2,8 @@
     "project_id": "{your-prefix}-drp",
     "bucket": "{your-prefix}-drp-cs-0",
     "api_path": "pipeline_api",
+    "location": "your-location",
+    "region": "your-gcp-region",
     "api_uri": "https://{your-region}-{your-edp-prefix}-drp.cloudfunctions.net/{your-function-prefix}",
     "endpoints": [
         {

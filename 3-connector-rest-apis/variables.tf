@@ -47,3 +47,8 @@ variable "prefix" {
   description = "Cloud Function prefix"
   type        = string
 }
+
+variable "instances" {
+  description = "Cloud Function maximum instances"
+  type        = string
+}
