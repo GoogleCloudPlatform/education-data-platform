@@ -63,5 +63,7 @@
     "mdl_cohort_members",
     "mdl_cohort"
   ],
-  "tables_with_polices":[]
+  "tables_with_polices":[],
+  "network": "{your-prefix}-default",
+  "subnetwork": "https://www.googleapis.com/compute/v1/projects/{your-prefix}-lod/regions/{your-gcp-region}/subnetworks/default"
 }
