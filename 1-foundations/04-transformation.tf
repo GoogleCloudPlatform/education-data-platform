@@ -17,7 +17,7 @@
 locals {
   transf_subnet = (
     local.use_shared_vpc
-    ? var.network_config.subnet_self_links.orchestration
+    ? var.network_config.subnet_self_links.transformation
     : values(module.transf-vpc.0.subnet_self_links)[0]
   )
   transf_vpc = (
