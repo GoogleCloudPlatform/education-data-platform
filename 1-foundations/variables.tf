@@ -22,13 +22,13 @@ variable "billing_account_id" {
 variable "composer_config" {
   description = "Cloud Composer config."
   type = object({
-    node_count      = number
+    #node_count      = number
     airflow_version = string
     env_variables   = map(string)
   })
   default = {
-    node_count      = 3
-    airflow_version = "composer-1-airflow-2"
+    #node_count      = 3
+    airflow_version = "composer-2-airflow-2"
     env_variables   = {}
   }
 }
@@ -84,12 +84,12 @@ variable "network_config" {
     composer_ip_ranges = object({
       cloudsql   = string
       gke_master = string
-      web_server = string
+      #web_server = string
     })
-    composer_secondary_ranges = object({
-      pods     = string
-      services = string
-    })
+    #composer_secondary_ranges = object({
+    #  pods     = string
+    #  services = string
+    #})
     # web_server_network_access_control = list(string)
   })
   default = null
