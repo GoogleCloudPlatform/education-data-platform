@@ -42,12 +42,14 @@ resource "google_composer_environment" "orch-cmp-0" {
       enable_ip_masq_agent = true
       ip_allocation_policy {
         use_ip_aliases = "true"
-        cluster_secondary_range_name = try(
-          var.network_config.composer_secondary_ranges.pods, "pods"
-        )
-        services_secondary_range_name = try(
-          var.network_config.composer_secondary_ranges.services, "services"
-        )
+        cluster_secondary_range_name = "pods"
+        #cluster_secondary_range_name = try(
+        #  var.network_config.composer_secondary_ranges.pods, "pods"
+        #)
+        services_secondary_range_name = "services"
+        #services_secondary_range_name = try(
+        #  var.network_config.composer_secondary_ranges.services, "services"
+        #)
       }
     }
     private_environment_config {
