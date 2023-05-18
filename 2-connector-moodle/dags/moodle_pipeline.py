@@ -54,7 +54,7 @@ def call_api_status_dataflow(project_id, job_id, region):
 def call_api_dataflow(project_id, region, table_name, url_template, driver_jar, dvrclsname, conn_url, query_sql,
                      output_table,
                      bq_temp_dir,
-                     conn_user, conn_pass, bq_sa_email):
+                     conn_user, conn_pass, bq_sa_email, network, subnetwork):
    try:
        # Set up the job_id
        id_job = hashlib.sha1(str(time.time()).encode("utf-8")).hexdigest()[:4]
@@ -77,9 +77,11 @@ def call_api_dataflow(project_id, region, table_name, url_template, driver_jar, 
 
        environment = {
            'serviceAccountEmail': bq_sa_email,
-           'network': 'default',
-           'subnetwork': 'https://www.googleapis.com/compute/v1/projects/{0}/regions/{1}/subnetworks/default'.format(
-               project_id, region),
+           #'network': 'default',
+           'network': network,
+           #'subnetwork': 'https://www.googleapis.com/compute/v1/projects/{0}/regions/{1}/subnetworks/default'.format(
+           #    project_id, region),
+           'subnetwork': subnetwork,
            'tempLocation': bq_temp_dir
        }
 
@@ -125,6 +127,8 @@ def run(config_file,table_name,**kwargs):
    bq_sa_email = config_file.get('bq_sa_email')
    max_df_instance = int(config_file.get("max_df_instance"))
    bq_dataset = config_file.get('dataset_name')
+   network = config_file.get('network')
+   subnetwork = config_file.get('subnetwork')
 
    if config_file != 'ERR':
 
@@ -147,7 +151,7 @@ def run(config_file,table_name,**kwargs):
         job_id = call_api_dataflow(project_id, region, table_name, url_template1, driver_jar, dvrclsname,
                                           conn_url,
                                           query_sql, output_table,
-                                          bq_temp_dir1, conn_user, conn_pass, bq_sa_email)
+                                          bq_temp_dir1, conn_user, conn_pass, bq_sa_email, network, subnetwork)
 
         executing_states = ['JOB_STATE_PENDING', 'JOB_STATE_RUNNING', 'JOB_STATE_CANCELLING']
 
