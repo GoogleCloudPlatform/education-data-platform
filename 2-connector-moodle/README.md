@@ -127,7 +127,9 @@ Before deploying the Moodle Connector's artifacts, you need to configure the [Fi
 - **"bq_sa_email": "{your-prefix}-load-df-0@{your-prefix}-lod.iam.gserviceaccount.com"** = Service account to load data into BigQuery
 - **"dir_schm": "gs://{your-prefix}-load-cs-0/Files/config_files/mdl_schemas.tar.gz"** = Bucket path in which it will be stored the Moodle tables schemas definition for BigQuery landing zone
 - **"dir_views_cur": "gs://{your-prefix}-load-cs-0/Files/config_files/mdl_views_cur.tar.gz"** = Bucket path in which it will be stored the views code for the curated layer
-- **"tables"** = List of table to be ingested from Moodle to EDP. For the complete list of tables available refer to Moodle 4.0 [documentation](https://www.examulator.com/er/4.0/). 
+- **"tables"** = List of table to be ingested from Moodle to EDP. For the complete list of tables available refer to Moodle 4.0 [documentation](https://www.examulator.com/er/4.0/).
+- **"network": "{your-prefix}-default"** = Name of the VPC in load project
+- **"subnetwork": "https://www.googleapis.com/compute/v1/projects/{your-prefix}-lod/regions/{your-gcp-region}/subnetworks/default"** = Name of the subnet in load project
 
 You can keep the default values for the following variables or customize them according to your needs:
 
