@@ -65,6 +65,10 @@ module "orch-project" {
       "serviceAccount:${module.orch-project.service_accounts.robots.composer}",
     ]
     "roles/storage.objectViewer" = [module.load-sa-df-0.iam_email]
+    #Composer 2
+    "roles/composer.ServiceAgentV2Ext" = [
+      "serviceAccount:${module.orch-project.service_accounts.robots.composer}",
+    ]
   }
   oslogin = false
   org_policies = {
