@@ -14,10 +14,10 @@
 
 steps:
 
-- name: gcr.io/cloud-builders/gsutil
-  args: ['cp', '2-connector-moodle/dags/*', 'gs://${_DATAFLOW_COMPOSER_BUCKET}/dags/']
+- name: gcr.io/cloud-builders/gcloud
+  args: ['storage', 'cp', '2-connector-moodle/dags/*', 'gs://${_DATAFLOW_COMPOSER_BUCKET}/dags/']
   id: 'deploy-dags'
 
-- name: gcr.io/cloud-builders/gsutil
-  args: ['cp', '2-connector-moodle/data/*', 'gs://${_DATAFLOW_COMPOSER_BUCKET}/data/']
+- name: gcr.io/cloud-builders/gcloud
+  args: ['storage', 'cp', '2-connector-moodle/data/*', 'gs://${_DATAFLOW_COMPOSER_BUCKET}/data/']
   id: 'deploy-data'

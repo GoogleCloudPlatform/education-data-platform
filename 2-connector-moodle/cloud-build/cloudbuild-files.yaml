@@ -14,14 +14,14 @@
 
 steps:
 
-- name: gcr.io/cloud-builders/gsutil
-  args: ['cp','-r', '2-connector-moodle/Files', 'gs://${_DATAFLOW_LOAD_BUCKET}/']
+- name: gcr.io/cloud-builders/gcloud
+  args: ['storage','cp','--recursive', '2-connector-moodle/Files', 'gs://${_DATAFLOW_LOAD_BUCKET}/']
   id: 'deploy-files'
 
-- name: gcr.io/cloud-builders/gsutil
-  args: ['cp', '-r', '2-connector-moodle/temp', 'gs://${_DATAFLOW_LOAD_BUCKET}/']
+- name: gcr.io/cloud-builders/gcloud
+  args: ['storage', 'cp', '--recursive', '2-connector-moodle/temp', 'gs://${_DATAFLOW_LOAD_BUCKET}/']
   id: 'deploy-temp'
 
-- name: gcr.io/cloud-builders/gsutil
-  args: ['cp', '-r', '2-connector-moodle/Driver-JDBC', 'gs://${_DATAFLOW_LOAD_BUCKET}/']
+- name: gcr.io/cloud-builders/gcloud
+  args: ['storage', 'cp', '--recursive', '2-connector-moodle/Driver-JDBC', 'gs://${_DATAFLOW_LOAD_BUCKET}/']
   id: 'deploy-jdbc'

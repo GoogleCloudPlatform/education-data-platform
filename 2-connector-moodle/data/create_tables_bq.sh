@@ -44,7 +44,7 @@ else
 	  echo $(pwd)
 	
     echo "Downloading schema file(s)..."
-    gsutil cp $dir_schm .
+    gcloud storage cp $dir_schm .
     echo $(ls mdl_schemas.tar.gz)
 	  exit_code=$?
 

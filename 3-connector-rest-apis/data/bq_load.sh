@@ -73,14 +73,14 @@ process_files() {
     then
         echo "File "$arq_nm" processed..."
         echo "Moving the file to processed folder"
-        cmd_gs="gsutil mv "$dir_nm"load/"$arq_nm" "$dir_nm"processed/"$nm_arq
+        cmd_gs="gcloud storage mv "$dir_nm"load/"$arq_nm" "$dir_nm"processed/"$nm_arq
         #echo $cmd_gs
         ${cmd_gs}
         echo "------------------------------------------------"
     else
         echo "File "$arq_nm" with error..."
         echo "Moving the file to error folder"
-        cmd_gs="gsutil mv "$dir_nm"load/"$arq_nm" "$dir_nm"error/"$nm_arq
+        cmd_gs="gcloud storage mv "$dir_nm"load/"$arq_nm" "$dir_nm"error/"$nm_arq
         #echo $cmd_gs
         ${cmd_gs}
         echo "------------------------------------------------"
@@ -101,7 +101,7 @@ else
     echo "Retention Time: "$ret_time
     echo "------------------------------------------------"
 
-    dirlist=$(gsutil ls $dir_orig)
+    dirlist=$(gcloud storage ls $dir_orig)
     exit_code=$?
 
     #Se tiver arquivo no diretorio executa bq load, senão nao faz nada
@@ -137,7 +137,7 @@ else
             cmd_fl=$dir"load/*.*"
             #echo "diretorio pesquisa: "$cmd_fl
 
-            listfiles=$(gsutil ls $cmd_fl 2> /dev/null)
+            listfiles=$(gcloud storage ls $cmd_fl 2> /dev/null)
             exit_code=$?
 
             #verifica se a variavel nao esta vazia
