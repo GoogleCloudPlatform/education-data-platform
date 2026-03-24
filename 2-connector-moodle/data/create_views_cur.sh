@@ -37,7 +37,7 @@ else
 	
     echo ""
     echo "Downloading views file(s)..."
-    gsutil cp $dir_views .
+    gcloud storage cp $dir_views .
     exit_code=$?
 	
     echo ""

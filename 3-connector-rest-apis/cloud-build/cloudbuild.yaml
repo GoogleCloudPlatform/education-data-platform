@@ -81,14 +81,14 @@ steps:
       echo "*************************************************"
       terraform apply api.tfplan
 
-- name: gcr.io/cloud-builders/gsutil
-  args: ['cp', '3-connector-rest-apis/gcp_api/config.json', 'gs://${_BUCKET_ID}/config/']
+- name: gcr.io/cloud-builders/gcloud
+  args: ['storage', 'cp', '3-connector-rest-apis/gcp_api/config.json', 'gs://${_BUCKET_ID}/config/']
   id: 'copy config.json'
 
-- name: gcr.io/cloud-builders/gsutil
-  args: ['cp', '3-connector-rest-apis/dags/*', 'gs://${_DATAFLOW_COMPOSER_BUCKET}/dags/']
+- name: gcr.io/cloud-builders/gcloud
+  args: ['storage', 'cp', '3-connector-rest-apis/dags/*', 'gs://${_DATAFLOW_COMPOSER_BUCKET}/dags/']
   id: 'deploy-dags'
 
-- name: gcr.io/cloud-builders/gsutil
-  args: ['cp', '3-connector-rest-apis/data/*', 'gs://${_DATAFLOW_COMPOSER_BUCKET}/data/']
+- name: gcr.io/cloud-builders/gcloud
+  args: ['storage', 'cp', '3-connector-rest-apis/data/*', 'gs://${_DATAFLOW_COMPOSER_BUCKET}/data/']
   id: 'deploy-data'
